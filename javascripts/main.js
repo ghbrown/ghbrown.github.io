@@ -14,13 +14,9 @@ function determineifprime() {
   var t0=performance.now();
   var inputtext=document.getElementById("primeinput").value;
   var input=parseInt(inputtext,10);
-  if (input==1) {
+  if (input<=2) {
     var telapsedoutputstring=gettelapsedstrint(t0);
     document.getElementById("primeresponse").innerHTML="The number "+input+" is <u>not prime</u>. <br>\
-     "+telapsedoutputstring;
-  } else if (input==2) {
-    var telapsedoutputstring=gettelapsedstrint(t0);
-    document.getElementById("primeresponse").innerHTML="The number "+input+" is <u>prime</u>. <br>\
      "+telapsedoutputstring;
   } else {
   var primenessfound=false;
