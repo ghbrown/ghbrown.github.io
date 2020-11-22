@@ -1,7 +1,7 @@
-function newcolor() {
-  var colorarray=["#eb1717","#23bff7","#3de215","#ed9e00","#f2e600"];
-  var randindex=Math.round(Math.random()*(colorarray.length-1));
-  document.documentElement.style.setProperty('--main-color',colorarray[randindex])
+function newColor() {
+  var colorArray=["#eb1717","#23bff7","#3de215","#ed9e00","#f2e600"];
+  var randIndex=Math.round(Math.random()*(colorArray.length-1));
+  document.documentElement.style.setProperty('--main-color',colorArray[randIndex])
 }
 
 function handleForm(event) {
@@ -10,56 +10,61 @@ function handleForm(event) {
 
 document.getElementById("primeform").addEventListener('submit', handleForm);
 
-function determineifprime() {
+function determineIfPrime() {
   var t0=performance.now();
-  var inputtext=document.getElementById("primeinput").value;
-  var input=parseInt(inputtext,10);
-  if (input<=2) {
-    var telapsedoutputstring=gettelapsedstrint(t0);
+  var inputText=document.getElementById("primeinput").value;
+  var input=parseInt(inputText,10);
+  if (input<=1) {
+    var tElapsedOutputString=gettElapsedString(t0);
     document.getElementById("primeresponse").innerHTML="The number "+input+" is <u>not prime</u>. <br>\
-     "+telapsedoutputstring;
+     "+tElapsedOutputString;
+  } else if (input==2) {
+    var tElapsedOutputString=gettElapsedString(t0);
+    document.getElementById("primeresponse").innerHTML="The number "+input+" is <u>prime</u>. <br>\
+     "+tElapsedOutputString;
   } else {
-  var primenessfound=false;
+  var primenessFound=false;
   var i=2;
-  var sqrtinput=Math.ceil(Math.sqrt(input))
-  var iltesqrtinput;
-  if (i<=sqrtinput) {
-    iltesqrtinput=true;
+  var squareRootInput=Math.ceil(Math.sqrt(input))
+  var iLTESquareRootInput;
+  if (i<=squareRootInput) {
+    iLTESquareRootInput=true;
   } else {
-    iltesqrtinput=false;
+    iLTESquareRootInput=false;
   }
-  while (primenessfound==false && iltesqrtinput==true) {
+  while (primenessFound==false && iLTESquareRootInput==true) {
     if (input%i==0) {
-      var telapsedoutputstring=gettelapsedstrint(t0);
+      var tElapsedOutputString=gettElapsedString(t0);
       document.getElementById("primeresponse").innerHTML="The number "+input+" is <u>not prime</u>. <br>\
       Factorization with lowest factor: "+i+"&middot"+input/i+"<br>\
-      "+telapsedoutputstring;
-      primenessfound=true;
+      "+tElapsedOutputString;
+      primenessFound=true;
     }
     i++;
-    if (i>sqrtinput) {
-      iltesqrtinput=false;
+    if (i>squareRootInput) {
+      iLTESquareRootInput=false;
     }
   }
-  if (primenessfound==false) {
-      var telapsedoutputstring=gettelapsedstrint(t0);
+  if (primenessFound==false) {
+      var tElapsedOutputString=gettElapsedString(t0);
       document.getElementById("primeresponse").innerHTML="The number "+input+" is <u>prime</u>. <br>\
-      "+telapsedoutputstring;
+      "+tElapsedOutputString;
   }
 }
 }
 
-function gettelapsedstrint(t0) {
+
+function gettElapsedString(t0) {
   var t1=performance.now();
-  var telapsedms=t1-t0;
-  if (telapsedms<1) {
-    var telapsedmus=Math.round(telapsedms*1000);
-    var telapsedoutputstring="Time elapsed: "+telapsedmus+" microseconds";
-  } else if (telapsedms>1000) {
-    var telapseds=Math.round(telapsedms/1000);
-    var telapsedoutputstring="Time elapsed: "+telapseds+" seconds";
+  var tElapsedMilliseconds=t1-t0;
+  if (tElapsedMilliseconds<1) {
+    var tElapsedMicroseconds=Math.round(tElapsedMilliseconds*1000);
+    var tElapsedOutputString="Time elapsed: "+tElapsedMicroseconds+" microseconds";
+  } else if (tElapsedMilliseconds>1000) {
+    var tElapsedSeconds=Math.round(tElapsedMilliseconds/1000);
+    var tElapsedOutputString="Time elapsed: "+tElapsedSeconds+" seconds";
   } else {
-    var telapsedoutputstring="Time elapsed: "+Math.round(telapsedms)+" milliseconds";
+    var tElapsedOutputString="Time elapsed: "+Math.round(tElapsedMilliseconds)+" milliseconds";
   }
-  return telapsedoutputstring;
+  return tElapsedOutputString;
 }
