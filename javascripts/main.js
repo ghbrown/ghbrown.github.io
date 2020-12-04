@@ -4,6 +4,13 @@ function newColor() {
   document.documentElement.style.setProperty('--main-color',colorArray[randIndex])
 }
 
+function getScreenWindowInformation() {
+  const screenWidth=window.screen.width;
+  const screenHeight=window.screen.height;
+  document.documentElement.style.setProperty('--screen-width',screenWidth)
+  document.documentElement.style.setProperty('--screen-height',screenHeight)
+}
+
 function handleForm(event) {
   event.preventDefault();
 }

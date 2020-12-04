@@ -1,6 +1,10 @@
 
 :root {
-  --main-color:rgba(255,255,255,1.0)
+  --screen-width: 1000;
+  --screen-height: 600;
+  --main-color: rgba(255,255,255,1.0);
+  --header-font: "Lucida Console";
+  --main-font: "Inconsolata";
 }
 
 html, body {
@@ -8,71 +12,46 @@ html, body {
   max-width: 100%;
 }
 
-input[type='text'] {
-  background-color: rgba(0,0,0,1);
-  border: 2px solid rgba(255,255,255,1.0);
-  color: rgba(255,255,255,1.0);
-  font-family: "Courier New", Courier, monospace;
-  font-size: 2.7vmin;
-  font-weight: 800;
-}
-
-.button {
-  background-color: rgba(255,255,255,1);
-  border: 2px solid rgba(255,255,255,1.0);
-  color: rgba(0,0,0,1.0);
-  font-family: "Courier New", Courier, monospace;
-  font-size: 2.7vmin;
-  font-weight: 800;
-}
-
-td {
-  color: rgba(255,255,255,1);
-  font-family: "Courier New", Courier, monospace;
-  font-size: 2.7vmin;
-  font-weight: 800;
-}
-
-.standardlucida {
-  font-family: "Lucida Console", Courier, monospace;
-}
-
 .themecolor {
   color: var(--main-color);
 }
 
-.smalltext {
-  font-size: small
+@font-face {
+  font-family: Inconsolata;
+  src: url(Inconsolata-Variable.ttf);
 }
 
-h1 {
-  color: var(--main-color);
-  font-family: "Lucida Console", Courier, monospace;
+@font-face {
+  font-family: "Lucida Console";
+  src: url("Lucida Console.ttf");
 }
 
-h2 {
-  color: var(--main-color);
-  font-family: "Lucida Console", Courier, monospace;
-  font-size: 3vmin;
-}
 
-.sectionheader {
-  font-family: "Lucida Console", Courier, monospace;
-  font-size: 5vmin;
+hr {
+  border-top: 1px solid white;
 }
 
 p {
   color: rgba(255,255,255,1.0);
-  font-family: "Courier New", Courier, monospace;
-  font-size: 2.7vmin;
-  font-weight: 600;
+  font-family: var(--main-font);
+  font-size: calc(var(--screen-width)*0.013px);
+  font-weight: 400;
   text-align: justify;
 }
 
-p a {
-  font-weight: lighter;
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--header-font);
 }
 
+h1 {
+  color: var(--main-color);
+  font-size: calc(var(--screen-width)*0.024px);
+}
+
+h2 {
+  color: var(--main-color);
+  font-size: calc(var(--screen-width)*0.016px);
+}
 
 a {
   text-decoration: none;
@@ -89,10 +68,54 @@ a:visited {
 
 a.mainlink {
   color: rgba(255,255,255,1.0);
-  font-family: "Courier New", Courier, monospace;
-  font-size: 2.7vmin;
+  font-family: var(--main-font);
   text-decoration: underline;
   text-align: justify;
+}
+
+p a {
+  font-weight: lighter;
+}
+
+input[type='text'] {
+  background-color: rgba(0,0,0,1);
+  border: 2px solid rgba(255,255,255,1.0);
+  color: rgba(255,255,255,1.0);
+  font-family: var(--main-font);
+  font-size: 2.7vmin;
+  font-weight: 600;
+}
+
+.button {
+  background-color: rgba(255,255,255,1);
+  border: 2px solid rgba(255,255,255,1.0);
+  color: rgba(0,0,0,1.0);
+  font-family: var(--main-font);
+  font-size: 2.7vmin;
+  font-weight: 800;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  display: grid;
+  background-color: black;
+  grid-template-columns: calc(var(--screen-width)*0.11px) min(calc(94vw - var(--screen-width)*0.11px), calc(var(--screen-width)*0.55px));
+  grid-template-rows: auto;
+  column-gap: 14px
+}
+
+@media screen and (max-width: 1px) {
+  .container {
+    display: grid;
+    background-color: black;
+    grid-template-columns: 17vw auto;
+    grid-template-rows: auto;
+    column-gap: 14px
+  }
 }
 
 .sidenav {
@@ -106,21 +129,17 @@ a.mainlink {
 
 .sidenav p {
   color: var(--main-color);
-  font-size: 3vw;
-  padding: 0vh 0vw 0vh 1vw;
   display: block;
+  font-size: calc(var(--screen-width)*0.024px);
+  padding: 0px 0px 0px 0px;
   font-family: "Lucida Console", Courier, monospace;
 }
 
 .sidenav a {
-  padding: 1vh 1vw 1vh 2vw;
   display: block;
-  font-size: 1.9vw;
+  padding: calc(var(--screen-width)*0.008px) calc(var(--screen-width)*0px) calc(var(--screen-width)*0px) calc(var(--screen-width)*0.006px);
+  font-size: calc(var(--screen-width)*0.0135px);
   color: rgba(255, 255, 255, 1.0);
-}
-
-hr {
-  border-top: 1px solid white;
 }
 
 .navtext {
@@ -131,30 +150,10 @@ hr {
   color: var(--main-color);
 }
 
-
 .main {
   padding-right: 10px;
 }
 
-.right {
-  position: fixed;
-  left: 790px;
-  top: 20px;
-}
-
 hr.hrmain {
   border-top: 1px solid white;
-}
-
-.container {
-  display: grid;
-  background-color: black;
-  grid-template-columns: 17vw auto;
-  grid-template-rows: auto;
-  column-gap: 14px
-}
-
-img {
-  max-width: 100%;
-  display: block;
 }
