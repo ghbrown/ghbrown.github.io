@@ -1,2 +1,1 @@
-links on random topic page are way too large on monile, but other links aren't
 everything still looks too small on mobile (switch to a new relative sizing framework)
