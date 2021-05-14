@@ -36,7 +36,6 @@ def make_keyword_line(keywords_path,num_spaces):
     keywords[-1]=keywords[-1]+'\">' #add trailing html formatting
     spaces=''.join([' ']*num_spaces)
     html_keywords_line=spaces+('\n'+spaces).join(keywords)+'\n'
-    print(html_keywords_line)
     return html_keywords_line
     
 
@@ -65,12 +64,11 @@ def update_page_keywords(page_path,keywords_path,keyword_line_signature,after_ke
     num_leading_spaces=len(first_keyword_line)-len(first_keyword_line.lstrip(' ')) #extract indentation/leading space amount from keyword line
     keyword_lines=make_keyword_line(keywords_path,num_leading_spaces)
     updated_page_lines=prekeyword_lines+[keyword_lines]+postkeyword_lines
-    #with open(page_path,'w') as f:
-    with open('testOutput.html','w') as f:
+    with open(page_path,'w') as f:
         f.writelines(updated_page_lines)
     
 
-def update_all_keywords(keywords_path,keyword_line_signature,next_line_signature):
+def update_all_keywords(keywords_path,keyword_line_signature,after_keyword_line_signature):
     """
     Updates the keywords of all *.html files adjacent to script or below in file tree.
     ---Inputs---
@@ -85,21 +83,15 @@ def update_all_keywords(keywords_path,keyword_line_signature,next_line_signature
         for file in files:
             if file.endswith('.html') and ('google' not in file):
                 pages.append(os.path.join(root,file))
-    print(pages)
                 
-    """
-    keywords_formatted=make_keyword_line(keywords_path)
+    print('\n')
     for page in pages:
-        update_page_keywords(page,keywords_formatted,keyword_line_signature,next_line_signature)
-    #delete copy (only uncomment this line after confirmed working)
-    """
+        update_page_keywords(page,keywords_path,keyword_line_signature,after_keyword_line_signature)
+        print('Updated:  ',page)
+    print('\n')
 
 
-keyword_line_sig='<meta name=\"keywords\"'
-after_keyword_line_sig='<meta name=\"viewport\"'
-#make_keyword_line(keywords_file,4)
-#update_page_keywords('index.html','keywords',keyword_line_signature=keyword_line_sig,after_keyword_line_signature=after_keyword_line_sig)
-update_all_keywords('keywords',keyword_line_sig,after_keyword_line_sig)
+update_all_keywords('keywords','<meta name=\"keywords\"','<meta name=\"viewport\"')
 
 
 
