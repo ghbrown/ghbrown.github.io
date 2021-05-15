@@ -3,30 +3,17 @@ import os
 import shutil
 
 """
-Simple script to update metadata tags on all pages of website.
-
-Flow:
-store desired tags in a text file
-when script is run:
-    make a full copy of website files and store somewhere
-    read tags from file somewhere
-    create full html meta-data tag line with tags
-    create list of all .html files in same directory and deeper
-    for each of these files:
-        open file and read contents
-        parse file into lines before and lines after meta tag line (saving both as variables)
-        open same file with write priveleges
-        write pre-tag lines
-        write in formatted tag line variable
-        write in post-tag lines
+Simple script to update metadata keywords on all pages of website.
 """
+
 def make_keyword_line(keywords_path,num_spaces):
     """
     Makes the .html keyword line from adjacent text file.
     ---Inputs---
     keywords_path: path to file containing keywords, string
+    num_spaces: level of spacing indent of keyword lines, integer
     ---Outputs---
-    html_keywords_line: .html formatted meta keywords line, string
+    html_keywords_line: html formatted meta keywords line(s), string (with newlines)
     """
     with open(keywords_path) as f:
         keywords=[line.strip('\n') for line in f]
