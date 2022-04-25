@@ -71,11 +71,11 @@ def update_all_keywords(keywords_path,keyword_line_signature,after_keyword_line_
             if file.endswith('.html') and ('google' not in file):
                 pages.append(os.path.join(root,file))
                 
-    print('\n')
+    print()
     for page in pages:
         update_page_keywords(page,keywords_path,keyword_line_signature,after_keyword_line_signature)
         print('Updated:  ',page)
-    print('\n')
+    print()
 
 
 update_all_keywords('keywords','<meta name=\"keywords\"','<meta name=\"viewport\"')
