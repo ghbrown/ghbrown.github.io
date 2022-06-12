@@ -17,8 +17,6 @@ def make_keyword_line(keywords_path,num_spaces):
     """
     with open(keywords_path) as f:
         keywords=[line.strip('\n') for line in f]
-    for i in range(len(keywords)-1): #add comma to end of first n-1 lines
-        keywords[i]=keywords[i]+',' 
     keywords[0]='<meta name=\"keywords\" content=\"'+keywords[0] #add leading html formatting
     keywords[-1]=keywords[-1]+'\">' #add trailing html formatting
     spaces=''.join([' ']*num_spaces)
@@ -57,7 +55,8 @@ def update_page_keywords(page_path,keywords_path,keyword_line_signature,after_ke
 
 def update_all_keywords(keywords_path,keyword_line_signature,after_keyword_line_signature):
     """
-    Updates the keywords of all *.html files adjacent to script or below in file tree.
+    Updates the keywords of all *.html files adjacent to script or
+    beneath it in file tree.
     ---Inputs---
     keywords_path: path to file containing keywords, string
     keyword_line_signature: unique identifier for the existing html keywords line(s), string
@@ -73,12 +72,15 @@ def update_all_keywords(keywords_path,keyword_line_signature,after_keyword_line_
                 
     print()
     for page in pages:
-        update_page_keywords(page,keywords_path,keyword_line_signature,after_keyword_line_signature)
+        update_page_keywords(page,keywords_path,keyword_line_signature,
+                             after_keyword_line_signature)
         print('Updated:  ',page)
     print()
 
 
-update_all_keywords('keywords','<meta name=\"keywords\"','<meta name=\"viewport\"')
+if (__name__ == '__main__'):
+    update_all_keywords('keywords.txt','<meta name=\"keywords\"',
+                        '<meta name=\"viewport\"')
 
 
 
