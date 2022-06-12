@@ -1,1 +1,8 @@
-everything still looks too small on mobile (switch to a new relative sizing framework)
+To do:
+- everything looks too small on mobile and Google complains
+  about it (switch to a new relative sizing framework)
+- Do I really need the page headers? Why should the top of the main
+  columns say "publications" when I already track it with link color?
+- switch "Home" to "About Me"
+- add note in Random that this site was inspired by Matthew Zahr's
+  but written from scratch
