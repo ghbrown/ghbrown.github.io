@@ -1,7 +1,5 @@
 
 :root {
-  --screen-width: 1000;
-  --screen-height: 600;
   --main-color: rgba(255,255,255,1.0);
   --header-font: "Lucida Console";
   --main-font: "Inconsolata";
@@ -34,7 +32,7 @@ hr {
 p {
   color: rgba(255,255,255,1.0);
   font-family: var(--main-font);
-  font-size: calc(var(--screen-width)*0.013px);
+  font-size: 3.0vmin;
   font-weight: 400;
   text-align: justify;
 }
@@ -45,12 +43,12 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
   color: var(--main-color);
-  font-size: calc(var(--screen-width)*0.024px);
+  font-size: 5vmin;
 }
 
 h2 {
   color: var(--main-color);
-  font-size: calc(var(--screen-width)*0.016px);
+  font-size: 4vmin;
 }
 
 a {
@@ -102,20 +100,17 @@ img {
 
 .container {
   display: grid;
+  width: 100%;
   background-color: black;
-  grid-template-columns: calc(var(--screen-width)*0.11px) min(calc(94vw - var(--screen-width)*0.11px), calc(var(--screen-width)*0.55px));
+  grid-template-columns: 20vmin auto;
   grid-template-rows: auto;
-  column-gap: 14px
+  column-gap: 1vw
 }
 
-@media screen and (max-width: 1px) {
-  .container {
-    display: grid;
-    background-color: black;
-    grid-template-columns: 17vw auto;
-    grid-template-rows: auto;
-    column-gap: 14px
-  }
+@media only screen and (min-width: 1500px) {
+    .container {
+        width: max(1500px,40vw);
+    }
 }
 
 .sidenav {
@@ -130,15 +125,15 @@ img {
 .sidenav p {
   color: var(--main-color);
   display: block;
-  font-size: calc(var(--screen-width)*0.024px);
+  font-size: 4.5vmin;
   padding: 0px 0px 0px 0px;
   font-family: "Lucida Console", Courier, monospace;
 }
 
 .sidenav a {
   display: block;
-  padding: calc(var(--screen-width)*0.008px) calc(var(--screen-width)*0px) calc(var(--screen-width)*0px) calc(var(--screen-width)*0.006px);
-  font-size: calc(var(--screen-width)*0.0135px);
+  padding: 1vmin 1vmin 1vmin;
+  font-size: 2.5vmin;
   color: rgba(255, 255, 255, 1.0);
 }
 
@@ -151,7 +146,7 @@ img {
 }
 
 .main {
-  padding-right: 10px;
+  padding-right: 2vw;
 }
 
 hr.hrmain {
