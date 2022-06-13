@@ -2,6 +2,7 @@ To do:
 - everything looks too small on mobile and Google complains
   about it (overhaul sizing and styling (keyword: responsive web
   design))
+- see if Google still complains about mobile visibility after refresh
 - add note in Random that this site was inspired by Matthew Zahr's
   but written from scratch
  
