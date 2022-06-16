@@ -5,4 +5,16 @@ To do:
 - see if Google still complains about mobile visibility after refresh
 - add note in Random that this site was inspired by Matthew Zahr's
   but written from scratch
+
+flex branch:
+- not sure where ratio of navbar to content is getting set currently,
+  but I can't seem to change it
+- navbar grows too wide even when text has stopped growing in desktop
+  mode
+- can't get any padding around the container class, and content is
+  spilling off
+  - probably do a test page with just a flexbox, border, and
+    padding
+- name in the top right isn't as clean as it is on main (how can
+  I remove the spacing above and below)
  
