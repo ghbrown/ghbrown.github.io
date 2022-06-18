@@ -1,20 +1,19 @@
 To do:
-- everything looks too small on mobile and Google complains
-  about it (overhaul sizing and styling (keyword: responsive web
-  design))
-- see if Google still complains about mobile visibility after refresh
+- figure out a more aesthetic way to place the navigation links when
+  navbar is at top
+- move to like a Python class extraction notation where insted of just
+  ABOUT ME at the top it's like ghbrown.themecolor(ABOUT_ME)
+  (you might also be able to do away with the top left name element
+   then)
+- Google still complaining about mobile usability
+  - try to see exactly what/where it's problem is (small text,
+    elements too close, both?)
+  - maybe need to add another breakpoint and raise minimum size of
+    text (it does look a bit small)?
+- remove spacing above and below name element in top left corner (I
+  think I can set the margin property or something?)
+- weird alignment issues that is thankfully easy to fix with minor
+  width hacking and padding (what's the root cause of the asymmetry?)
 - add note in Random that this site was inspired by Matthew Zahr's
   but written from scratch
-
-flex branch:
-- not sure where ratio of navbar to content is getting set currently,
-  but I can't seem to change it
-- navbar grows too wide even when text has stopped growing in desktop
-  mode
-- can't get any padding around the container class, and content is
-  spilling off
-  - probably do a test page with just a flexbox, border, and
-    padding
-- name in the top right isn't as clean as it is on main (how can
-  I remove the spacing above and below)
  
