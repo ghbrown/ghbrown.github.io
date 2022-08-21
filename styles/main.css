@@ -55,6 +55,11 @@ h2 {
   font-size: 4vmin;
 }
 
+h3 {
+  color: var(--main-color);
+  font-size: 3vmin;
+}
+
 a {
   text-decoration: none;
   text-decoration-color: rgba(255,255,255,1.0);
