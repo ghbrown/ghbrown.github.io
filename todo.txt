@@ -1,4 +1,7 @@
 To do:
+- change to a Jekyll or Hugo site
+  - Jekyll tutorial: https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages
+
 - figure out a more aesthetic way to place the navigation links when
   navbar is at top
 - move to like a Python class extraction notation where insted of just
@@ -16,4 +19,5 @@ To do:
   width hacking and padding (what's the root cause of the asymmetry?)
 - add note in Random that this site was inspired by Matthew Zahr's
   but written from scratch
+
  
