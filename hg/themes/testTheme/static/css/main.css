@@ -1,0 +1,194 @@
+
+:root {
+  /*
+    main color gets overwritten with a random value by javascript on
+    page load, so it's value here is just a placeholder
+  */
+  --main-color: rgba(255,255,255,1.0);
+  --header-font: "Lucida Console";
+  --main-font: "Inconsolata";
+}
+
+html, body {
+  background-color: rgba(0,0,0,1);
+  max-width: 100%;
+}
+
+.themecolor {
+  color: var(--main-color);
+}
+
+@font-face {
+  font-family: Inconsolata;
+  src: url(Inconsolata-Variable.ttf);
+}
+
+@font-face {
+  font-family: "Lucida Console";
+  src: url("Lucida Console.ttf");
+}
+
+
+hr {
+  border-top: 0.2vmin solid white;
+}
+
+p {
+  color: rgba(255,255,255,1.0);
+  font-family: var(--main-font);
+  font-size: min(3vmin,32px);
+  font-weight: 400;
+  text-align: justify;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: var(--header-font);
+}
+
+h1 {
+  color: var(--main-color);
+  font-size: 5vmin;
+}
+
+h2 {
+  color: var(--main-color);
+  font-size: 4vmin;
+}
+
+h3 {
+  color: var(--main-color);
+  font-size: 3vmin;
+}
+
+a {
+  text-decoration: none;
+  text-decoration-color: rgba(255,255,255,1.0);
+}
+
+a:hover {
+  font-weight: bold;
+}
+
+a:visited {
+  color: rgba(255,255,255,1.0);
+}
+
+a.mainlink {
+  color: rgba(255,255,255,1.0);
+  font-family: var(--main-font);
+  text-decoration: underline;
+  text-align: justify;
+}
+
+p a {
+  font-weight: lighter;
+}
+
+input[type='text'] {
+  background-color: rgba(0,0,0,1);
+  border: 2px solid rgba(255,255,255,1.0);
+  color: rgba(255,255,255,1.0);
+  font-family: var(--main-font);
+  font-size: 2.7vmin;
+  font-weight: 600;
+}
+
+.button {
+  background-color: rgba(255,255,255,1);
+  border: 2px solid rgba(255,255,255,1.0);
+  color: black;
+  font-family: var(--main-font);
+  font-size: 2.7vmin;
+  font-weight: 800;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 98vw;
+  box-sizing: border-box;
+  /* TODO: there seems to already be some mysterious padding on the left which results in the uneven padding below */
+  padding: 0vh 2vw 0vh 0vw;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  column-gap: 1vw;
+  background-color: black;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-between;
+  align-items: stretch;
+  border-width: 0.2vw;
+  border-style: solid;
+  border-color: white;
+}
+
+.name {
+  display: none;
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-begin;
+}
+
+.nav p {
+  color: var(--main-color);
+  display: block;
+  font-size: min(5.3vmin,63px);
+  margin: 0
+  padding: 0px 0px 0px 0px;
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.nav a {
+  padding: 1vmin 1vmin 1vmin;
+  font-size: min(3vmin,36px);
+  color: white;
+}
+
+.navtext {
+  font-family: "Lucida Console", Courier, monospace;
+}
+
+.navtext .current {
+  color: var(--main-color);
+}
+
+.main {
+}
+
+@media only screen and (min-width: 1000px) {
+    .container {
+      width: min(1500px,98vw);
+      padding: 0vh 0vw 0vh 0vw;
+      flex-direction: row;
+    }
+    .nav {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-begin;
+    }
+    .name {
+      display: flex;
+      align-self: center;
+    }
+    .navlinks {
+      flex-direction: column;
+      /* add it's own top border to divide between name */
+      border-top-width: 0.2vw;
+      border-top-style: solid;
+      border-top-color: white;
+    }
+}
+

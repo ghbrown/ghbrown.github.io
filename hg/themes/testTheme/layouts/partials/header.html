@@ -1,0 +1,14 @@
+<div class="nav navtext">
+    <div class="name">
+        <p> GABRIEL<br> H.BROWN </p>
+    </div>
+    <nav id="nav" class="navlinks">
+        {{ range .Site.Menus.main }}
+        <a href="{{ .URL }}">
+        {{ $text := print .Name | safeHTML }}
+        {{ $text }}
+        <!-- use if statement here to implement "current page" behavior -->
+        </a>
+        {{ end }}
+    </nav>
+</div>
