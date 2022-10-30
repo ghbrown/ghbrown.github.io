@@ -2,27 +2,26 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'Gabriel H. Brown'
 theme = "testTheme"
+
 [markup.goldmark.renderer]
   unsafe = true # allow HTML in md files
-
-# things you'll forget:
-# - hugo server doesn't watch for CSS changes, so you have to change
-#   a file like this for it to refresh the website
-# - it probably doesn't watch for any changes in themes/ actually
-
-# really just want my site to be 1:1 with old site before moving
-# over, then I can figure out improvements one at a time
-
-# current issues:
-# - content runs unbounded from edge to edge (container doing nothing?)
-# - not really sure how to best handle responsiveness (feels like it
-#   should be automatic once simple stuff is ironed out, but not sure
-# - some dynamic stuff (like font size) already working
-
-
 
 [menu]
   [[menu.main]]
     name = "ABOUT ME"
     url = "/"
     weight = 1
+
+# things you'll forget:
+# - hugo server doesn't watch for CSS changes, so you have to change
+#   a tracked file for it to refresh the website
+# - it probably doesn't watch for any changes in themes/ actually
+
+# really just want my site to be 1:1 with old site before moving
+# over, then I can figure out improvements one at a time
+
+# current issues:
+#- don't set page titles to THING IN CAPS
+#- but instead set menu entries to {.TITLE | capitalize} or something
+#  that way it still appears nicely in browser tab
+

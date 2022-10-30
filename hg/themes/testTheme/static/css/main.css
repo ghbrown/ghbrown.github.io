@@ -33,7 +33,7 @@ hr {
   border-top: 0.2vmin solid white;
 }
 
-p {
+p, ul {
   color: rgba(255,255,255,1.0);
   font-family: var(--main-font);
   font-size: min(3vmin,32px);
@@ -122,7 +122,6 @@ img {
 .nav {
   display: flex;
   flex-direction: row;
-  flex-grow: 1;
   justify-content: space-between;
   align-items: stretch;
   border-width: 0.2vw;

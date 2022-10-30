@@ -1,10 +1,11 @@
 ---
-title: "something"
+title: "About Me"
 date: 2022-10-27T21:32:55-05:00
 draft: false
 ---
 
-## ABOUT ME
+# ABOUT ME
+
 ---
 
 <table style="width:100%">
@@ -37,4 +38,7 @@ I graduated from the University of Notre Dame in 2020 with my bacholor's in Mech
 
 My primary academic interest is in computational and applied mathematics, especially numerical analysis, linear algebra, and optimization.
 I also enjoy all of the the adjacent research fields, including physics based applications like multiscale modeling, computer science, and high performance computing.
+
+---
+
 
