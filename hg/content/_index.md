@@ -15,7 +15,7 @@ draft: false
     </td>
     <td style="padding: 0vmin 0vmin 0vmin 3vmin">
       <p>
-        Gabriel H. Brown, graduate research assistant <br>
+        Gabriel H. Brown <br> <!-- usually I put ", graduate research assistant"-->
         Oden Institute for Computational Engineering & Sciences <br>
         University of Texas at Austin <br>
         <br>

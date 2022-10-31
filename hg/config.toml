@@ -11,6 +11,22 @@ theme = "testTheme"
     name = "ABOUT ME"
     url = "/"
     weight = 1
+  [[menu.main]]
+    name = "RESEARCH"
+    url = "/topics/research"
+    weight = 2
+  [[menu.main]]
+    name = "PUBLICATIONS"
+    url = "/topics/publications"
+    weight = 3
+  [[menu.main]]
+    name = "HOBBIES & INTERESTS"
+    url = "/topics/hobbies_and_interests"
+    weight = 4
+  [[menu.main]]
+    name = "RANDOM"
+    url = "/topics/random/random"
+    weight = 5
 
 # things you'll forget:
 # - hugo server doesn't watch for CSS changes, so you have to change
@@ -24,4 +40,5 @@ theme = "testTheme"
 #- don't set page titles to THING IN CAPS
 #- but instead set menu entries to {.TITLE | capitalize} or something
 #  that way it still appears nicely in browser tab
+#- set menu in config.toml (here) so I can control order
 

@@ -30,9 +30,9 @@ and this number is the largest this format supports.
 My goal is to objectively convey the flavors and textures I experience rather than try to generate some rating or ranking you probably wouldn't agree with.
 I suggest you use these reviews as data points and decide for yourself what sounds good or bad.
 
-<a href="food_reviews/traditional_chain/traditional_chain.html" class="mainlink"> Hand tossed/traditional pizzas from national chains.</a>
+<a href="food_reviews/deep_dish_chain/deep_dish_chain.html" class="mainlink"> Deep dish/pan pizzas from national chains.</a>
 <br>
-<a href="/topics/random/deep_dish_chain" class="mainlink"> Deep dish/pan pizzas from national chains.</a>
+<a href="food_reviews/traditional_chain/traditional_chain.html" class="mainlink"> Hand tossed/traditional pizzas from national chains.</a>
 
 ---
 

@@ -1,8 +1,7 @@
 ---
-title: "PUBLICATIONS"
+title: "Publications"
 date: 2022-10-29T23:53:32-05:00
 draft: false
-menu: main
 ---
 
 # PUBLICATIONS

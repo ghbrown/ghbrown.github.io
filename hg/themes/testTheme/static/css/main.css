@@ -165,6 +165,7 @@ img {
 }
 
 .main {
+  flex-grow: 1;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -176,7 +177,8 @@ img {
     .nav {
         flex-direction: column;
         justify-content: flex-start;
-        align-items: flex-begin;
+        flex-basis: min(25%,200px);
+        /*#align-items: flex-test;*/
     }
     .name {
       display: flex;

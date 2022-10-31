@@ -1,8 +1,7 @@
 ---
-title: "HOBBIES AND INTERESTS"
+title: "Hobbies and Interests"
 date: 2022-10-30T00:29:42-05:00
 draft: false
-menu: main
 ---
 
 # HOBBIES & INTERESTS
