@@ -15,7 +15,7 @@ A review of deep dish and pan style pizzas from national chains (specifically th
 <table style="width:100%">
   <tr>
     <td>
-      <img src="media/TraditionalChain.jpg">
+      <img src="/media/topics/random/food_reviews/DeepDishPanChain.jpg">
     </td>
   </tr>
 </table>

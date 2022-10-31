@@ -10,43 +10,64 @@ draft: false
 
 ## HAND TOSSED / TRADITIONAL - CHAIN
 
-A review of deep dish and pan style pizzas from national chains (specifically those in the Urbana, IL area) including: Domino's, Jet's, Little Ceasars, Papa John's and Pizza Hut.
+A review of traditional style pizzas from national chains (specifically those in the Urbana, IL area) including: Domino's, Jet's, Little Ceasars, Papa John's, and Pizza Hut.
 
 <table style="width:100%">
   <tr>
     <td>
-      <img src="media/TraditionalChain.jpg">
+      <img src="/media/topics/random/food_reviews/TraditionalChain.jpg">
     </td>
   </tr>
 </table>
 
-<span class="themecolor">Domino's</span> pan pizza (top left) is appropriately doughy with a crisp bottom and a crust that was almost indiscernible from the rest of the pizza.
-However, the bread/dough was alarmingly sweet as compared to the typical pizza experience.
-The sauce was well distributed on the pizza, but the ratio of sauce to the rest of the pizza was too low.
-However, it is perhaps important to note that I err on the side of more sauce when in doubt.
-As for taste, the sauce was appropriately acidic, but perhaps under spiced.
-Moving up to cheese, it was applied in the  correct proportion all the way to the edges, where cripsed cheese bits could be had.
-Notably, Domino's blend of mozzarella, monterey jack, and white cheddar provides a punchier flavor when compared to 100% mozzarella topped pizzas.
+<span class="themecolor">Domino's</span> standard/traditional pizza (top left) has a slightly doughy base with a golden, crisp bottom.
+At the crust, the dough is crisp on the outside while remaining soft and well inflated on the inside (and covered with a tasty garlic butter).
+sauce is well distributed and in a good ratio with the other components.
+Its flavor was light on spices and pleasantly acidic.
+propropietary blend of cheeses (equal parts monterey jack, mozzarella, white cheddar) and the carefully metered cook time means the cheese is both flavorful (properly browned) and tender (not overcooked).
+This contributes to the overall "tender bite" of the pizza; that is to say the selected bite separates from the rest of the slice with no gnawing or vigorous head shaking.
 <br>
-[COST: $10.68 after tax for 14 inch large.]
+[COST: $8.49 after tax for 13 inch large.]
 
-<span class="themecolor">Jet's</span> deep dish pizza (top right) has proprtionately too much dough, though the shatteringly crisp bottom provides a welcome change of texture.
-This crispness could come from the high oil content of the dough, or a liberal application of oil to the pan in which it is cooked.
-Either way the result is a glassy bottomed pizza that oozes a bit of oil from the dough when squeezing or biting.
-The crumb structure of the dough was very open resulting in a bubbly and textured base layer.
-The sauce distribution of this deep dish pizza is such that there is only an appropriate sauce ratio in places which were originally at the centermost part of the pan.
-This means that one or two bites per slice are well sauced, while the rest of the slice is left high and dry.
-As for taste, the sauce is heavily spiced, and not pronouncedly acidic or sweet.
-The cheese is laid on thick to the edges, where it is well crisped.
-However, the muted flavor puts it solidly in the background of the experience.
+<span class="themecolor">Jet's</span> NY style pizza (top right) has a firm dough with a crisp bottom.
+At the edges this dough terminates in a substantial, nearly crunchy, slightly tough, unflavored crust.
+The sauce was acidic and well spiced (almost floral), though a bit on the watery side (often contributing to cheese delidding).
+It's distribution was appropriate, though it seemed to be dominated by other components.
+Even when hot, Jet's 100% mozzarella cheese was quite tough (almost leathery), likely due to its quite generous application and possible overcooking.
+This, along with the watery sauce, was the prime cause of cheese deliddings, and contributed to the overall tough texture of the pizza.
+In the flavor department, the Jet's cheese fails to make much of an impact, almost certainly since it is all mozzarella (great at melting, but low on flavor).
+These factors combine to make the sizable cheese layer the dominant component of this overall tough pizza.
+In a single sentence, the best way to describe this pizza is perhaps to mention that it is strongly reminiscent of arcade pizza (specifically Chuck E. Cheese's, curse that place).
 <br>
-[COST: $8.91 (after 20% discount for text-to-order) for a single 8 inch by 10 inch pizza.]
+[COST: $12.48 (after 20% discount for text-to-order) for a ~14 inch pizza.]
 
-<span class="themecolor">Little Ceasars'</span> deep dish pizza (bottom left) starts with a well browned and lightly crispy bottom with an open crumb structure. The ratio of dough to the rest of the components is perhaps a bit high, but within an appropriate range. The crust was more distinct from the rest of the pizza as compared with Jet's or Domino's, but still had the classic one expects of deep dish/pan pizza crust.
-Like Jet's, this deep dish pizza also suffers from sauce distribution problems, with the parts of each slice originally from the center of the pizza bordering on oversauced (not complaining) while the outer rim of the pizza has almost none (complaining). It is worth noting that the severity of this problem was slice dependent, unlike Jet's, but never absent. In the flavor department, Little Ceasars provides a well spiced sauce that is remarkably well balanced otherwise. [COST: $8.56 for large DEEP!DEEP! Dish which is two ~8 inch by 10 inch pizzas, though I got it free since they we're super behind and I had to wait quite a while even though I called it in ahead of time.] <br>
-<span class="themecolor">Pizza Hut's</span> pan pizza (bottom right) has an almost perfectly flat base, perhaps due to its very fine/tight crumb structure. Though this dough construction is outside of the typically bubbly experience one might expect from pan and deep dish pizzas, it results in a uniquely tender bite. Like Little Ceasars the crust is clearly a separate entity from the bulk of the pizza, and is both tender and crisp. Perhaps surprisingly, the dough was not as oily as the standard hand tossed Pizza Hut pizza. As a final note on the crust, I cannot overemphasize how much the dough tasted like a biscuit. The flavor was not necessarily unpleasant, but it certainly was out of place and unsettling.
-Perhaps the only worthwile comment about the sauce was that is was well distributed, but not plentiful enough. The taste of the sauce was not remarkable in any way, and didn't distract from the overall experience of eating a foot and a half wide biscuit.
-Just like the sauce under it, the cheese was remarkably nondescript. The texture and amount was pleasant enough, but the flavor places it clearly as a background performer in the biscuit circus. [COST: $12.25 for 14 inch large.]
-p>
-<hr>
+<span class="themecolor">Little Ceasars'</span> traditional round pizza stakes its claim on a spongy, blonde, and slight dough layer.
+At the crust this results in a rather deflated profile, which flattens to a point in the radial direction without ever ballooning up.
+Though the rest of the crust has a largely uniform texture, this pointed edge around the outside of the pizza does provide a firm and welcome crunch. 
+Though applied in reasonable proportion with everything else, the sauce fails to make its presence know outside of its red color.
+Likewise, the cheese lacks any distinct or heavy-hitting flavors, though it too is applied in a reasonable proportion and cooked appropriately.
+This pizza is geometrically and flavorifically flat.
+<br>
+[COST: $6.68 for a ~13 inch Classic Cheese pizza.]
 
+<span class="themecolor">Papa John's</span> standard (and in fact only style of) pizza builds atop a thick and doughy base layer with a light crisp on the bottom and a chewy, pillowy, almost undercooked pull at the sauce interface.
+However, the crust portion suffered from the opposite problem.
+Though well inflated and crisp on the outside, the crust seemed to deflate and become quite chewy when bitten, making it difficult to take a courteous bite (requiring mild head shaking at best, and crocodile death rolls at worst).
+This may have been due to the fact that my crust was likely somewhat burnt (evidence of which was the fishy taste of overcooked garlic and cheese, which I suspect is not part of the intended experience).
+The sauce, though very sparingly applied compared to the amount of cheese and dough, had a pleasant, well balanced flavor profile.
+Much like the dough layer (excluding the crust), the cheese contributed to the tender and soft, but tangible resistance of a non-crust bite.
+The cheese also brings a subtle but welcome flavor, both accentuating and strengthening the overall buttery note that runs throughout this pizza.
+I'm confident the cheese is not just 100% mozzarella, but I have had trouble finding the actual blend.
+<br>
+[COST: $10.39 for 14 inch large, though I could have sworn I found a $7.99 pretax deal.]
+
+<span class="themecolor">Pizza Hut's</span> hand tossed pizza begins atop a dough layer with a slightly crisp bottom.
+This time though dought smells of, but does not taste like, biscuits.
+The texture of the dough layer throughout (including the airy, crisp, and well risen crust) was tender and only required a light pull to separate a chosen bite.
+Though the sauce was very generously applied (perhaps even too much for some people) and well distributed, its flavor was mild enough that the flavor of the sauce was overpowered by the other components.
+The cheese was applied in a good ratio with the other major components, but was almost certainly completely mozzarella, contributing to its back seat in the bus to Flavortown.
+However, it was properly baked, so the cheese layer behaved itself when taking bites and did not try to slide off into your lap all at once.
+<br>
+[COST: $11.15 for ~13 inch large.]
+
+---

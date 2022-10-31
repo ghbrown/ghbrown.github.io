@@ -37,8 +37,5 @@ theme = "testTheme"
 # over, then I can figure out improvements one at a time
 
 # current issues:
-#- don't set page titles to THING IN CAPS
-#- but instead set menu entries to {.TITLE | capitalize} or something
-#  that way it still appears nicely in browser tab
-#- set menu in config.toml (here) so I can control order
+#- crop picture of my legs out of traditional pizza image
 
