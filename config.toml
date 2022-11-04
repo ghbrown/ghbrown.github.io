@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'http://ghbrown.github.io/'
 languageCode = 'en-us'
 title = 'Gabriel H. Brown'
 theme = "color_splotch"
