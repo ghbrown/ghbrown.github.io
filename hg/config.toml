@@ -37,5 +37,15 @@ theme = "testTheme"
 # over, then I can figure out improvements one at a time
 
 # current issues:
-#- crop picture of my legs out of traditional pizza image
+#- figure out simple scrolling of CSS code blocks (may be tied to width
+#  contraints and flex box stuff
+#- too long code lines actually widen whole page past 100% window width
+#- how to determine syntax highlighting colorscheme
+#- rename theme to something sensible
+#- see if CSS styling can be simplified to make it a bit more theme
+#  agnostic and extensible/flexible
+#- set up Hugo CI job thing
+#- rearrange and delete files as necessary such that files such that
+#  it conforms with Hugo CI Job thing (for example, google certificate
+#  should go in static/ not at root of git repo where it currently is
 

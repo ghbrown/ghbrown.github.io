@@ -5,13 +5,19 @@
     page load, so it's value here is just a placeholder
   */
   --main-color: rgba(255,255,255,1.0);
+  --background-color: rgba(0,0,0,1.0);
+  --background-color-lightened: rgba(70,70,70,1.0);
   --header-font: "Lucida Console";
   --main-font: "Inconsolata";
 }
 
 html, body {
-  background-color: rgba(0,0,0,1);
+  background-color: var(--background-color);
   max-width: 100%;
+}
+
+body {
+  margin: auto;
 }
 
 .themecolor {
@@ -84,6 +90,34 @@ p a {
   font-weight: lighter;
 }
 
+code {
+  color: rgba(255,255,255,1.0);
+  font-family: var(--main-font);
+  font-size: min(3vmin,32px);
+  background-color: var(--background-color-lightened);
+  word-wrap: normal;
+  box-decoration-break: clone;
+  padding: 0.2rem 0.3rem; /* upper/lower pad   left/right pad */
+  border-radius: 0.2rem;
+}
+
+pre:first-line {
+  line-height: 1000;
+}
+
+pre code{
+  display: block;
+  color: rgba(255,255,255,1.0);
+  font-family: var(--main-font);
+  font-size: min(3vmin,32px);
+  background-color: var(--background-color-lightened);
+  word-wrap: normal;
+  box-decoration-break: clone;
+  white-space: pre;
+  overflow-x: scroll;
+  padding: 0.2rem 0.3rem; /* upper/lower pad   left/right pad */
+}
+
 input[type='text'] {
   background-color: rgba(0,0,0,1);
   border: 2px solid rgba(255,255,255,1.0);
@@ -110,13 +144,14 @@ img {
 .container {
   width: 98vw;
   box-sizing: border-box;
-  /* TODO: there seems to already be some mysterious padding on the left which results in the uneven padding below */
-  padding: 0vh 2vw 0vh 0vw;
+  /* left pad evens out mystical right padding from <body> */
+  padding: 1vh 0vw 0vh 2vw; 
   display: flex;
   flex-direction: column;
   align-items: stretch;
+  align-self: center;
   column-gap: 1vw;
-  background-color: black;
+  background-color: var(--background-color);
 }
 
 .nav {
@@ -139,6 +174,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-begin;
+  word-spacing: -0.5em; /* makes different links more distinguishable */
 }
 
 .nav p {
@@ -166,9 +202,10 @@ img {
 
 .main {
   flex-grow: 1;
+  overflow: scroll;
 }
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1250px) {
     .container {
       width: min(1500px,98vw);
       padding: 0vh 0vw 0vh 0vw;
@@ -177,8 +214,7 @@ img {
     .nav {
         flex-direction: column;
         justify-content: flex-start;
-        flex-basis: min(25%,200px);
-        /*#align-items: flex-test;*/
+        flex-basis: min(20%,200px);
     }
     .name {
       display: flex;
