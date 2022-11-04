@@ -5,7 +5,7 @@ To do:
 - figure out a more aesthetic way to place the navigation links when
   navbar is at top
 - move to like a Python class extraction notation where insted of just
-  ABOUT ME at the top it's like ghbrown.themecolor(ABOUT_ME)
+  ABOUT ME at the top it's like ghbrown.themecolor(ABOUT_ME)?
   (you might also be able to do away with the top left name element
    then)
 - Google still complaining about mobile usability
