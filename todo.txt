@@ -1,5 +1,5 @@
 To do:
-- get Hugo action working
+- test Hugo action working
 - see if CSS styling can be simplified to make it a bit more theme
   agnostic and extensible/flexible
 - figure out a more aesthetic way to place the navigation links when
