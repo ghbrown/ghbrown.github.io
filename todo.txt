@@ -2,6 +2,9 @@ To do:
 - test Hugo action working
 - see if CSS styling can be simplified to make it a bit more theme
   agnostic and extensible/flexible
+- add numerical analysis section
+- fix organization so it's a bit flatter and easier to navigate to
+  interesting stuff
 - figure out a more aesthetic way to place the navigation links when
   navbar is at top
 - move to like a Python class extraction notation where insted of just

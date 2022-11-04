@@ -50,7 +50,7 @@ It is mostly legible in its current state, but I intend to retype and upload a c
 
 On every refresh of this website the header color is changed according to the selection of a (pseudo)random number.
 
-I originally wrote this website from scratch in HTML, CSS, and Javascript, which was a great learning experience.
+I first wrote this website from scratch in HTML, CSS, and Javascript, which was a great learning experience.
 Though almost everything is still the same, I've moved to Hugo for static site generation, which makes maintenance a bit easier.
 
 ---
