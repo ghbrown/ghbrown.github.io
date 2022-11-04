@@ -1,6 +1,5 @@
 To do:
 - set up Hugo CI job thing
-- rename theme to something sensible
 - see if CSS styling can be simplified to make it a bit more theme
   agnostic and extensible/flexible
 - figure out a more aesthetic way to place the navigation links when
