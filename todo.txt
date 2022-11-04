@@ -1,7 +1,8 @@
 To do:
-- change to a Jekyll or Hugo site
-  - Jekyll tutorial: https://programminghistorian.org/en/lessons/building-static-sites-with-jekyll-github-pages
-
+- set up Hugo CI job thing
+- rename theme to something sensible
+- see if CSS styling can be simplified to make it a bit more theme
+  agnostic and extensible/flexible
 - figure out a more aesthetic way to place the navigation links when
   navbar is at top
 - move to like a Python class extraction notation where insted of just
@@ -19,5 +20,12 @@ To do:
   width hacking and padding (what's the root cause of the asymmetry?)
 - add note in Random that this site was inspired by Matthew Zahr's
   but written from scratch
+
+Things you'll forget:
+- hugo server doesn't watch for CSS changes, so you have to change
+  a tracked file for it to refresh the website
+- it probably doesn't watch for any changes in themes/ actually
+
+current issues:
 
  
