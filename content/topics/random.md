@@ -20,19 +20,7 @@ Input a number to determine if it is prime.<br>
 
 The maximum input value before truncation error is 9007199254740991 (~9e15, nine and fifteen zeros!),
 which is not prime but has a relatively large least factor.
-This is because JavaScript uses double-precision floating-point numbers according to IEEE 754,
-and this number is the largest this format supports.
-
----
-
-## FOOD REVIEWS
-
-My goal is to objectively convey the flavors and textures I experience rather than try to generate some rating or ranking you probably wouldn't agree with.
-I suggest you use these reviews as data points and decide for yourself what sounds good or bad.
-
-<a href="/topics/random/traditional_chain" class="mainlink"> Hand tossed/traditional pizzas from national chains.</a>
-<br>
-<a href="/topics/random/deep_dish_chain" class="mainlink"> Deep dish/pan pizzas from national chains.</a>
+This is because JavaScript uses double-precision floating-point numbers according to IEEE 754, and this number is the largest this format supports.
 
 ---
 

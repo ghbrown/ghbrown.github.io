@@ -1,0 +1,19 @@
+<!-- orders all tagged posts newest first -->
+{{ define "main" }}
+<div class="main">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <hr>
+    {{ range .Site.RegularPages.ByPublishDate.Reverse }}
+        {{ if (isset .Params "tags") }}
+            <h2>{{ .Title }}</h2>
+            <p>
+                <a href="{{ .RelPermalink }}" class="mainlink">
+                    {{ .Summary }}
+                </a>
+            </p>
+            <hr>
+        {{ end }}
+    {{ end }}
+</div>
+{{ end }}

@@ -1,5 +1,5 @@
 To do:
-- test Hugo action working
+- get a chronological posts page running (includes all tagged posts)
 - see if CSS styling can be simplified to make it a bit more theme
   agnostic and extensible/flexible
 - add numerical analysis section

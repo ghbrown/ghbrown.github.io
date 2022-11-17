@@ -6,6 +6,10 @@ theme = "color_splotch"
 [markup.goldmark.renderer]
   unsafe = true # allow HTML in md files
 
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
 [menu]
   [[menu.main]]
     name = "ABOUT ME"
@@ -25,7 +29,11 @@ theme = "color_splotch"
     weight = 4
   [[menu.main]]
     name = "RANDOM"
-    url = "/topics/random/random"
+    url = "/topics/random"
     weight = 5
+  [[menu.main]]
+    name = "POST TOPICS"
+    url = "/tags"
+    weight = 6
 
 
