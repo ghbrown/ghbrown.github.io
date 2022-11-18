@@ -5,6 +5,12 @@
     {{ .Content }}
     <hr>
     {{ range .Site.RegularPages.ByPublishDate.Reverse }}
+        <!-- find text of first header -->
+        {{ $con0 := .Content }}
+        {{ $con1 := (replaceRE "</h[0-9]>" "LmNoP" $con0) }} <!-- insert dummy token to split on -->
+        {{ $con2 := (split $con1 "LmNoP") }} <!-- split on dummy token -->
+        {{ $header := (index $con2 0) }}     <!-- part of HTML header -->
+        {{ $header_text := (replaceRE "<h.*>" "" $header) }} <!-- remove leading header tag -->
         {{ if (isset .Params "tags") }}
             <div class="timeline-title">
                 <p>({{ .PublishDate.Format "2006-01-02" }})</p>
@@ -13,7 +19,10 @@
             </div>
             <p>
                 <a href="{{ .RelPermalink }}" class="mainlink">
-                    {{ .Summary | safeHTML | truncate 300 }}
+                    <!-- remove text of first header from summary and print result -->
+                    {{ $summary_h := (.Summary | safeHTML | truncate 300) }} <!-- summary with header text -->
+                    {{ $summary := (replace $summary_h $header_text "") }} <!-- remove header text -->
+                    {{ $summary | safeHTML }}
                 </a>
             </p>
             <hr>

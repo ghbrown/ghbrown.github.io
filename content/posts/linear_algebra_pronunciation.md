@@ -36,7 +36,7 @@ This is further complicated by numerical linear algebra libraries which have inc
 
 ### BLAS
 
-- pronounced: blaws (rhymes with paws)
+- pronounced: blawz (rhymes with paws), blaws (rhymes with gloss, perhaps slightly less common)
 - often mispronounced: blass (rhymes with class)
 
 

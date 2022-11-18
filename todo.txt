@@ -2,7 +2,6 @@ Current issues:
 - 
 
 To do:
-- would really like headers to be ignored in summaries (tried using replace and split already with little success, but it shouldn't be too bad) (the reason this doesn't work is that .Summary is already plain text, so can't remove <h1> etc. to strip headers)
 - put numbers next to tags to indicate number of articles
 - see if CSS styling can be simplified to make it a bit more theme
   agnostic and extensible/flexible
