@@ -4,8 +4,9 @@ Current issues:
 To do:
 - put numbers next to tags to indicate number of articles
 - see if CSS styling can be simplified to make it a bit more theme
-  agnostic and extensible/flexible
-- add numerical analysis section
+  agnostic and extensible/flexible (see if shortcodes can be used
+  to assist in this)
+- more posts
 - figure out a more aesthetic way to place the navigation links when
   navbar is at top
 - Google still complaining about mobile usability

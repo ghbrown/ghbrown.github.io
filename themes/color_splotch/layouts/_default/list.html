@@ -13,7 +13,7 @@
         </a>
         <p>
             <a href="{{ .RelPermalink }}" class="mainlink">
-                {{ .Summary | safeHTML | truncate 300 }}
+                {{ partial "summary_no_header.html" . }} <!-- cleaner summary -->
             </a>
         </p>
         <hr>

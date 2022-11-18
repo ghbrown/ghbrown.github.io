@@ -41,4 +41,10 @@ I also enjoy all of the the adjacent research fields, including physics based ap
 
 ---
 
+Here are some things I've been thinking (and writing) about lately:
+
+- <p><a href="{{< ref "posts/linear_algebra_pronunciation" >}}" class="mainlink"><span class="themecolor">Linear Algebra Pronunciation Guide</span></a>: a guide to commonly mispronounced names and packages</p>
+
+---
+
 
