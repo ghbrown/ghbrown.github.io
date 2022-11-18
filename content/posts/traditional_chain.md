@@ -1,11 +1,11 @@
 ---
-title: "Traditional Chain Pizza"
-date: 2021-04-30T18:55:13-05:00
+title: "Traditional Chain Pizza Review"
+date: 2021-02-15T18:55:13-05:00
 draft: false
 tags: food
 ---
 
-## HAND TOSSED / TRADITIONAL PIZZA REVIEW (CHAIN)
+## Hand Tossed / Traditional Pizza Review (Chain)
 
 A review of traditional style pizzas from national chains (specifically those in the Urbana, IL area) including: Domino's, Jet's, Little Ceasars, Papa John's, and Pizza Hut.
 

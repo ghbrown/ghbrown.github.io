@@ -6,6 +6,6 @@ draft: false
 ---
 
 
-All of my posts ordered newest first.
+All posts; ordered newest first.
 
 

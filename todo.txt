@@ -1,33 +1,34 @@
+Current issues:
+- 
+
 To do:
-- get a chronological posts page running (includes all tagged posts)
+- would really like headers to be ignored in summaries (tried using replace and split already with little success, but it shouldn't be too bad) (the reason this doesn't work is that .Summary is already plain text, so can't remove <h1> etc. to strip headers)
+- put numbers next to tags to indicate number of articles
 - see if CSS styling can be simplified to make it a bit more theme
   agnostic and extensible/flexible
 - add numerical analysis section
-- fix organization so it's a bit flatter and easier to navigate to
-  interesting stuff
 - figure out a more aesthetic way to place the navigation links when
   navbar is at top
-- move to like a Python class extraction notation where insted of just
-  ABOUT ME at the top it's like ghbrown.themecolor(ABOUT_ME)?
-  (you might also be able to do away with the top left name element
-   then)
 - Google still complaining about mobile usability
   - try to see exactly what/where it's problem is (small text,
     elements too close, both?)
   - maybe need to add another breakpoint and raise minimum size of
     text (it does look a bit small)?
-- remove spacing above and below name element in top left corner (I
-  think I can set the margin property or something?)
 - weird alignment issues that is thankfully easy to fix with minor
   width hacking and padding (what's the root cause of the asymmetry?)
 - add note in Random that this site was inspired by Matthew Zahr's
   but written from scratch
+- move to like a Python class extraction notation where insted of just
+  ABOUT ME at the top it's like ghbrown.themecolor(ABOUT_ME)?
+  (you might also be able to do away with the top left name element
+   then)
 
 Things you'll forget:
 - hugo server doesn't watch for CSS changes, so you have to change
   a tracked file for it to refresh the website
 - it probably doesn't watch for any changes in themes/ actually
+- putting an <!-- html comment --> at the top of a layout outside
+  "main" breaks Hugo
 
-current issues:
 
  

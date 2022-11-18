@@ -1,15 +1,19 @@
-<!-- orders all tagged posts newest first -->
 {{ define "main" }}
+<!-- orders all tagged posts newest first -->
 <div class="main">
     <h1>{{ .Title }}</h1>
     {{ .Content }}
     <hr>
     {{ range .Site.RegularPages.ByPublishDate.Reverse }}
         {{ if (isset .Params "tags") }}
-            <h2>{{ .Title }}</h2>
+            <div class="timeline-title">
+                <p>({{ .PublishDate.Format "2006-01-02" }})</p>
+                <p> &nbsp &nbsp </p>
+                <h3>{{ .Title }}</h3>
+            </div>
             <p>
                 <a href="{{ .RelPermalink }}" class="mainlink">
-                    {{ .Summary }}
+                    {{ .Summary | safeHTML | truncate 300 }}
                 </a>
             </p>
             <hr>

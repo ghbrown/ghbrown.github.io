@@ -4,11 +4,11 @@ date: 2022-10-30T00:29:42-05:00
 draft: false
 ---
 
-# HOBBIES & INTERESTS
+# Hobbies & Interests
 
 ---
 
-## OBSERVATIONAL ASTRONOMY
+## Observational Astronomy
 
 Open these images in a new tab to get them at full size and resolution.
 

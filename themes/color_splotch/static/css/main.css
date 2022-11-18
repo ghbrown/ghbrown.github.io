@@ -54,16 +54,19 @@ h1,h2,h3,h4,h5,h6 {
 h1 {
   color: var(--main-color);
   font-size: 5vmin;
+  text-transform: uppercase;
 }
 
 h2 {
   color: var(--main-color);
   font-size: 4vmin;
+  text-transform: uppercase;
 }
 
 h3 {
   color: var(--main-color);
   font-size: 3vmin;
+  text-transform: uppercase;
 }
 
 a {
@@ -172,6 +175,7 @@ img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  align-content: space-between;
   justify-content: space-between;
   align-items: flex-begin;
   word-spacing: -0.5em; /* makes different links more distinguishable */
@@ -181,8 +185,7 @@ img {
   color: var(--main-color);
   display: block;
   font-size: min(5.3vmin,63px);
-  margin: 0
-  padding: 0px 0px 0px 0px;
+  margin: 2vmin 1vmin;
   font-family: "Lucida Console", Courier, monospace;
 }
 
@@ -190,6 +193,7 @@ img {
   padding: 1vmin 1vmin 1vmin;
   font-size: min(3vmin,36px);
   color: white;
+  flex-grow: 1;
 }
 
 .navtext {
@@ -203,6 +207,16 @@ img {
 .main {
   flex-grow: 1;
   overflow: scroll;
+}
+
+.timeline-title {
+  /* allows date and title to be on some line */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: baseline;
+  padding: 0vh 0vw 0vh 0vw; 
 }
 
 @media only screen and (min-width: 1250px) {

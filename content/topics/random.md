@@ -4,11 +4,11 @@ date: 2022-10-30T00:05:55-05:00
 draft: false
 ---
 
-# RANDOM
+# Random
 
 ---
 
-## PRIME NUMBER DETECTOR
+## Prime Number Detector
 
 Input a number to determine if it is prime.<br>
 
@@ -24,7 +24,7 @@ This is because JavaScript uses double-precision floating-point numbers accordin
 
 ---
 
-## UNCLE GIMPY'S INTELLECTIFIER (WALLET REFERENCE SHEET)
+## Uncle Gimpy's Intellectifier
 
 Here is an old reference sheet with simple formulae for length, area, volume as well as useful conversions.
 It's called Uncle Gimpy's Wallet Intellectifier, and is meant to be folded up and kept in a wallet or purse.
@@ -34,7 +34,7 @@ It is mostly legible in its current state, but I intend to retype and upload a c
 
 ---
 
-## FUN FACTS ABOUT THIS WEBSITE
+## Fun Facts About This Website
 
 On every refresh of this website the header color is changed according to the selection of a (pseudo)random number.
 

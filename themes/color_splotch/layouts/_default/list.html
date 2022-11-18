@@ -1,13 +1,19 @@
 {{ define "main" }}
 <div class="main">
     <h1>{{ .Title }}</h1>
-    {{ .Content }}
     <hr>
-    {{ range .Pages.ByPublishDate.Reverse }}
-        <h2>{{ .Title }}</h2>
+    <!-- ensures double <hr> not rendered when .Content empty -->
+    {{ if (not (eq .Content "")) }}
+        {{ .Content }}
+        <hr>
+    {{ end }}
+    {{ range .Pages.ByWeight }}
+        <a href="{{ .RelPermalink }}">
+        <h3>{{ .Title }}</h3>
+        </a>
         <p>
             <a href="{{ .RelPermalink }}" class="mainlink">
-                {{ .Summary }}
+                {{ .Summary | safeHTML | truncate 300 }}
             </a>
         </p>
         <hr>

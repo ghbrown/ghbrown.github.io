@@ -1,12 +1,12 @@
 ---
-title: "Deep Dish Chain Pizza"
+title: "Deep Dish Chain Pizza Review"
 date: 2020-10-30T18:54:34-05:00
 draft: false
 tags: food
 ---
 
 
-## DEEP DISH / PAN PIZZA REVIEW (CHAIN)
+## Deep Dish / Pan Pizza Review (Chain)
 
 A review of deep dish and pan style pizzas from national chains (specifically those in the Urbana, IL area) including: Domino's, Jet's, Little Ceasars, Papa John's and Pizza Hut.
 
