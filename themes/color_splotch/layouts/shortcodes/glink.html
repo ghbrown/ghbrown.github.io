@@ -1,0 +1,14 @@
+<!--
+general link handler for easy linking in markdown
+target: "int" for internal link to this site (otherwise new tab via _blank)
+color : *anything* for theme color (otherwise no color)
+-->
+{{ $tar := "_blank" }}
+{{ if (eq (.Get "target") "int") }}
+  {{ $tar := "" }}
+{{ end }}
+{{ if (.Get "color") }}
+<a href="{{ .Get "url" }}" class="mainlink" target="{{ $tar }}"><span class="themecolor">{{ .Get "text" }}</span></a>
+{{ else }}
+<a href="{{ .Get "url" }}" class="mainlink" target="{{ $tar }}">{{ .Get "text" }}</a>
+{{ end }}

@@ -71,7 +71,6 @@ h3 {
 
 a {
   text-decoration: none;
-  text-decoration-color: rgba(255,255,255,1.0);
 }
 
 a:hover {
@@ -85,12 +84,9 @@ a:visited {
 a.mainlink {
   color: rgba(255,255,255,1.0);
   font-family: var(--main-font);
+  font-style: italic;
   text-decoration: underline;
   text-align: justify;
-}
-
-p a {
-  font-style: italic;
 }
 
 code {
@@ -119,6 +115,30 @@ pre code{
   white-space: pre;
   overflow-x: scroll;
   padding: 0.2rem 0.3rem; /* upper/lower pad   left/right pad */
+}
+
+details {
+  color: var(--main-color); /* this seems to color summary text instead */
+  font-size: min(3vmin,32px);
+  font-family: var(--main-font);
+  border: 0.2vmin solid white;
+  padding: .5em .5em 0;
+}
+
+summary {
+  color: var(--main-color);
+  font-weight: bold;
+  margin: -.5em -.5em 0;
+  padding: .5em;
+}
+
+details[open] {
+  padding: .5em;
+}
+
+details[open] summary {
+  border-bottom: 0.2vmin solid white;
+  margin-bottom: .5em;
 }
 
 input[type='text'] {
