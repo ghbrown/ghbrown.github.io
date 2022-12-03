@@ -7,8 +7,9 @@ To do:
 - three dots are getting crowded on Publications
 - change names to main-color and theme-color in main.css
 - put numbers next to tags to indicate number of articles
-- use LaTeX styling for upper corner where name is now (will need KaTeX on every page)
-- more posts
+- use LaTeX styling for upper corner where name is now (will need
+  KaTeX on every page), I'm thinking diagonal matrix where G,H,B are
+  block diagonal terms
 - figure out a more aesthetic way to place the navigation links when
   navbar is at top
 - Google still complaining about mobile usability
@@ -35,6 +36,7 @@ Things you'll forget:
 - using glink inline with sentence requires {{< glink >}} while
   single line links use {{% glink %}} (changes whether result is
   treated as html or markdown)
+- CSS selectors is the right term for "p, a" vs "p a" etc.
 
 
  
