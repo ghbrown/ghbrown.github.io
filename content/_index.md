@@ -14,7 +14,7 @@ draft: false
       <img src="media/NewspaperPortraitAlpha.png">
     </td>
     <td style="padding: 0vmin 0vmin 0vmin 3vmin">
-      <p>
+      <p class="left_align">
         Gabriel H. Brown <br> <!-- usually I put ", graduate research assistant"-->
         Oden Institute for Computational Engineering & Sciences <br>
         University of Texas at Austin <br>
