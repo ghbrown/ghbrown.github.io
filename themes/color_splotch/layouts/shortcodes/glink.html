@@ -1,14 +1,21 @@
 <!--
 general link handler for easy linking in markdown
-target: "int" for internal link to this site (otherwise new tab via _blank)
+dest: external URL or internal page name (to be fed to ref)
+text: text to which link is attached
+int: *anything* for internal link to this site (otherwise new tab
+     via _blank)
 color : *anything* for theme color (otherwise no color)
+*note*: all {{- "" -}} are necessary to remove automatically inserted
+        spaces/line breaks
 -->
 {{ $tar := "_blank" }}
-{{ if (eq (.Get "target") "int") }}
-  {{ $tar := "" }}
+{{ $url := (.Get "dest") }}
+{{ if (.Get "int") }}
+  {{ $url = (ref . $url) }}
+  {{ $tar = "" }}
 {{ end }}
 {{ if (.Get "color") }}
-<a href="{{ .Get "url" }}" class="mainlink" target="{{ $tar }}"><span class="themecolor">{{ .Get "text" }}</span></a>
+<a href="{{ $url }}" class="mainlink" target="{{ $tar }}"><span class="themecolor">{{ .Get "text" }}</span></a>{{- "" -}}
 {{ else }}
-<a href="{{ .Get "url" }}" class="mainlink" target="{{ $tar }}">{{ .Get "text" }}</a>
-{{ end }}
+<a href="{{ $url }}" class="mainlink" target="{{ $tar }}">{{ .Get "text" }}</a>{{- "" -}}
+{{ end }}{{- "" -}}

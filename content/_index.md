@@ -19,12 +19,12 @@ draft: false
         Oden Institute for Computational Engineering & Sciences <br>
         University of Texas at Austin <br>
         <br>
-        <a href="media/CV_GHBrown.pdf" class="mainlink" target="_blank">Curriculum Vitae</a>
-        <a href="https://scholar.google.com/citations?user=L465_QQAAAAJ&hl=en&oi=ao" class="mainlink" target="_blank">Google Scholar</a>
-<br>
-<a href="https://github.com/ghbrown" class="mainlink" target="_blank">GitHub</a>
-&nbsp &nbsp &nbsp &nbsp &nbsp
-        <a href="https://www.linkedin.com/in/gabriel-brown-25829b138/" class="mainlink" target="_blank"> LinkedIn</a>
+        {{< glink dest="media/CV_GHBrown.pdf" text="Curriculum Vitae" >}}
+        {{< glink dest="https://scholar.google.com/citations?user=L465_QQAAAAJ&hl=en&oi=ao" text="Google Scholar" >}}
+        <br>
+        {{< glink dest="https://github.com/ghbrown" text="GitHub" >}}
+        &nbsp &nbsp &nbsp &nbsp &nbsp
+        {{< glink dest="https://www.linkedin.com/in/gabriel-brown-25829b138/" text="LinkedIn" >}}
       </p>
     </td>
   </tr>
@@ -43,7 +43,9 @@ I also enjoy all of the the adjacent research fields, including physics based ap
 
 Here are some things I've been thinking (and writing) about lately:
 
-- <p><a href="{{< ref "posts/linear_algebra_pronunciation" >}}" class="mainlink"><span class="themecolor">Linear Algebra Pronunciation Guide</span></a>: a guide to commonly mispronounced names and packages</p>
+- {{< glink dest="posts/linear_algebra_pronunciation" text="Linear Algebra Pronunciation Guide" int="y" color="y" >}}: a guide to commonly mispronounced names and packages
+
+- {{< glink dest="posts/cg_residual" text="Behavior of the Conjugate Gradient Residual" int="y" color="y" >}}: some notes and a small (possibly new) result about residual trends for CG 
 
 ---
 

@@ -4,6 +4,8 @@ Current issues:
   cranking markdown syntax out)
 
 To do:
+- three dots are getting crowded on Publications
+- change names to main-color and theme-color in main.css
 - put numbers next to tags to indicate number of articles
 - use LaTeX styling for upper corner where name is now (will need KaTeX on every page)
 - more posts
@@ -18,10 +20,6 @@ To do:
   width hacking and padding (what's the root cause of the asymmetry?)
 - add note in Random that this site was inspired by Matthew Zahr's
   but written from scratch
-- move to like a Python class extraction notation where insted of just
-  ABOUT ME at the top it's like ghbrown.themecolor(ABOUT_ME)?
-  (you might also be able to do away with the top left name element
-   then)
 
 Things you'll forget:
 - hugo server doesn't watch for CSS changes, so you have to change

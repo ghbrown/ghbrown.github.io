@@ -11,10 +11,10 @@ tags: ['linear algebra']
 ---
 
 An often stressed property of the conjugate gradient method (CG) for solving linear systems is the monotonic decrease in the A-norm of the error.
-Since the error is not available in real use cases of CG (since this would require knowledge of the exact solution), the residual or relative residual is used instead.
+When CG is applied in practice the exact solution is unknown and the error cannot be computed or tracked, so the residual or relative residual is used instead.
 
 However, the kinds of guarantees available for residuals are slightly weaker and more involved than is often presented, due to complications introduced by different norms and arithmetic precisions.
-Per {{< glink url="https://www.scirp.org/html/2644.html" text="an article by Washizawa" color="y" >}} we have
+Per {{< glink dest="https://www.scirp.org/html/2644.html" text="an article by Washizawa" color="y" >}} we have
 
 - monotonic decrease of error in the A-norm in finite precision and exact arithmetic
   \\( \left( k > j \implies ||\mathbf{e}_k||_A \le ||\mathbf{e}_j||_A  \right) \\)
@@ -23,9 +23,9 @@ Per {{< glink url="https://www.scirp.org/html/2644.html" text="an article by Was
 - almost monotonic decrease of residual in the 2-norm in finite precision and exact arithmetic
   \\( \left( \exist k > j : ||\mathbf{r}_k||_2 \le ||\mathbf{r}_j||_2  \right) \\)
 
-Examples with increasing residual 2-norms are not difficult to come by in practice, for example see slide 21 of {{< glink url="https://see.stanford.edu/materials/lsocoee364b/11-conj_grad_slides.pdf" text="these slides by Stephen Boyd" color="y" >}}.
+Examples with increasing residual 2-norms are not difficult to come by in practice, for an example see slide 21 of {{< glink dest="https://see.stanford.edu/materials/lsocoee364b/11-conj_grad_slides.pdf" text="these slides by Stephen Boyd" color="y" >}}.
 However, I am unaware of any simple, tangible, and easily understandable examples where CG produces a temporarily increasing residual.
-In attempting to find such a matrix I was able to prove something small about the behavior of the residual in the 2-norm for CG.
+While attempting to find such a system I was able to prove something small about the behavior of the residual in the 2-norm for CG.
 That is **the 2-norm of the residual always decreases on the first iteration**
 $$
   ||\mathbf{r}_1||_2 \lt ||\mathbf{r}_0||_2
@@ -116,9 +116,8 @@ $$
 I'd like to determine if this result is also true in finite precision, and find an increasing system if it is false in finite precision.
 Furthermore, since we have almost monotonic decrease of residual 2-norm in exact arithmetic, I'd like to determine whether the residual could increase on the second iteration.
 
-Comment 1: I think there are some errors in the Washizawa paper, see for example Equation 20.
+Comment 1: I the Washizawa paper has some errors, see for example Equation 20, where it should be \\( || \overline{\mathbf{r}_i} - \\varepsilon_M(\mathbf{r}_i)|| \\) (one less bar).
 
-Comment 2: I'd like to post about this {{< glink url="https://epubs.siam.org/doi/abs/10.1137/S0895479894275030" text="amazing result by Greenbaum" color="y" >}} at some point, perhaps in a separate post, and after I've had time to read it.
+Comment 2: I'd like to post about this {{< glink dest="https://epubs.siam.org/doi/abs/10.1137/S0895479894275030" text="amazing result by Greenbaum" color="y" >}} at some point, perhaps in a separate post, and after I've had time to read it.
 
-Comment 3: I'd also like to discuss the common misconception about conjugate gradient and eigenvalue clusters brought up at 13:35 in {{< glink url="https://www.youtube.com/watch?v=jpBzZP2f5Wk" text="this wonderful talk by Zdenek Strakos" color="y" >}}.
-
+Comment 3: I'd also like to discuss the common misconception about conjugate gradient and eigenvalue clusters brought up at 13:35 in {{< glink dest="https://www.youtube.com/watch?v=jpBzZP2f5Wk" text="this wonderful talk by Zdenek Strakos" color="y" >}}.
