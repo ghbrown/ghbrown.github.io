@@ -4,6 +4,8 @@ Current issues:
   cranking markdown syntax out)
 
 To do:
+- make publications page use full highlighting on the entire citation
+  should be like <a> stuff <span class="themecolor">G. H. Brown</span></a>
 - three dots are getting crowded on Publications
 - change names to main-color and theme-color in main.css
 - put numbers next to tags to indicate number of articles

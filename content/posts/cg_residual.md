@@ -116,7 +116,7 @@ $$
 I'd like to determine if this result is also true in finite precision, and find an increasing system if it is false in finite precision.
 Furthermore, since we have almost monotonic decrease of residual 2-norm in exact arithmetic, I'd like to determine whether the residual could increase on the second iteration.
 
-Comment 1: I the Washizawa paper has some errors, see for example Equation 20, where it should be \\( || \overline{\mathbf{r}_i} - \\varepsilon_M(\mathbf{r}_i)|| \\) (one less bar).
+Comment 1: I think the Washizawa paper has some errors, see for example Equation 20, where it should be \\( || \overline{\mathbf{r}_i} - \\varepsilon_M(\mathbf{r}_i)|| \\) (one less bar).
 
 Comment 2: I'd like to post about this {{< glink dest="https://epubs.siam.org/doi/abs/10.1137/S0895479894275030" text="amazing result by Greenbaum" color="y" >}} at some point, perhaps in a separate post, and after I've had time to read it.
 
