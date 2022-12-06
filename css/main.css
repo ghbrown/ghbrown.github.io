@@ -206,11 +206,10 @@ img {
 }
 
 .nav p {
-  color: var(--main-color);
+  color: white;
   display: block;
-  font-size: min(5.3vmin,63px);
-  margin: 2vmin 1vmin;
-  font-family: "Lucida Console", Courier, monospace;
+  font-size: 3.3vmin;
+  margin: -1vmin -1vmin; /* absorbs some spacing from katex styling */
 }
 
 .nav a {

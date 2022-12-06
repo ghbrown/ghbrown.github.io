@@ -7,8 +7,26 @@ function newColor() {
 function getScreenWindowInformation() {
   const screenWidth=window.screen.width;
   const screenHeight=window.screen.height;
-  document.documentElement.style.setProperty('--screen-width',screenWidth)
-  document.documentElement.style.setProperty('--screen-height',screenHeight)
+    document.documentElement.style.setProperty('--screen-width',screenWidth);
+    document.documentElement.style.setProperty('--screen-height',screenHeight);
+}
+
+function cornerMatrix() {
+  // I'd like to use this function to achieve coloring of some parts
+  // of rendered KaTeX
+  // it needs access to theme color, so I'll have it construct a string
+  // like $$ \begin{bmatrix} \color{red}{G} <....> \end{bmatrix} $$
+  // and write it to the page where hopefully it will be caught
+  // by the autorenderer
+  var col = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
+  var beginb = "$$ \\begin{bmatrix} ";
+  var row1 = "\\color{" + col + "}{\\mathbf{G}} & \\color{" + col + "}{\\mathbf{H}} \\\\ ";
+  var row2 = "\\mathbf{0} & \\color{" + col + "}{\\mathbf{B}} \\\\ ";
+  var endb = "\\end{bmatrix} $$";
+  var text = beginb + row1 + row2 + endb;
+  var paragraph = document.getElementById("corner_matrix");
+  var textNode = document.createTextNode(text);
+  paragraph.appendChild(textNode);
 }
 
 function handleForm(event) {
