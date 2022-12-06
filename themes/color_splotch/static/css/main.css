@@ -206,7 +206,7 @@ img {
 }
 
 .nav p {
-  color: var(--main-color);
+  color: white;
   display: block;
   font-size: min(5.3vmin,63px);
   margin: 2vmin 1vmin;
