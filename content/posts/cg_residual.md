@@ -2,7 +2,6 @@
 title: "Behavior of conjugate gradient residual"
 date: 2022-11-29T22:19:38-06:00
 draft: false
-katex: true
 tags: ['linear algebra']
 ---
 

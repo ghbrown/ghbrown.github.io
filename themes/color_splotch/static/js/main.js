@@ -18,14 +18,13 @@ function cornerMatrix() {
   // like $$ \begin{bmatrix} \color{red}{G} <....> \end{bmatrix} $$
   // and write it to the page where hopefully it will be caught
   // by the autorenderer
-    var col = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
-    var text = "$$ \\begin{bmatrix} \\color{red}{\\alpha} \\end{bmatrix} $$";
-    // \begin{bmatrix}
-    // \color{red}{\mathbf{G}} & \mathbf{0} & \mathbf{0} \\\\
-    // \mathbf{0} & \mathbf{H} & \mathbf{0} \\\\
-    // \mathbf{0} & \mathbf{0} & \mathbf{B}
-    // \end{bmatrix}
-  var paragraph = document.getElementById("idee");
+  var col = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
+  var beginb = "$$ \\begin{bmatrix} ";
+  var row1 = "\\color{" + col + "}{\\mathbf{G}} & \\color{" + col + "}{\\mathbf{H}} \\\\ ";
+  var row2 = "\\mathbf{0} & \\color{" + col + "}{\\mathbf{B}} \\\\ ";
+  var endb = "\\end{bmatrix} $$";
+  var text = beginb + row1 + row2 + endb;
+  var paragraph = document.getElementById("corner_matrix");
   var textNode = document.createTextNode(text);
   paragraph.appendChild(textNode);
 }

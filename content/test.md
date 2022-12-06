@@ -3,7 +3,6 @@ title: "Test"
 date: 2022-10-27T20:57:35-05:00
 draft: true
 menu: main
-katex: true
 ---
 
 <!--
