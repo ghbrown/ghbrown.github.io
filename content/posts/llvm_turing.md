@@ -26,7 +26,7 @@ In the event that they do not win I will be extremly disappointed.
   <summary>Evidence of prediction</summary>
 
   To make this a bonafide prediction it's necessary to provide some evidence that my prediction was made in advance of the award (if it occurs).
-  Towards this end I provide the git commit hash for the commit which adds this post: <--hash goes here-->
+  To this end I provide the git commit hash for the commit which adds this post: {{< glink dest="https://github.com/ghbrown/ghbrown.github.io/commit/6924275f9ef350dc3ce48daf4f85c908a867bd17" text="6924275f9ef350dc3ce48daf4f85c908a867bd17" color="y" >}}
 
   (Since entering the hash of course changes the hash, I added the hash and a link to the commit one commit after the post.)
 </details>
