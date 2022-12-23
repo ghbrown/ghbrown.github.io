@@ -32,12 +32,12 @@ draft: false
 
 ---
 
-I am a first year student in the Computational Science, Engineering, and Mathematics graduate program in the Oden Institute at the University of Texas at Austin.
+I am a first year Ph.D. student in the Computational Science, Engineering, and Mathematics graduate program in the Oden Institute at the University of Texas at Austin.
 
 I graduated from the University of Notre Dame in 2020 with my bachelor's in Mechanical Engineering, and from the University of Illinois Urbana-Champaign in 2022 with my master's in Theoretical and Applied Mechanics.
 
-My primary academic interest is in computational and applied mathematics, especially numerical analysis, linear algebra, and optimization.
-I also enjoy all of the the adjacent research fields, including physics based applications like multiscale modeling, computer science, and high performance computing.
+My primary focus is on computational and applied mathematics, especially numerical analysis, linear algebra, and optimization.
+I also enjoy the adjacent research fields, including physics based applications like multiscale modeling, computer science, and high performance computing.
 
 ---
 
