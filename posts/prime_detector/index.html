@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><link rel=stylesheet type=text/css href=/css/main.css><script src=/js/main.js></script>
-<script>getScreenWindowInformation(),newColor()</script><title>Gabriel H. Brown | Hobbies and Interests</title><meta name=author content="Gabriel H. Brown"><meta name=description content="Website of Gabriel H. Brown, Graduate
+<script>getScreenWindowInformation(),newColor()</script><title>Gabriel H. Brown | Prime number detector</title><meta name=author content="Gabriel H. Brown"><meta name=description content="Website of Gabriel H. Brown, Graduate
      Student at University of Texas at Austin."><meta name=keywords content="Gabriel Brown,Gabriel H Brown,Gabriel H. Brown,G. H. Brown,G H Brown,
     Notre Dame,ND,University of Illinois Urbana-Champaign,UIUC,
     University of Texas Austin,UT Austin,Texas,
@@ -12,4 +12,8 @@
 <a href=/topics/publications>PUBLICATIONS</a>
 <a href=/topics/open_source>OPEN SOURCE</a>
 <a href=/topics/hobbies_and_interests>HOBBIES</a>
-<a href=/tags>POST TOPICS</a></nav></div><div class=main><h1 id=hobbies--interests>Hobbies & Interests</h1><hr><h2 id=observational-astronomy>Observational Astronomy</h2><p>Open these images in a new tab to get them at full size and resolution.</p><table style=width:100%><tr><td width=50%><img src=/media/topics/hobbies_and_interests/Moon.png width=100%></td><td><p>Single shot, unedited image of the Moon through small refractor telescope. Taken in Steinhatchee, FL on 2020/05/22.</p></td></tr><tr><td width=50%><img src=/media/topics/hobbies_and_interests/JupiterAndGalileanMoons.png width=100%></td><td><p>Single shot, edited image of Jupiter and its four Galilean moons at low magnification. The contrast between the background and moons was enhanced; the glare from Jupiter was reduced and it was recolored to more accurately represent the color seen with the eye that night. Taken in Dunedin, FL on 2020/06/18.</p></td></table><hr></div></div></body></html>
+<a href=/tags>POST TOPICS</a></nav></div><div class=main><h1 id=prime-number-detector>Prime Number Detector</h1><hr><p>Input a number to determine if it is prime.<br></p><form id=primeform onsubmit="return determineIfPrime(),!1"><input type=text id=primeinput>
+<input type=submit class=button id=primebutton value=RUN></form><p class=themecolor id=primeresponse></p><p>The maximum input value before truncation error is 9007199254740991 (~9e15, nine and fifteen zeros!),
+which is not prime but has a relatively large least factor.
+This is because JavaScript uses double-precision floating-point numbers according to IEEE 754, and this number is the largest this format supports.</p><hr><h2 id=notes>Notes</h2><p>I used this little project to get my feet wet with Javascript when I was building my website from raw HTML and CSS.
+I also enjoyed implementing some tricks to accelerate the solution, the main one being the square root bound on the factors.</p><hr></div></div></body></html>
