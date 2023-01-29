@@ -2,8 +2,11 @@ Current issues:
 - negative spacing in menu looks bad on mobile for phones (too close)
 - three periods show up as ellipses on publications (probably Hugo
   cranking markdown syntax out)
+- (date) title   doesn't get linked on timeline page, but does on tags
+  page
 
 To do:
+- change directories named hobbies_and_interests to hobbies
 - make publications page use full highlighting on the entire citation
   should be like <a> stuff <span class="themecolor">G. H. Brown</span></a>
 - three dots are getting crowded on Publications

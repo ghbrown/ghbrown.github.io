@@ -24,12 +24,12 @@ theme = "color_splotch"
     url = "/topics/publications"
     weight = 3
   [[menu.main]]
-    name = "HOBBIES & INTERESTS"
-    url = "/topics/hobbies_and_interests"
+    name = "OPEN SOURCE"
+    url = "/topics/open_source"
     weight = 4
   [[menu.main]]
-    name = "RANDOM"
-    url = "/topics/random"
+    name = "HOBBIES"
+    url = "/topics/hobbies_and_interests"
     weight = 5
   [[menu.main]]
     name = "POST TOPICS"

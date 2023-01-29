@@ -2,7 +2,7 @@
 title: "Expected profit for a 50/50 Raffle"
 date: 2022-12-19T18:37:01-05:00
 draft: false
-tags: ['everyday math and science']
+tags: ['everyday math and science','mathematics']
 ---
 
 # Expected profit for a 50/50 Raffle

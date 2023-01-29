@@ -39,26 +39,12 @@ physics laboratory, which is how I got into research.
 
 ## PERSONAL RESEARCH PROJECTS
 
-### MICROPAPERS
+Write ups of my thoughts and efforts on various problems both inside and outside my research field (and of varying degrees of originality and complexity) can be found among {{< glink dest="/tags" text="my posts" color="y" >}}.
 
-Investigations or calculations which are far too small and/or unoriginal to be published in a peer reviewed journal.
-However, many of these problems are still quite instructive or interesting.
+You might be interested in:
 
-- <a href="/media/topics/research/micropapers/Calculating the Number of Atoms in the Sun - G. H. Brown.pdf" class="mainlink" target="_blank">Calculating the number of atoms in the Sun</a>
-
-- <a href="/media/topics/research/micropapers/Re() and Im() as Complex Numbers - G. H. Brown.pdf" class="mainlink" target="_blank">Defining Re() and Im() as complex numbers</a>
-
-- <a href="/media/topics/research/micropapers/Theoretical Minimum Time for Competition Speed Climbing - G. H. Brown.pdf" class="mainlink" target="_blank">Theoretical Minimum Time for Competition Speed Climbing</a>
-
-
-### MILLIPAPERS
-
-Similar to the micropapers above, but more substantive and/or original.
-
-- <a href="/media/topics/research/millipapers/An Alternative Method to Compute Gauss's Sum - G. H. Brown.pdf" class="mainlink" target="_blank">An alternative method to compute Gauss's sum (from 1 to n).</a>
-
-- <a href="/media/topics/research/millipapers/The relationship between power iteration and gradient descent - G. H. Brown and E. V. Solomonik.pdf" class="mainlink" target="_blank">The relationship between power iteration and gradient descent.</a>
-
-- <a href="/media/topics/research/millipapers/Interior eigenvectors of symmetric matrices are saddle points - G. H. Brown and E. V. Solomonik.pdf" class="mainlink" target="_blank">Interior eigenvectors of symmetric matrices are saddle points.</a>
+- {{< glink dest="/posts/speed_climbing" text="The theoretical minimum time for competition speed climbing" int="y" >}}
+<br><br>
+- {{< glink dest="/posts/gauss_sum" text="An alternative method to compute Gauss's sum (from 1 to N)" int="y" >}}
 
 ---
