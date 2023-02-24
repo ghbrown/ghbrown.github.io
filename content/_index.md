@@ -36,8 +36,8 @@ I am a first year Ph.D. student in the Computational Science, Engineering, and M
 
 I graduated from the University of Notre Dame in 2020 with my bachelor's in Mechanical Engineering, and from the University of Illinois Urbana-Champaign in 2022 with my master's in Theoretical and Applied Mechanics.
 
-My primary focus is on computational and applied mathematics, especially numerical analysis, linear algebra, and optimization.
-I also enjoy the adjacent research fields, including physics based applications like multiscale modeling, computer science, and high performance computing.
+My primary focus is on computational and applied mathematics, especially numerical analysis, (multi)linear algebra, and optimization.
+I also enjoy the connections and combinations of these topics with other fields like high performance computing, theoretical computer science, and multiscale modeling.
 
 ---
 
