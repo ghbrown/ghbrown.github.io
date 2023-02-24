@@ -45,6 +45,7 @@ p, ul {
   font-size: min(3vmin,32px);
   font-weight: 400;
   text-align: justify;
+  padding-right: 0.15em;
 }
 
 .left_align {
@@ -191,7 +192,7 @@ img {
   border-color: white;
 }
 
-.name {
+.corner { /* box in top left corner */
   display: none;
 }
 
@@ -202,7 +203,7 @@ img {
   align-content: space-between;
   justify-content: space-between;
   align-items: flex-begin;
-  word-spacing: -0.5em; /* makes different links more distinguishable */
+  word-spacing: -1vmin; /* makes different links more distinguishable */
 }
 
 .nav p {
@@ -253,13 +254,13 @@ img {
         justify-content: flex-start;
         flex-basis: min(20%,200px);
     }
-    .name {
+    .corner {
       display: flex;
       align-self: center;
     }
     .navlinks {
       flex-direction: column;
-      /* add it's own top border to divide between name */
+      /* add it's own top border to divide between corner */
       border-top-width: 0.2vw;
       border-top-style: solid;
       border-top-color: white;
