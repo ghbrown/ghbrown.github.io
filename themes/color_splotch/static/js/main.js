@@ -12,12 +12,8 @@ function getScreenWindowInformation() {
 }
 
 function cornerMatrix() {
-  // I'd like to use this function to achieve coloring of some parts
-  // of rendered KaTeX
-  // it needs access to theme color, so I'll have it construct a string
-  // like $$ \begin{bmatrix} \color{red}{G} <....> \end{bmatrix} $$
-  // and write it to the page where hopefully it will be caught
-  // by the autorenderer
+  // writes KaTeX formatted text into the page with dynamically
+  // colored text, which then gets caught by the KaTeX autorenderer
   var col = getComputedStyle(document.documentElement).getPropertyValue('--main-color');
   var beginb = "$$ \\begin{bmatrix} ";
   var row1 = "\\color{" + col + "}{\\mathbf{G}} & \\color{" + col + "}{\\mathbf{H}} \\\\ ";

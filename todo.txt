@@ -1,8 +1,7 @@
 Current issues:
-- negative spacing in menu looks bad on mobile for phones (too close)
 - three periods show up as ellipses on publications (probably Hugo
   cranking markdown syntax out)
-- (date) title   doesn't get linked on timeline page, but does on tags
+- (date) title   is not a hot link on timeline page, but is on tags
   page
 
 To do:
