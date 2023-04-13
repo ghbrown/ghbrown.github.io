@@ -1,10 +1,11 @@
-Current issues:
+## Current issues
+- first link on llvm prediction page points to ghbrown.net/llvm.org (fix link)
 - three periods show up as ellipses on publications (probably Hugo
   cranking markdown syntax out)
 - (date) title   is not a hot link on timeline page, but is on tags
   page
 
-To do:
+## To do
 - change directories named hobbies_and_interests to hobbies
 - make publications page use full highlighting on the entire citation
   should be like <a> stuff <span class="themecolor">G. H. Brown</span></a>
@@ -21,7 +22,7 @@ To do:
     text (it does look a bit small)?
 - weird alignment issues that is thankfully easy to fix with minor
   width hacking and padding (what's the root cause of the asymmetry?)
-- add note in Random that this site was inspired by Matthew Zahr's
+- add note somewhere that this site was inspired by Matthew Zahr's
   but written from scratch
 
 Things you'll forget:
