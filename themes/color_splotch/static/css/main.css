@@ -9,6 +9,7 @@
   --background-color-lightened: rgba(70,70,70,1.0);
   --header-font: "Lucida Console";
   --main-font: "Inconsolata";
+  --base-fs: min(4vmin,32px)
 }
 
 html, body {
@@ -34,7 +35,6 @@ body {
   src: url("Lucida Console.ttf");
 }
 
-
 hr {
   border-top: 0.2vmin solid white;
 }
@@ -42,7 +42,7 @@ hr {
 p, ul {
   color: rgba(255,255,255,1.0);
   font-family: var(--main-font);
-  font-size: min(3vmin,32px);
+  font-size: var(--base-fs);
   font-weight: 400;
   text-align: justify;
   padding-right: 0.15em;
@@ -58,19 +58,19 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
   color: var(--main-color);
-  font-size: 5vmin;
+  font-size: 5.5vmin;
   text-transform: uppercase;
 }
 
 h2 {
   color: var(--main-color);
-  font-size: 4vmin;
+  font-size: 5.0vmin;
   text-transform: uppercase;
 }
 
 h3 {
   color: var(--main-color);
-  font-size: 3vmin;
+  font-size: 4.5vmin;
   text-transform: uppercase;
 }
 
@@ -97,7 +97,7 @@ a.mainlink {
 code {
   color: rgba(255,255,255,1.0);
   font-family: var(--main-font);
-  font-size: min(3vmin,32px);
+  font-size: var(--base-fs);
   background-color: var(--background-color-lightened);
   word-wrap: normal;
   box-decoration-break: clone;
@@ -113,7 +113,7 @@ pre code{
   display: block;
   color: rgba(255,255,255,1.0);
   font-family: var(--main-font);
-  font-size: min(3vmin,32px);
+  font-size: var(--base-fs);
   background-color: var(--background-color-lightened);
   word-wrap: normal;
   box-decoration-break: clone;
@@ -124,7 +124,7 @@ pre code{
 
 details {
   color: var(--main-color); /* this seems to color summary text instead */
-  font-size: min(3vmin,32px);
+  font-size: var(--base-fs);
   font-family: var(--main-font);
   border: 0.2vmin solid white;
   padding: .5em .5em 0;
@@ -206,7 +206,7 @@ img {
   word-spacing: -1vmin; /* makes different links more distinguishable */
 }
 
-.nav p {
+.nav p { /* applies to corner image */
   color: white;
   display: block;
   font-size: 3.3vmin;
@@ -215,7 +215,7 @@ img {
 
 .nav a {
   padding: 1vmin 1vmin 1vmin;
-  font-size: min(3vmin,36px);
+  font-size: var(--base-fs);
   color: white;
   flex-grow: 1;
 }
