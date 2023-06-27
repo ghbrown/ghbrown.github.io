@@ -6,7 +6,22 @@
   page
 
 ## To do
-- change directories named hobbies_and_interests to hobbies
+- change variable names in main.css to theme-color and main-color (will require
+  changes to main.js since it sets variable so white color can be accessed from
+  a var())
+- use katex shortcodes in legacy posts (then remove item below)
+- fix the Katex + Hugo situation (current solution is functional but buggy in some cases like $a_1 + a_2$ since markdown runs first and processes the underscores away)
+  - see possibly: https://mertbakir.gitlab.io/hugo/math-typesetting-in-hugo/
+                  https://discourse.gohugo.io/t/how-to-render-math-equations-properly-with-katex/40998/4
+                  https://www.simonspavound.com/posts/2020/09/equations-with-katex-in-hugo/
+  - my planned solution: write .md files as usual using only $<inline>$ and 
+                         $$<block>$$ syntax, placing them in
+                         `content_preproc/` then use regex to process
+                         these into shortcodes and place results in `content/`
+                         {{< katex >}}$<inline>${{< /katex>}}
+                         {{< katex >}}$<block>${{< /katex>}}
+                         which will render as normal
+- change directories named `hobbies_and_interests` to hobbies
 - make publications page use full highlighting on the entire citation
   should be like <a> stuff <span class="themecolor">G. H. Brown</span></a>
 - three dots are getting crowded on Publications

@@ -123,7 +123,7 @@ pre code{
 }
 
 details {
-  color: var(--main-color); /* this seems to color summary text instead */
+  color: rgba(255,255,255,1.0); /* this affects color of KaTeX math in details */
   font-size: var(--base-fs);
   font-family: var(--main-font);
   border: 0.2vmin solid white;
