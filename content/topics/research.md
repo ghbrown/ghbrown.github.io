@@ -10,16 +10,13 @@ draft: false
 
 ## RESEARCH POSITIONS
 
-As a first year student I plan to investigate research groups with a focus on numerical algorithms, including linear algebra and optimization.
+I am fortunate to be advised by {{< glink dest=https://web.ma.utexas.edu/users/jkileel/ text="Joe Kileel" color="y" >}}, with whom I am currently working on problems related to low rank tensor approximation.
 <br>
-During my master's degree I worked on computational electronic
-structure for multiscale modeling and coupled quantum Monte
-Carlo to total energy tight binding via the creation of
-bespoke parameterizations.
-<br>
-I also spent a year working in tandem on theoretical and
-numerical aspects of the tensor eigenpair problem, including
-conditioning and clustering.
+During my master's degree I worked with
+{{< glink dest=https://solomonik.cs.illinois.edu/ text="Edgar Solomonik" color=y >}}
+on theoretical and numerical aspects of the tensor eigenpair problem, and with
+{{< glink dest=https://matse.illinois.edu/people/profile/htj text="Harley Johnson" color="y" >}}
+on computational electronic structure.
 <br>
 As an undergraduate I researched multiple phenomena related to
 nonequilibrium plasmas - from dielectric barrier discharges
