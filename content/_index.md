@@ -11,7 +11,7 @@ draft: false
 <table style="width:100%">
   <tr>
     <td class="maintext" width=25%>
-      <img src="media/NewspaperPortraitAlpha.png">
+      <img src="media/bust.png">
     </td>
     <td style="padding: 0vmin 0vmin 0vmin 3vmin">
       <p class="left_align">
