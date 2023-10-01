@@ -47,6 +47,8 @@ Here are some things I've been thinking (and writing) about lately:
 
 - {{< glink dest="posts/cg_residual" text="Behavior of the Conjugate Gradient Residual" int="y" color="y" >}}: some notes and a small (possibly new) result about residual trends for CG 
 
+- {{< glink dest="posts/sufficient_nonnegative" text="Non-negative Solutions to Non-negative Linear Systems" int="y" color="y" >}}: a sufficient condition for a non-negative linear system to have a non-negative solution 
+
 ---
 
 
