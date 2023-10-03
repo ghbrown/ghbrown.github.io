@@ -25,7 +25,7 @@ to computation.
 I also spent one summer with a (chance) position in a nuclear
 physics laboratory, which is how I got into research.
 
-- <b>August 2022 - <span class="themecolor">present</span></b>: exploring research groups
+- <b>August 2022 - <span class="themecolor">present</span></b>: Applied Mathematics Group, Joe Kileel, UT Austin
 - <b>March 2021 - August 2022</b>: Labaratory for Parallel Numerical Algorithms, Edgar Solomonik, UIUC
 - <b>July 2020 - May 2022</b>: Harley T. Johnson Group, UIUC
 - <b>Fall 2017 - Spring 2020</b>: Go Lab, University of Notre Dame
