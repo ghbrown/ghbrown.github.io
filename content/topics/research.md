@@ -19,9 +19,10 @@ on theoretical and numerical aspects of the tensor eigenpair problem, and with
 on computational electronic structure.
 <br>
 As an undergraduate I researched multiple phenomena related to
-nonequilibrium plasmas - from dielectric barrier discharges
-to plasma jets, and from experimentation and instrumentation
-to computation.
+nonequilibrium plasmas including plasma-liquid simulations with
+{{< glink dest=https://engineering.nd.edu/faculty/david-go/ text="David Go" color="y" >}}
+and plasma jets with
+{{< glink dest=https://ieeexplore.ieee.org/author/37273977200 text="Scott Walton" color="y" >}}.
 I also spent one summer with a (chance) position in a nuclear
 physics laboratory, which is how I got into research.
 
@@ -38,10 +39,10 @@ physics laboratory, which is how I got into research.
 
 Write ups of my thoughts and efforts on various problems both inside and outside my research field (and of varying degrees of originality and complexity) can be found among {{< glink dest="/tags" text="my posts" color="y" >}}.
 
-You might be interested in:
+You might be interested in
 
-- {{< glink dest="/posts/speed_climbing" text="The theoretical minimum time for competition speed climbing" int="y" >}}
+- something light: {{< glink dest="/posts/speed_climbing" text="The theoretical minimum time for competition speed climbing" int="y" >}}
 <br><br>
-- {{< glink dest="/posts/gauss_sum" text="An alternative method to compute Gauss's sum (from 1 to N)" int="y" >}}
+- something serious: {{< glink dest="/posts/dim_lu_pivot_needed" text="The space of matrices where LU factorization requires pivoting is almost full-dimensional" int="y" >}}
 
 ---
