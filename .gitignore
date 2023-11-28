@@ -2,5 +2,6 @@
 *.~
 .hugo_build.lock
 
+
 # omit the /public directory (but not directories named "public")
 /public/

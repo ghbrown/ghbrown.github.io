@@ -1,7 +1,16 @@
 baseURL = 'https://ghbrown.net/'
 languageCode = 'en-us'
+author = 'Gabriel H. Brown'
 title = 'Gabriel H. Brown'
-theme = "color_splotch"
+copyright = 'Copyright [Gabriel H. Brown](ghbrown.net).'
+desciption = 'Website of Gabriel H. Brown, Graduate Student at University of Texas at Austin.'
+theme = 'risotto'
+
+[params.theme]
+  palette = 'color-splotch'
+  # palette = 'base16-dark'
+  # palette = 'windows-95'
+  # palette = 'dracula'
 
 [markup.goldmark.renderer]
   unsafe = true # allow HTML in md files
@@ -12,27 +21,27 @@ theme = "color_splotch"
 
 [menu]
   [[menu.main]]
-    name = "ABOUT ME"
+    name = "About Me"
     url = "/"
     weight = 1
   [[menu.main]]
-    name = "RESEARCH"
+    name = "Research"
     url = "/topics/research"
     weight = 2
   [[menu.main]]
-    name = "PUBLICATIONS"
+    name = "Publications"
     url = "/topics/publications"
     weight = 3
   [[menu.main]]
-    name = "OPEN SOURCE"
+    name = "Open Source"
     url = "/topics/open_source"
     weight = 4
   [[menu.main]]
-    name = "HOBBIES"
+    name = "Hobbies"
     url = "/topics/hobbies_and_interests"
     weight = 5
   [[menu.main]]
-    name = "POST TOPICS"
+    name = "Post Topics"
     url = "/tags"
     weight = 6
 

@@ -1,9 +1,17 @@
 ## Current issues
-- first link on llvm prediction page points to ghbrown.net/llvm.org (fix link)
 - three periods show up as ellipses on publications (probably Hugo
   cranking markdown syntax out)
 - (date) title   is not a hot link on timeline page, but is on tags
   page
+  
+## Risotto migration
+- unify aside to only serve quotes and link to quotes page
+  - if unified can probably put directly into baseof.html
+  - maybe just add another (always there) section to aside)?
+- fix details and summary styling (mostly color)
+- get code highlighting to use same palette as website
+- final item: remove "Powered by" in footer.html partial, and instead add
+  attribution in the "This Website" post
 
 ## To do
 - change variable names in main.css to theme-color and main-color (will require

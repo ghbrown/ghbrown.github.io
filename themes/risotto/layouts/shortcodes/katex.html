@@ -1,0 +1,8 @@
+{{- $inner := trim .Inner "\r\n" }}
+{{- if hasPrefix $inner "$$" }}
+  <p>
+    {{- $inner }}
+  </p>
+{{- else }}
+  {{- $inner}}
+{{- end -}}

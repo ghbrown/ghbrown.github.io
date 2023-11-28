@@ -1,0 +1,23 @@
+{{ define "main" }}
+<!-- orders all tagged posts newest first -->
+<div class="main">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+    <hr>
+    {{ range .Site.RegularPages.ByPublishDate.Reverse }}
+        {{ if (isset .Params "tags") }}
+            <div class="timeline-title">
+                <h3>{{ .Title }}</h3>
+                <!-- <p> &nbsp &nbsp </p> -->
+            </div>
+            <p>
+                <a href="{{ .RelPermalink }}" class="mainlink">
+                    {{ partial "summary_no_header.html" . }} <!-- cleaner summary -->
+                </a>
+            </p>
+            <p>({{ .PublishDate.Format "2006-01-02" }})</p>
+            <hr>
+        {{ end }}
+    {{ end }}
+</div>
+{{ end }}

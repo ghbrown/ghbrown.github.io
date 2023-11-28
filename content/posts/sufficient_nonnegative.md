@@ -37,7 +37,7 @@ $$
 {{< /katex >}}
 
 In particular, one could apply this theorem to the case when {{< katex >}}$\mathbf{c} = \mathbf{A}\mathbb{1}${{< /katex >}}, a point expected to be relatively deep in the interior of the cone (assuming all columns normalized).
-Contrast with the case when {{< katex >}}$\mathbf{c} = \mathbf{Az}${{< /katex >}}, where {{< katex >}}$\mathbf{z}${{< /katex >}} has a 0 in or more elements, meaning {{< katex >}}$\mathbf{c}${{< /katex >}} would be on a face of the cone (and hence the above theorem would predict zero for the radius of the subcone).
+Contrast with the case when {{< katex >}}$\mathbf{c} = \mathbf{Az}${{< /katex >}}, where {{< katex >}}$\mathbf{z}${{< /katex >}} has a 0 in one or more elements, meaning {{< katex >}}$\mathbf{c}${{< /katex >}} would be on a face of the cone (and hence the above theorem would predict zero for the radius of the subcone).
 
 <details>
   <summary>Proof</summary>

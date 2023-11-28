@@ -1,0 +1,21 @@
+/* color splotch
+ */
+
+:root {
+	--base00: #181818; /* deepest background */
+	--base01: #282828; /* second deepest background */
+	--base02: #383838; /* highlight and code background */
+	--base03: #585858; /* unknown */
+	--base04: #b8b8b8;
+	--base05: #d8d8d8; /* main text */
+	--base06: #e8e8e8;
+	--base07: #f8f8f8;
+	--base08: #ab4642;
+	--base09: #dc9656;
+	--base0A: #f7ca88;
+	--base0B: #ed9e00; /* title background */
+	--base0C: #3de215; /* hover */
+	--base0D: #23bff7; /* links */
+	--base0E: #ba8baf;
+	--base0F: #116946;
+}

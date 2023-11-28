@@ -19,7 +19,7 @@ This is further complicated by numerical linear algebra libraries which have inc
 
 - pronounced: ko - less - key (somewhat throaty ko, like kho)
 - often mispronounced: chuh - less - key
-- notes: <a href="https://en.wikipedia.org/wiki/Andr%C3%A9-Louis_Cholesky" target="_blank" class="mainlink">this is somewhat muddled by that fact that Choleskly was paternally Polish and maternally French, and grew up in France<a>, but I side with the Polish pronunciation (see references)
+- notes: <a href="https://en.wikipedia.org/wiki/Andr%C3%A9-Louis_Cholesky" target="_blank" class="mainlink">this is somewhat muddled by that fact that Choleskly was paternally Polish and maternally French, and grew up in France</a>, but I side with the Polish pronunciation (see references)
 
 
 ### Schur

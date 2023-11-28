@@ -4,11 +4,11 @@ date: 2022-10-30T12:45:07-05:00
 draft: false
 ---
 
-# RESEARCH
+# Research
 
 ---
 
-## RESEARCH POSITIONS
+## Research Positions
 
 I am fortunate to be advised by {{< glink dest=https://web.ma.utexas.edu/users/jkileel/ text="Joe Kileel" color="y" >}}, with whom I am currently working on problems related to low rank tensor approximation.
 <br>
@@ -35,7 +35,7 @@ physics laboratory, which is how I got into research.
 
 ---
 
-## PERSONAL RESEARCH PROJECTS
+## Personal Research Projects
 
 Write ups of my thoughts and efforts on various problems both inside and outside my research field (and of varying degrees of originality and complexity) can be found among {{< glink dest="/tags" text="my posts" color="y" >}}.
 
