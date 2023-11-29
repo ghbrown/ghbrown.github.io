@@ -1,6 +1,5 @@
 ---
 title: "Open Source"
-date: 2022-10-30T00:29:42-05:00
 draft: false
 ---
 

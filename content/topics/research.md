@@ -1,6 +1,5 @@
 ---
 title: "Research"
-date: 2022-10-30T12:45:07-05:00
 draft: false
 ---
 
