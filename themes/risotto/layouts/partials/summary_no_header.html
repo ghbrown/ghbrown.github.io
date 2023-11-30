@@ -4,7 +4,7 @@
 -->
 
 {{ $summary_length := 300 }}
-{{ $summary_h := (.Summary | safeHTML | truncate $summary_length) }} <!-- summary with header text -->
+{{ $summary_h := (.Summary | safeHTML | truncate $summary_length " ...") }} <!-- summary with header text -->
 
 <!-- find text of first header -->
 {{ $token := "LmNoP8675309" }} <!-- dummy token for splitting -->

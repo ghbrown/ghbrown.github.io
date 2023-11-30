@@ -3,9 +3,12 @@
 
     {{ .Content }}
 
-    <ul>
-    {{ range .Pages }}
+    <ul style="line-height: 2em">
+    {{ range .Pages.ByWeight }}
         {{ .Render "li" }}
+        <p>
+            {{ partial "summary_no_header.html" . }} <!-- cleaner summary -->
+        </p>
     {{ end }}
     </ul>
 
