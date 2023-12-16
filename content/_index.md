@@ -7,27 +7,33 @@ draft: false
 
 ---
 
-<table style="width:100%">
-  <tr>
-    <td class="maintext" width=25%>
-      <img src="media/bust.png">
-    </td>
-    <td style="padding: 0vmin 0vmin 0vmin 3vmin">
-      <p class="left_align">
-        Gabriel H. Brown <br> <!-- usually I put ", graduate research assistant"-->
-        Oden Institute for Computational Engineering & Sciences <br>
-        University of Texas at Austin <br>
-        <br>
-        {{< glink dest="media/CV_GHBrown.pdf" text="Curriculum Vitae" >}}
-        {{< glink dest="https://scholar.google.com/citations?user=L465_QQAAAAJ&hl=en&oi=ao" text="Google Scholar" >}}
-        <br>
-        {{< glink dest="https://github.com/ghbrown" text="GitHub" >}}
-        &nbsp &nbsp &nbsp &nbsp &nbsp
+<div style="display:flex; column-gap:3%; align-items:stretch">
+<!-- <div width=100% style="display:flex;"> -->
+  <div style="flex-grow:1; flex-basis:30%; flex-shrink:0">
+    <img src="media/bust.png">
+    <!-- <p>just some coolio text</p> -->
+  </div>
+  <div style="display:flex; flex-direction:column; flex-grow:2">
+    <p class="left_align">
+      Gabriel H. Brown <br> <!-- usually I put ", graduate research assistant"-->
+      Oden Institute for Computational Engineering & Sciences <br>
+      University of Texas at Austin <br>
+    </p>
+    <ul>
+        <li>
+          {{< glink dest="media/CV_GHBrown.pdf" text="Curriculum Vitae" >}}
+        </li>
+        <li>
+          {{< glink dest="https://scholar.google.com/citations?user=L465_QQAAAAJ&hl=en&oi=ao" text="Google Scholar" >}}
+        </li>
+        <li>
+          {{< glink dest="https://github.com/ghbrown" text="GitHub" >}}
+        </li>
+        <li>
         {{< glink dest="https://www.linkedin.com/in/gabriel-brown-25829b138/" text="LinkedIn" >}}
-      </p>
-    </td>
-  </tr>
-</table>
+    </ul>
+  </div>
+</div>
 
 ---
 

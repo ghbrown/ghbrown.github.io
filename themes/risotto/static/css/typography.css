@@ -5,8 +5,21 @@
 
 body {
     font-family: var(--font-monospace);
-    font-size: 16px;
-    line-height: 1.5rem;
+    /* font-size: 16px; */
+    /* line-height: 1.3rem; */
+    font-size: min(4vmin,10px);
+    line-height: 1.5em;
+}
+
+@media only screen and (min-width: 700px) {
+    body {
+        font-size: min(4vmin,20px);
+    }
+}
+@media only screen and (min-width: 1024px) {
+    body {
+        font-size: min(4vmin,24px);
+    }
 }
 
 /* Headings */
@@ -16,7 +29,8 @@ h3,
 h4, 
 h5, 
 h6 {
-    font-size: 1rem;
+    /* font-size: 1rem; */
+    font-size: 1em;
     margin: 1.5rem 0 0 0;
     font-weight: 600;
 }

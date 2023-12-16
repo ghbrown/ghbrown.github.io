@@ -2,7 +2,7 @@ baseURL = 'https://ghbrown.net/'
 languageCode = 'en-us'
 author = 'Gabriel H. Brown'
 title = 'Gabriel H. Brown'
-copyright = 'Copyright [Gabriel H. Brown](ghbrown.net).'
+copyright = 'Copyright [Gabriel H. Brown](/).'
 desciption = 'Website of Gabriel H. Brown, Graduate Student at University of Texas at Austin.'
 theme = 'risotto'
 
