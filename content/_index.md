@@ -10,7 +10,7 @@ draft: false
 <div style="display:flex; column-gap:3%; align-items:stretch">
 <!-- <div width=100% style="display:flex;"> -->
   <div style="flex-grow:1; flex-basis:30%; flex-shrink:0">
-    <img src="media/bust.png">
+    <img src="assets/bust.png">
     <!-- <p>just some coolio text</p> -->
   </div>
   <div style="display:flex; flex-direction:column; flex-grow:2">
@@ -21,7 +21,7 @@ draft: false
     </p>
     <ul>
         <li>
-          {{< glink dest="media/CV_GHBrown.pdf" text="Curriculum Vitae" >}}
+          {{< glink dest="assets/CV_GHBrown.pdf" text="Curriculum Vitae" >}}
         </li>
         <li>
           {{< glink dest="https://scholar.google.com/citations?user=L465_QQAAAAJ&hl=en&oi=ao" text="Google Scholar" >}}

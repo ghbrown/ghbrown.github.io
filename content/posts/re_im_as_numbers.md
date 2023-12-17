@@ -10,6 +10,6 @@ tags: ['mathematics']
 ---
 
 A summer day in 2019 reading *Complex Variables and Applications* by Churchill inspired what I now realize is almost certainly a useless (but perhaps slightly amusing) result.
-{{< glink dest="/media/posts/re_im_as_numbers/Re() and Im() as complex numbers - G. H. Brown.pdf" text="Enjoy" color="y" >}}.
+{{< glink dest="/assets/posts/re_im_as_numbers/Re() and Im() as complex numbers - G. H. Brown.pdf" text="Enjoy" color="y" >}}.
 
 ---

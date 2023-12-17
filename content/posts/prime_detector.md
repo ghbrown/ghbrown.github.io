@@ -3,6 +3,7 @@ title: "Prime number detector"
 date: 2020-04-25T18:37:01-05:00
 draft: false
 tags: ['web development']
+scripts: ['assets/posts/prime_detector/prime.js']
 ---
 
 # Prime Number Detector

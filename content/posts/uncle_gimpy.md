@@ -15,6 +15,6 @@ This is certainly from a time before internet enabled personal devices (probably
 
 It is mostly legible in its current state, but I intend to retype and upload a clean copy in the future.
 
-- {{< glink dest="/media/posts/uncle_gimpy/UncleGimpysWalletIntellectifier.pdf" text="Uncle Gimpy's Intellectifier" color="y">}}
+- {{< glink dest="/assets/posts/uncle_gimpy/UncleGimpysWalletIntellectifier.pdf" text="Uncle Gimpy's Intellectifier" color="y">}}
 
 ---

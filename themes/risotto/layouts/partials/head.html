@@ -23,4 +23,12 @@
 {{ if os.FileExists "static/apple-touch-icon.png" }}<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}">{{ end }}
 {{ if os.FileExists "static/site.webmanifest" }}<link rel="manifest" href="{{ "site.webmanifest" | absURL }}">{{ end }}
 
+<!-- js to always load -->
+<script src="{{ "assets/quotes.js" | absURL }}"></script>
+<script src="{{ "js/serve_quote.js" | absURL }}"></script>
+<script> newQuote() </script>
+
+<!-- load extra js as needed -->
+{{ partial "load_js.html" . }}
+
 {{ partial "hook_head_end.html" . }}

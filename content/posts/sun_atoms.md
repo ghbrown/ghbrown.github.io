@@ -11,6 +11,6 @@ tags: ['everyday math and science']
 
 It is said Freeman Dyson attempted to complete this task at the age of 4 or 5.
 
-In {{< glink dest="/media/posts/sun_atoms/Calculating the number of atoms in the Sun - G. H. Brown.pdf" text="this write up" color="y" >}} we complete the calculation and simultaneously present the necessary basics of chemistry and measurement.
+In {{< glink dest="/assets/posts/sun_atoms/Calculating the number of atoms in the Sun - G. H. Brown.pdf" text="this write up" color="y" >}} we complete the calculation and simultaneously present the necessary basics of chemistry and measurement.
 
 ---

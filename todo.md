@@ -5,11 +5,11 @@
   page
   
 ## Risotto migration
-- get code highlighting to use same palette as website
-  - see: https://makewithhugo.com/syntax-hightlight-color/
 - unify aside to only serve quotes and link to quotes page
   - if unified can probably put directly into baseof.html
   - or maybe just add another (always there) section to aside)?
+- get code highlighting to use same palette as website
+  - see: https://makewithhugo.com/syntax-hightlight-color/
 - final item: remove "Powered by" in footer.html partial, and instead add
   attribution in the "This Website" post
 

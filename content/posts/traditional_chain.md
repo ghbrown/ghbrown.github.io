@@ -12,7 +12,7 @@ A review of traditional style pizzas from national chains (specifically those in
 <table style="width:100%">
   <tr>
     <td>
-      <img src="/media/posts/traditional_chain/TraditionalChain.jpg">
+      <img src="/assets/posts/traditional_chain/TraditionalChain.jpg">
     </td>
   </tr>
 </table>

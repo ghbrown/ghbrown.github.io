@@ -10,3 +10,21 @@ summary {
 details[open] {
   padding: 0.5em;
 }
+
+
+input[type='text'] {
+  background-color: var(--fg);
+  border: none;
+  font-family: var(--font-monospace);
+  font-size: 1em;
+  color: var(--off-bg);
+}
+
+.button {
+  background-color: var(--fg);
+  color: var(--off-bg);
+  border: none;
+  font-family: var(--font-monospace);
+  font-size: 1em;
+  font-weight: 800;
+}

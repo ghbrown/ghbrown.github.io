@@ -12,6 +12,6 @@ tags: ['mathematics']
 Gauss famously (and possibly fictionally) computed the sum between 1 and 100 at a young age.
 His original logic relies on symmetry and geometrical thought, especially triangles.
 
-In {{< glink dest="/media/posts/gauss_sum/An alternative method to compute Gauss's sum - G. H. Brown.pdf" text="this write up" color="y" >}} we provide an alternative derivation of the same result, but using a technique more reminiscent of strategies for solving ordinary differential equations.
+In {{< glink dest="/assets/posts/gauss_sum/An alternative method to compute Gauss's sum - G. H. Brown.pdf" text="this write up" color="y" >}} we provide an alternative derivation of the same result, but using a technique more reminiscent of strategies for solving ordinary differential equations.
 
 ---
