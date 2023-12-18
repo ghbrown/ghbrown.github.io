@@ -5,6 +5,8 @@
   page
   
 ## Risotto migration
+- shrink text for quotes
+- streamline presentation of quote and maybe strip contents from aside
 - unify aside to only serve quotes and link to quotes page
   - if unified can probably put directly into baseof.html
   - or maybe just add another (always there) section to aside)?

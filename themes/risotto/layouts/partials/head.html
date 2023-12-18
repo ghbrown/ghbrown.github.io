@@ -26,7 +26,7 @@
 <!-- js to always load -->
 <script src="{{ "assets/quotes.js" | absURL }}"></script>
 <script src="{{ "js/serve_quote.js" | absURL }}"></script>
-<script> newQuote() </script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
 
 <!-- load extra js as needed -->
 {{ partial "load_js.html" . }}
