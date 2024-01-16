@@ -20,8 +20,8 @@ For any greater depth one receives a `SyntaxError: too many nested parentheses`.
 from sys import maxsize
 
 def parens_expr(N):
-   str = '('*N + '1 + 2' + ')'*N 
-   return eval(str)
+   s = '('*N + '1 + 2' + ')'*N 
+   return eval(s)
 
 max_depth = 0
 for i in range(maxsize):

@@ -8,12 +8,12 @@ theme = 'risotto'
 
 [params.theme]
   palette = 'color-splotch'
-  # palette = 'base16-dark'
-  # palette = 'windows-95'
-  # palette = 'dracula'
 
 [markup.goldmark.renderer]
-  unsafe = true # allow HTML in md files
+  unsafe = true  # allow HTML in md files
+
+[markup.highlight]
+  noClasses = false  # control highlighting via syntax.css style sheet
 
 [taxonomies]
   tag = "tags"

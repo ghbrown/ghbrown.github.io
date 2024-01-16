@@ -28,3 +28,12 @@ input[type='text'] {
   font-size: 1em;
   font-weight: 800;
 }
+
+/* make quotes a bit smaller than main content */
+div#quote p,
+div#quote h1,
+div#quote h2,
+div#quote h3 {
+    font-size: 0.85em;
+}
+
