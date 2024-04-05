@@ -59,3 +59,15 @@ You run the computation and you pray."
 
 ---
 
+"I live 30 minutes away from everthing, it's wonderful."
+<br>
+\- anonymous, *overheard*
+
+---
+
+"We develop open source software in MatLab."
+
+\- [a paper](https://arxiv.org/pdf/2006.08756.pdf)
+
+---
+
