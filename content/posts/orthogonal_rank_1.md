@@ -65,9 +65,10 @@ def orthogonal_rank_1_matrix(A):
 
 ### Comments
 
-- The case where one seeks a rank $k$ matrix is a bit more complicated, but I suspect a similar tactic can be used.
-- Based on a rough dimension counting argument, the dimension of the solution space should be about $2nk - \frac{k(k+1)}{2} - 1$
-  Since $k \leq n$ there should always be an infinite number of solutions.
+- The case where one seeks a rank $k$ matrix is nearly identical.
+  Initialize the $2nk-1$ elements of the rank $k$ factorization
+  $\mathbf{B} = \mathbf{X} \mathbf{Y}^T$
+  randomly, then solve for the remaining element via a scalar equation.
 
 
 

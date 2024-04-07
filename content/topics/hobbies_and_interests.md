@@ -27,6 +27,7 @@ Open these images in a new tab to get them at full size and resolution.
         Single shot, edited image of Jupiter and its four Galilean moons at low magnification. The contrast between the background and moons was enhanced; the glare from Jupiter was reduced and it was recolored to more accurately represent the color seen with the eye that night. Taken in Dunedin, FL on 2020/06/18.
       </p>
     </td>
+  </tr>
 </table>
 
 ---
