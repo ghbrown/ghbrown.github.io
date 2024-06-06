@@ -31,7 +31,7 @@ Here are some projects I've contributed to:
 ### Chapel
 
 - The [Chapel programming language](https://chapel-lang.org/) is designed for parallel computing at scale.
-  I [package](https://aur.archlinux.org/packages/chapel) the compiler for Arch Linux, and have contributed multiple routines to built in modules.
+  I [package](https://aur.archlinux.org/packages/chapel) the compiler for Arch Linux, and have contributed multiple routines to built in modules like `LinearAlgebra.chpl`.
 
 
 ### fortran-lang
