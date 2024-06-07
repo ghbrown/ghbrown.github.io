@@ -71,3 +71,11 @@ You run the computation and you pray."
 
 ---
 
+"We disavow any knowledge of the existence of PDF files of Demmel's book.
+<br>
+*provides link*"
+
+\- [Gene Golub and Lek-Heng Lim](https://www.stat.uchicago.edu/~lekheng/courses/302/)
+
+---
+
