@@ -9,7 +9,8 @@ draft: false
 
 ## Research Positions
 
-I am fortunate to be advised by {{< glink dest=https://web.ma.utexas.edu/users/jkileel/ text="Joe Kileel" color="y" >}}, with whom I am currently working on problems related to low rank tensor approximation.
+I am fortunate to be advised by {{< glink dest=https://web.ma.utexas.edu/users/jkileel/ text="Joe Kileel" color="y" >}}, with whom I am working on problems related to low rank tensor approximation.
+This summer I am investigating the use of tensor decompositions to detect climate events at Sandia National Lab under the guidance of [Eric Phipps](https://www.sandia.gov/ccr/staff/eric-t-phipps/).
 <br>
 During my master's degree I worked with
 {{< glink dest=https://solomonik.cs.illinois.edu/ text="Edgar Solomonik" color=y >}}
@@ -25,6 +26,7 @@ and plasma jets with
 I also spent one summer with a (chance) position in a nuclear
 physics laboratory, which is how I got into research.
 
+- <b>May 2024 - <span class="themecolor">present</span></b>: Computer Science Research Institute, Eric Phipps, Sandia National Laboratory
 - <b>August 2022 - <span class="themecolor">present</span></b>: Applied Mathematics Group, Joe Kileel, UT Austin
 - <b>March 2021 - August 2022</b>: Labaratory for Parallel Numerical Algorithms, Edgar Solomonik, UIUC
 - <b>July 2020 - May 2022</b>: Harley T. Johnson Group, UIUC

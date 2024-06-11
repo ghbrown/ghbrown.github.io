@@ -6,6 +6,22 @@ draft: false
 # Publications
 
 ---
+## 2024
+<!-- seems cannot use markdown for bold/italics here since inside of complicated HTML -->
+<table style="width:100%">
+  <tr>
+    <td width="20%"><img src="/assets/topics/publications/AVS-JVSTB_MayJune_2024.jpg" width="100%"></td>
+    <td style="vertical-align:middle">
+        <b>(Editor's Pick, Cover Art)</b>
+        M. J. Johnson. <span class="themecolor">G.H. Brown</span>, et al.,
+        "Phase-shifted counterpropagating atmospheric pressure plasma jets:
+        Characterization and interaction with materials",
+        <i>Journal of Vacuum Science & Technology B</i>, 2024.
+        <a class="mainlink" href="https://pubs.aip.org/avs/jvb/article/42/3/034004/3285545" target="_blank"> link </a>
+    </td>
+  </tr>
+</table>
+
 
 ## 2022
 
