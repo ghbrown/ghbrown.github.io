@@ -1,6 +1,6 @@
 ---
 title: "Behavior of conjugate gradient residual"
-date: 2022-11-29T22:19:38-06:00
+date: 2024-06-15T02:19:38-06:00
 draft: false
 tags: ['linear algebra']
 ---
@@ -22,21 +22,20 @@ Per {{< glink dest="https://www.scirp.org/html/2644.html" text="an article by Wa
 - almost monotonic decrease of residual in the 2-norm in finite precision and exact arithmetic
   \\( \left( \exist k > j : ||\mathbf{r}_k||_2 \le ||\mathbf{r}_j||_2  \right) \\)
 
-Examples with increasing residual 2-norms are not difficult to come by in practice, for an example see slide 21 of {{< glink dest="https://see.stanford.edu/materials/lsocoee364b/11-conj_grad_slides.pdf" text="these slides by Stephen Boyd" color="y" >}}.
-However, I am unaware of any simple, tangible, and easily understandable examples where CG produces a temporarily increasing residual.
-While attempting to find such a system I was able to prove something small about the behavior of the residual in the 2-norm for CG.
-That is **the 2-norm of the residual always decreases on the first iteration**
+However, while the errors decrease the 2-norm of the residual may provably do almost anything.
+An old but lesser known result from the original [Hestenes and Stiefel paper](https://nvlpubs.nist.gov/nistpubs/jres/049/6/V49.N06.A08.pdf) provides the precise form of the statement: for any (almost monotonically decreasing) sequence of residual 2-norms there exist $\mathbf{A}$ and $\mathbf{b}$ which realize this sequence.
+While there exist elaborately constructed systems which realize specific important patterns (see Section 2.7 of [this paper by Carson, Liesen, and Strakos](https://arxiv.org/pdf/2211.00953v3) and the citations within) I find it hard to grasp what precisely is causing the residual 2-norm to increase.
+While grapplig with this problem, I proved a small result that has helped me to understand just a bit better how the residual 2-norm can (at least temporarily) grow.
+**The residual after one iteration of CG is larger than the initial residual if and only if**
 $$
-  ||\mathbf{r}_1||_2 \lt ||\mathbf{r}_0||_2
-  \quad \forall \\; \mathbf{A}, \mathbf{b}, \mathbf{x}_0 .
+  ||\mathbf{r}_0||_2 ||\mathbf{A}\mathbf{r}_0||_2
+  \ge
+  \sqrt{2} \mathbf{r}_0^T \mathbf{A} \mathbf{r}_0 .
 $$
 
 <details>
   <summary>Proof</summary>
-
-  We wish to find a system whose residual does not decrease in the 2-norm on the first iteration, that is \\( ||\mathbf{r}_1||_2 \ge ||\mathbf{r}_0||_2 \\).
-  
-  Using the standard conjugate gradient iteration pseudocode (from Trefethen and Bau, for example) one gets
+  Using the standard conjugate gradient iteration pseudocode (from Trefethen and Bau, for example) the residual after 0 and 1 iterations of CG are
   $$
     \mathbf{r}_0 = \mathbf{A}\mathbf{x}_0 - \mathbf{b}, \quad\quad
     \mathbf{r}_1 = \mathbf{r}_0 -
@@ -65,58 +64,43 @@ $$
     \ge
     \sqrt{2} \mathbf{r}_0^T \mathbf{A} \mathbf{r}_0.
   $$
-  
-  Now, take advantage of the symmetric positive definiteness of \\( \mathbf{A} \\) to insert the eigendecomposition \\( \mathbf{A} = \mathbf{X}^T \mathbf{\Lambda X} \\) with unitary \\( \mathbf{X} \\) and diagonal, positive \\( \mathbf{\Lambda} \\).
-  Further, define the new variable \\( \mathbf{v} = \mathbf{Xr}_0 = ||\mathbf{r}_0||_2 \hat{\mathbf{v}} \\) (where \\( ||\hat{\mathbf{v}}||_2 = 1 \\)) to simplify to the equivalent inequality
-  $$
-    ||\mathbf{\Lambda} \hat{\mathbf{v}}||_2
-    \ge
-    \sqrt{2} \hat{\mathbf{v}}^T \mathbf{\Lambda} \hat{\mathbf{v}} . \quad (*)
-  $$
-  Taking the negation of this statement, that is
-  $$
-    \sqrt{2} \hat{\mathbf{v}}^T \mathbf{\Lambda} \hat{\mathbf{v}}
-    \gt
-    ||\mathbf{\Lambda} \hat{\mathbf{v}}||_2  \quad \text{(negation)} ,
-  $$
-  and employing the Cauchy-Schwarz inequality for the left term (using \\( ||\hat{\mathbf{v}}||_2 = 1 \\)) one gets
-  $$
-    \sqrt{2} \hat{\mathbf{v}}^T \mathbf{\Lambda} \hat{\mathbf{v}}
-    \ge
-    \sqrt{2} ||\mathbf{\Lambda} \hat{\mathbf{v}}||_2
-    \gt
-    ||\mathbf{\Lambda} \hat{\mathbf{v}}||_2  \quad \text{(negation)} .
-  $$
-  Since the right of these two inequalities is true for arbitrary \\( \Lambda, \\; \hat{\mathbf{v}} \\) then
-  $$
-    \sqrt{2} \hat{\mathbf{v}}^T \mathbf{\Lambda} \hat{\mathbf{v}}
-    \gt
-    ||\mathbf{\Lambda} \hat{\mathbf{v}}||_2  \quad \text{(negation)}
-  $$
-  is also true for all \\( \Lambda, \\; \hat{\mathbf{v}} \\).
-  
-  This being the negation, we have proved \\( (*) \\) false generically, which is equivalent to
-  $$
-    ||\mathbf{r}_1||_2 \ge ||\mathbf{r}_0||_2 \\;\\; \text{false} \quad
-    \forall \mathbf{A}, \\; \mathbf{b}, \\; \mathbf{x}_0 .
-  $$
-  In more direct language
-  $$
-    ||\mathbf{r}_1||_2 \le ||\mathbf{r}_0||_2 \quad
-    \forall \mathbf{A}, \\; \mathbf{b}, \\; \mathbf{x}_0 ,
-  $$
-  completing the proof.
 </details>
+
+Admittedly, this form of this statement does not immediately suggest a choice of $\mathbf{r}_0$ might result in an increase.
+However, let's try to understand one such case by picking apart the expression.
+
+Since $\mathbf{A}$ is symmetric and positive definite, it may be written as $\mathbf{A} = \mathbf{Y}^T \mathbf{Y}$.
+Letting $\mathbf{v} = \mathbf{Y} \mathbf{r}_0$ and rewriting the expression we find
+$$
+  ||\mathbf{r}_0||_2 ||\mathbf{X}^T \mathbf{v}||_2
+  \ge
+  \sqrt{2} ||\mathbf{v}||_2^2 .
+$$
+Exploiting submultiplicativity of the norm on the left we find
+{{< katex >}}
+$$
+  ||\mathbf{X}||_2 ||\mathbf{r}_0||_2
+  \ge
+  \sqrt{2} ||\mathbf{v}||_2
+  =
+  \sqrt{2} ||\mathbf{X} \mathbf{r}_0||_2 .
+$$
+{{< /katex >}}
+So, to realize an increasing residual 2-norm after 1 iteration it is sufficient to satisfy
+$||\mathbf{X}||_2 ||\mathbf{r}_0||_2 \ge \sqrt{2} ||\mathbf{X} \mathbf{r}_0||_2$.
+This can easily occur if $r_0$ is aligned with eigenvectors of $\mathbf{X}$ (equivalently $\mathbf{A}$) which have relatively small eigenvalues.
+Though in a very restricted case (the first iteration), I find this to be a digestible condition leading to a temporarily increasing 2-norm.
 
 ---
 
 ### Future work and comments
 
-I'd like to determine if this result is also true in finite precision, and find an increasing system if it is false in finite precision.
-Furthermore, since we have almost monotonic decrease of residual 2-norm in exact arithmetic, I'd like to determine whether the residual could increase on the second iteration.
+Comment 1: I'd like to read and understand the proof about realizing any residual 2-norm sequence.
+It's amazing that this result was already in the original CG paper.
 
-Comment 1: I think the Washizawa paper has some errors, see for example Equation 20, where it should be \\( || \overline{\mathbf{r}_i} - \\varepsilon_M(\mathbf{r}_i)|| \\) (one less bar).
+Comment 2: A [similar result about GMRES sequences](https://epubs.siam.org/doi/abs/10.1137/S0895479894275030), but this time a whole paper has been dedicated to it.
+I am sure this is a more involved proof.
 
-Comment 2: I'd like to post about this {{< glink dest="https://epubs.siam.org/doi/abs/10.1137/S0895479894275030" text="amazing result by Greenbaum" color="y" >}} at some point, perhaps in a separate post, and after I've had time to read it.
+Comment 3: I think the Washizawa paper has some errors, see for example Equation 20, where it should be \\( || \overline{\mathbf{r}_i} - \\varepsilon_M(\mathbf{r}_i)|| \\) (one less bar).
 
-Comment 3: I'd also like to discuss the common misconception about conjugate gradient and eigenvalue clusters brought up at 13:35 in {{< glink dest="https://www.youtube.com/watch?v=jpBzZP2f5Wk" text="this wonderful talk by Zdenek Strakos" color="y" >}}.
+Comment 4: I'd also like to discuss the common misconception about conjugate gradient and eigenvalue clusters brought up at 13:35 in {{< glink dest="https://www.youtube.com/watch?v=jpBzZP2f5Wk" text="this wonderful talk by Zdenek Strakos" color="y" >}}.
