@@ -59,7 +59,7 @@ You run the computation and you pray."
 
 ---
 
-"I live 30 minutes away from everthing, it's wonderful."
+"I live 30 minutes away from everything, it's wonderful."
 <br>
 \- anonymous, *overheard*
 
