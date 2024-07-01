@@ -23,12 +23,12 @@ However, the bread/dough was alarmingly sweet as compared to the typical pizza e
 The sauce was well distributed on the pizza, but the ratio of sauce to the rest of the pizza was too low.
 However, it is perhaps important to note that I err on the side of more sauce when in doubt.
 As for taste, the sauce was appropriately acidic, but perhaps under spiced.
-Moving up to cheese, it was applied in the correct proportion all the way to the edges, where cripsed cheese bits could be had.
+Moving up to cheese, it was applied in the correct proportion all the way to the edges, where crisped cheese bits could be had.
 Notably, Domino's blend of mozzarella, monterey jack, and white cheddar provides a punchier flavor when compared to 100% mozzarella topped pizzas.
 <br>
 [COST: $10.68 after tax for 14 inch large.]
 
-<span class="themecolor">Jet's</span> deep dish pizza (top right) has proprtionately too much dough, though the shatteringly crisp bottom provides a welcome change of texture.
+<span class="themecolor">Jet's</span> deep dish pizza (top right) has proportionately too much dough, though the shatteringly crisp bottom provides a welcome change of texture.
 This crispness could come from the high oil content of the dough, or a liberal application of oil to the pan in which it is cooked.
 Either way the result is a glassy bottomed pizza that oozes a bit of oil from the dough when squeezing or biting.
 The crumb structure of the dough was very open resulting in a bubbly and textured base layer.
@@ -40,7 +40,7 @@ However, the muted flavor puts it solidly in the background of the experience.
 <br>
 [COST: $8.91 (after 20% discount for text-to-order) for a single 8 inch by 10 inch pizza.]
 
-<span class="themecolor">Little Ceasars'</span> deep dish pizza (bottom left) starts with a well browned and lightly crispy bottom with an open crumb structure.
+<span class="themecolor">Little Ceasars</span> deep dish pizza (bottom left) starts with a well browned and lightly crispy bottom with an open crumb structure.
 The ratio of dough to the rest of the components is perhaps a bit high, but within an appropriate range.
 The crust was more distinct from the rest of the pizza as compared with Jet's or Domino's, but still had the classic one expects of deep dish/pan pizza crust.
 Like Jet's, this deep dish pizza also suffers from sauce distribution problems, with the parts of each slice originally from the center of the pizza bordering on oversauced (not complaining) while the outer rim of the pizza has almost none (complaining).
@@ -55,7 +55,7 @@ Like Little Ceasars the crust is clearly a separate entity from the bulk of the 
 Perhaps surprisingly, the dough was not as oily as the standard hand tossed Pizza Hut pizza.
 As a final note on the crust, I cannot overemphasize how much the dough tasted like a biscuit.
 The flavor was not necessarily unpleasant, but it certainly was out of place and unsettling.
-Perhaps the only worthwile comment about the sauce was that is was well distributed, but not plentiful enough.
+Perhaps the only worthwhile comment about the sauce was that is was well distributed, but not plentiful enough.
 The taste of the sauce was not remarkable in any way, and didn't distract from the overall experience of eating a foot and a half wide biscuit.
 Just like the sauce under it, the cheese was remarkably nondescript. The texture and amount was pleasant enough, but the flavor places it clearly as a background performer in the biscuit circus.
 <br>

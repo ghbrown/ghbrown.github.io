@@ -111,7 +111,7 @@ Note that here {{< katex >}}$3 = 2^2 - 1${{< /katex >}}, which agrees with the g
   The condition for breakdown of the algorithm on the {{< katex >}}$k${{< /katex >}}th iteration is {{< katex >}}$b_{kk}^{(k-1)} = 0${{< /katex >}}.
   Using the update formula and recurrence relationship, one can equivalently write this condition only in terms of the elements of the original matrix {{< katex >}}$\mathbf{A}${{< /katex >}}.
   Further, applying this recurrence relationship only to the {{< katex >}}$b_{kk}^{(p)}${{< /katex >}} term, one can see that the final result is an equation like {{< katex >}}$a_{kk} = f(a_{ij})${{< /katex >}} where only {{< katex >}}$i = j = k${{< /katex >}} is excluded.
-  Therefore, with only one of the {{< katex >}}$n^2${{< /katex >}} variables dependent on the others, one can explicitly paramterize any such pivot-required matrix with {{< katex >}}$n^2 - 1${{< /katex >}} parameters, hence this space is of dimension {{< katex >}}$n^2 - 1${{< /katex >}}.
+  Therefore, with only one of the {{< katex >}}$n^2${{< /katex >}} variables dependent on the others, one can explicitly parameterize any such pivot-required matrix with {{< katex >}}$n^2 - 1${{< /katex >}} parameters, hence this space is of dimension {{< katex >}}$n^2 - 1${{< /katex >}}.
 </details>
 
 ---

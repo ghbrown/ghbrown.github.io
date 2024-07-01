@@ -18,7 +18,7 @@ The columns of {{< katex >}}$\mathbf{A}${{< /katex >}} form a linear cone; if a 
 The sufficient condition essentially upper bounds the "radius" of this subcone.
 
 <span class="themecolor">**Theorem**</span>: let {{< katex >}}$\mathbf{A} \in \mathbb{R}^{n \times n}${{< /katex >}} and {{< katex >}}$\mathbf{b}${{< /katex >}} be an invertible matrix and a vector, both non-negative.
-Futher, let {{< katex >}}$\mathbf{A}${{< /katex >}} satisfy the following form of diagonal dominance by rows
+Further, let {{< katex >}}$\mathbf{A}${{< /katex >}} satisfy the following form of diagonal dominance by rows
 {{< katex >}}
 $$
   0 \leq \alpha \leq |a_{ii}| - \sum_{j} |a_{ij}| \quad \forall i .

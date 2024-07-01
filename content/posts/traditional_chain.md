@@ -21,7 +21,7 @@ A review of traditional style pizzas from national chains (specifically those in
 At the crust, the dough is crisp on the outside while remaining soft and well inflated on the inside (and covered with a tasty garlic butter).
 sauce is well distributed and in a good ratio with the other components.
 Its flavor was light on spices and pleasantly acidic.
-propropietary blend of cheeses (equal parts monterey jack, mozzarella, white cheddar) and the carefully metered cook time means the cheese is both flavorful (properly browned) and tender (not overcooked).
+propietary blend of cheeses (equal parts monterey jack, mozzarella, white cheddar) and the carefully metered cook time means the cheese is both flavorful (properly browned) and tender (not overcooked).
 This contributes to the overall "tender bite" of the pizza; that is to say the selected bite separates from the rest of the slice with no gnawing or vigorous head shaking.
 <br>
 [COST: $8.49 after tax for 13 inch large.]
@@ -38,7 +38,7 @@ In a single sentence, the best way to describe this pizza is perhaps to mention 
 <br>
 [COST: $12.48 (after 20% discount for text-to-order) for a ~14 inch pizza.]
 
-<span class="themecolor">Little Ceasars'</span> traditional round pizza stakes its claim on a spongy, blonde, and slight dough layer.
+<span class="themecolor">Little Ceasars</span> traditional round pizza stakes its claim on a spongy, blonde, and slight dough layer.
 At the crust this results in a rather deflated profile, which flattens to a point in the radial direction without ever ballooning up.
 Though the rest of the crust has a largely uniform texture, this pointed edge around the outside of the pizza does provide a firm and welcome crunch. 
 Though applied in reasonable proportion with everything else, the sauce fails to make its presence know outside of its red color.

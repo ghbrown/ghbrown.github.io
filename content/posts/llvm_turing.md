@@ -20,7 +20,7 @@ Examples include:
 - the compiler for the {{< glink dest="https://julialang.org" text="Julia" color="y" >}} programming language
 
 Needless to say, I strongly believe that one or both of {{< glink dest="https://nondot.org/~sabre/" text="Chris Lattner" color="y" >}} and {{< glink dest="https://vikram.cs.illinois.edu" text="Vikram Adve" color="y" >}} (the original authors of LLVM) will win the Turing Award for their work on LLVM.
-In the event that they do not win I will be extremly disappointed.
+In the event that they do not win I will be extremely disappointed.
 
 <details>
   <summary>Evidence of prediction</summary>

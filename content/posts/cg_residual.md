@@ -25,7 +25,7 @@ Per {{< glink dest="https://www.scirp.org/html/2644.html" text="an article by Wa
 However, while the errors decrease the 2-norm of the residual may provably do almost anything.
 An old but lesser known result from the original [Hestenes and Stiefel paper](https://nvlpubs.nist.gov/nistpubs/jres/049/6/V49.N06.A08.pdf) provides the precise form of the statement: for any (almost monotonically decreasing) sequence of residual 2-norms there exist $\mathbf{A}$ and $\mathbf{b}$ which realize this sequence.
 While there exist elaborately constructed systems which realize specific important patterns (see Section 2.7 of [this paper by Carson, Liesen, and Strakos](https://arxiv.org/pdf/2211.00953v3) and the citations within) I find it hard to grasp what precisely is causing the residual 2-norm to increase.
-While grapplig with this problem, I proved a small result that has helped me to understand just a bit better how the residual 2-norm can (at least temporarily) grow.
+While grappling with this problem, I proved a small result that has helped me to understand just a bit better how the residual 2-norm can (at least temporarily) grow.
 **The residual after one iteration of CG is larger than the initial residual if and only if**
 $$
   ||\mathbf{r}_0||_2 ||\mathbf{A}\mathbf{r}_0||_2
