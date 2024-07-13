@@ -6,14 +6,13 @@
     <hr>
     {{ range .Site.RegularPages.ByPublishDate.Reverse }}
         {{ if (isset .Params "tags") }}
-            <div class="timeline-title">
-                <h3>{{ .Title }}</h3>
-                <!-- <p> &nbsp &nbsp </p> -->
-            </div>
-            <p>
+            <h2>
                 <a href="{{ .RelPermalink }}" class="mainlink">
-                    {{ partial "summary_no_header.html" . }} <!-- cleaner summary -->
+                    {{ .Title }}
                 </a>
+            </h2>
+            <p>
+                {{ partial "summary_no_header.html" . }} <!-- cleaner summary -->
             </p>
             <p>({{ .PublishDate.Format "2006-01-02" }})</p>
             <hr>

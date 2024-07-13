@@ -5,6 +5,7 @@
   page
   
 ## To do
+- ensure RSS is generating and working (especially for posts)
 - use katex shortcodes in legacy posts (then remove item below)
   - my planned solution: write .md files as usual using only $<inline>$ and 
                          $$<block>$$ syntax, placing them in

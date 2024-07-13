@@ -16,8 +16,8 @@ theme = 'risotto'
   noClasses = false  # control highlighting via syntax.css style sheet
 
 [taxonomies]
-  tag = "tags"
-  category = "categories"
+  tag = 'tags'
+  category = 'categories'
 
 [menu]
   [[menu.main]]
