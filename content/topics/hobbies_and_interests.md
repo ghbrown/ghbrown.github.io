@@ -28,8 +28,6 @@ Ask me about the time I wrote an ASCII shader in less than 600 characters, it's 
 </table>
 
 
-
-
 ## Observational Astronomy
 
 Open these images in a new tab to get them at full size and resolution.
