@@ -87,7 +87,7 @@ This is the optimal solution to the second problem (over $\mathbf{c}$), but reca
 Using the aforementioned relationship between the argmins of the two problems
 ({{< katex >}}$\mathbf{v}^* = \mathbf{Ac}^* + \mathbf{b}${{< /katex >}})
 we find that the nearest point to $\mathbf{w}$ in the affine subspace $A$
-(that is, {{< katex >}}$\mathbf{P}_A${{< /katex >}}) is
+(that is, {{< katex >}}$\mathbf{P}_A(\mathbf{w})${{< /katex >}}) is
 {{< katex >}}
 $$
   \mathbf{AA}^\dagger(\mathbf{w} - \mathbf{b}) + \mathbf{b}
