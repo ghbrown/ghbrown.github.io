@@ -37,7 +37,7 @@ draft: false
 
 ---
 
-I am a second year Ph.D. student in the Computational Science, Engineering, and Mathematics graduate program in the Oden Institute advised by {{< glink dest=https://web.ma.utexas.edu/users/jkileel/ text="Joe Kileel" color="y" >}}.
+I am a third year Ph.D. student in the Computational Science, Engineering, and Mathematics graduate program in the Oden Institute advised by [Joe Kileel](https://web.ma.utexas.edu/users/jkileel/).
 
 My primary focus is on computational and applied mathematics, especially numerical analysis, (multi)linear algebra, and optimization.
 I also enjoy the intersections of these topics with high performance computing, theoretical computer science, and multiscale modeling.
@@ -48,11 +48,11 @@ I graduated from the University of Notre Dame in 2020 with my bachelor's in Mech
 
 Here are some things I've been thinking (and writing) about lately:
 
-- {{< glink dest="posts/linear_algebra_pronunciation" text="Linear Algebra Pronunciation Guide" int="y" color="y" >}}: a guide to commonly mispronounced names and packages
+- [Linear Algebra Pronunciation Guide](posts/linear_algebra_pronunciation): a guide to commonly mispronounced names and packages
 
-- {{< glink dest="posts/cg_residual" text="Behavior of the Conjugate Gradient Residual" int="y" color="y" >}}: some notes and a small (possibly new) result about residual trends for CG 
+- [Behavior of the Conjugate Gradient Residual](posts/cg_residual): some notes and a small (possibly new) result about residual trends for CG
 
-- {{< glink dest="posts/sufficient_nonnegative" text="Non-negative Solutions to Non-negative Linear Systems" int="y" color="y" >}}: a sufficient condition for a non-negative linear system to have a non-negative solution 
+- [Non-negative Solutions to Non-negative Linear Systems](posts/sufficient_nonnegative): a sufficient condition for a non-negative linear system to have a non-negative solution
 
 ---
 
