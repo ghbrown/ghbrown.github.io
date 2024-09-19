@@ -1,4 +1,58 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Computer Science on Gabriel H. Brown</title><link>https://ghbrown.net/tags/computer-science/</link><description>Recent content in Computer Science on Gabriel H. Brown</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright [Gabriel H. Brown](/).</copyright><lastBuildDate>Tue, 10 Oct 2023 23:21:47 -0500</lastBuildDate><atom:link href="https://ghbrown.net/tags/computer-science/index.xml" rel="self" type="application/rss+xml"/><item><title>How many parentheses can Python handle?</title><link>https://ghbrown.net/posts/python_parentheses_depth/</link><pubDate>Tue, 10 Oct 2023 23:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/python_parentheses_depth/</guid><description>How many parentheses can Python handle? During my office hours today I was asked whether &amp;ldquo;an extra pair of parentheses&amp;rdquo; would do any harm to the execution of a Python program. In the case at hand the answer was &amp;ldquo;no&amp;rdquo;, but I suspected there might be actually be a limit on nested parentheses depth.
-Using the following Python script (which leverages the ability of the interpreter to evaluate expressions at runtime via eval), we can determine the answer is 200.</description></item><item><title>LLVM will win the Turing Award</title><link>https://ghbrown.net/posts/llvm_turing/</link><pubDate>Thu, 22 Dec 2022 23:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/llvm_turing/</guid><description>LLVM will win the Turing Award (prediction) The LLVM Project, which focuses on &amp;ldquo;modular and reusable compiler technologies&amp;rdquo; has had an enormous impact on the field of compilers, and by extension almost every kind of &amp;ldquo;applied&amp;rdquo; computer science.
-Though compilers (at the time of writing) is not my area of expertise, LLVM&amp;rsquo;s impact on my own field of &amp;ldquo;numerical computing&amp;rdquo; is undeniable. Examples include:
-the compiler for the Chapel programming language the Flang and LFortran compilers for the Fortran programming language Intel&amp;rsquo;s IFX compiler for the Fortran programming language (it was the discovery that IFX was using LLVM that that spurred me to make this post) (Intel URLs are famous for breaking, apologies in advance) the compiler for the Julia programming language Needless to say, I strongly believe that one or both of Chris Lattner and Vikram Adve (the original authors of LLVM) will win the Turing Award for their work on LLVM.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Computer Science on Gabriel H. Brown</title><link>https://ghbrown.net/tags/computer-science/</link><description>Recent content in Computer Science on Gabriel H. Brown</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright [Gabriel H. Brown](/).</copyright><lastBuildDate>Tue, 10 Oct 2023 23:21:47 -0500</lastBuildDate><atom:link href="https://ghbrown.net/tags/computer-science/index.xml" rel="self" type="application/rss+xml"/><item><title>How many parentheses can Python handle?</title><link>https://ghbrown.net/posts/python_parentheses_depth/</link><pubDate>Tue, 10 Oct 2023 23:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/python_parentheses_depth/</guid><description>&lt;h1 id="how-many-parentheses-can-python-handle">How many parentheses can Python handle?&lt;/h1>
+&lt;hr>
+&lt;p>During my office hours today I was asked whether &amp;ldquo;an extra pair of parentheses&amp;rdquo; would do any harm to the execution of a Python program.
+In the case at hand the answer was &amp;ldquo;no&amp;rdquo;, but I suspected there might be actually be a limit on nested parentheses depth.&lt;/p>
+&lt;p>Using the following Python script (which leverages the ability of the interpreter to evaluate expressions at runtime via &lt;code>eval&lt;/code>), we can determine the answer is &lt;span class='themecolor'>200&lt;/span>.
+For any greater depth one receives a &lt;code>SyntaxError: too many nested parentheses&lt;/code>.&lt;/p></description></item><item><title>LLVM will win the Turing Award</title><link>https://ghbrown.net/posts/llvm_turing/</link><pubDate>Thu, 22 Dec 2022 23:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/llvm_turing/</guid><description>&lt;h1 id="llvm-will-win-the-turing-award-prediction">LLVM will win the Turing Award (prediction)&lt;/h1>
+&lt;hr>
+&lt;p>The 
+
+
+
+
+&lt;a href="https://llvm.org" class="mainlink" target="_blank">&lt;span class="themecolor">LLVM Project&lt;/span>&lt;/a>, which focuses on &amp;ldquo;modular and reusable compiler technologies&amp;rdquo; has had an enormous impact on the field of compilers, and by extension almost every kind of &amp;ldquo;applied&amp;rdquo; computer science.&lt;/p>
+&lt;p>Though compilers (at the time of writing) is not my area of expertise, LLVM&amp;rsquo;s impact on my own field of &amp;ldquo;numerical computing&amp;rdquo; is undeniable.
+Examples include:&lt;/p>
+&lt;ul>
+&lt;li>the compiler for the 
+
+
+
+
+&lt;a href="https://chapel-lang.org" class="mainlink" target="_blank">&lt;span class="themecolor">Chapel&lt;/span>&lt;/a> programming language&lt;/li>
+&lt;li>the 
+
+
+
+
+&lt;a href="https://flang.llvm.org/docs/" class="mainlink" target="_blank">&lt;span class="themecolor">Flang&lt;/span>&lt;/a> and 
+
+
+
+
+&lt;a href="https://lfortran.org" class="mainlink" target="_blank">&lt;span class="themecolor">LFortran&lt;/span>&lt;/a> compilers for the Fortran programming language&lt;/li>
+&lt;li>Intel&amp;rsquo;s 
+
+
+
+
+&lt;a href="https://community.intel.com/t5/Intel-Fortran-Compiler/The-Next-Chapter-for-the-Intel-Fortran-Compiler-2023/td-p/1440619" class="mainlink" target="_blank">&lt;span class="themecolor">IFX&lt;/span>&lt;/a> compiler for the Fortran programming language (it was the discovery that IFX was using LLVM that that spurred me to make this post) (Intel URLs are famous for breaking, apologies in advance)&lt;/li>
+&lt;li>the compiler for the 
+
+
+
+
+&lt;a href="https://julialang.org" class="mainlink" target="_blank">&lt;span class="themecolor">Julia&lt;/span>&lt;/a> programming language&lt;/li>
+&lt;/ul>
+&lt;p>Needless to say, I strongly believe that one or both of 
+
+
+
+
+&lt;a href="https://nondot.org/~sabre/" class="mainlink" target="_blank">&lt;span class="themecolor">Chris Lattner&lt;/span>&lt;/a> and 
+
+
+
+
+&lt;a href="https://vikram.cs.illinois.edu" class="mainlink" target="_blank">&lt;span class="themecolor">Vikram Adve&lt;/span>&lt;/a> (the original authors of LLVM) will win the Turing Award for their work on LLVM.
+In the event that they do not win I will be extremely disappointed.&lt;/p></description></item></channel></rss>

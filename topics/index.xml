@@ -1,9 +1,160 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Topics on Gabriel H. Brown</title><link>https://ghbrown.net/topics/</link><description>Recent content in Topics on Gabriel H. Brown</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright [Gabriel H. Brown](/).</copyright><atom:link href="https://ghbrown.net/topics/index.xml" rel="self" type="application/rss+xml"/><item><title>Hobbies and Interests</title><link>https://ghbrown.net/topics/hobbies_and_interests/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/hobbies_and_interests/</guid><description>Hobbies &amp;amp; Interests 3-D Modeling and Graphics Who can avoid being drawn to a beautiful render? Ask me about the time I wrote an ASCII shader in less than 600 characters, it&amp;rsquo;s a fun story.
-Here is my first Blender Donut, I went with a sour cream/old-fashioned instead of the standard yeast donut. Observational Astronomy Open these images in a new tab to get them at full size and resolution.</description></item><item><title>Open Source</title><link>https://ghbrown.net/topics/open_source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/open_source/</guid><description>(Free and) Open Source I believe in free and open source software (FOSS), so I dedicate a significant amount of time and effort to this end.
-Here is the project I&amp;rsquo;m the most proud of:
-visla visla renders stunning visualizations of sparse matrices and graphs with ease. Here are some projects I&amp;rsquo;ve contributed to:
-Chapel The Chapel programming language is designed for parallel computing at scale. I package the compiler for Arch Linux, and have contributed multiple routines to built in modules like LinearAlgebra.</description></item><item><title>Publications</title><link>https://ghbrown.net/topics/publications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/publications/</guid><description>Publications 2024 (Editor's Pick, Cover Art) M. J. Johnson. G.H. Brown, et al., "Phase-shifted counterpropagating atmospheric pressure plasma jets: Characterization and interaction with materials", Journal of Vacuum Science &amp; Technology B, 2024. link 2022 M. J. Johnson. G.H. Brown, et al., &amp;ldquo;Two Atmospheric Pressure Plasma Jets Driven by Phase-Shifted Voltages: A Method to Control Plasma Properties at the Plasma–Surface Interface&amp;rdquo;, IEEE Transaction on Plasma Science, 2022. link 2021 N. Shaffer, G.</description></item><item><title>Quotes</title><link>https://ghbrown.net/topics/quotes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/quotes/</guid><description>Quotes Congratulations for finding this page!
-It&amp;rsquo;s not linked anywhere on my site but is the source page from which the random quotes are drawn.
-MC: Gucchon, you win or you lose?
-Gucchon: I don&amp;rsquo;t care. &amp;ldquo;So we want to make it easy to write parallel programs&amp;hellip; We can&amp;rsquo;t, writing parallel programs is extremely difficult.&amp;rdquo; - Joe Armstrong &amp;ldquo;7 iterations is a good number.&amp;rdquo; - numerical analysis student
-&amp;ldquo;Nothing brings fear to my heart more than a floating point number.</description></item><item><title>Research</title><link>https://ghbrown.net/topics/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/research/</guid><description>Research Research Positions I am fortunate to be advised by Joe Kileel, with whom I am working on problems related to low rank tensor approximation. During my master&amp;rsquo;s degree I worked with Edgar Solomonik on theoretical and numerical aspects of the tensor eigenpair problem, and with Harley Johnson on computational electronic structure. As an undergraduate I researched multiple phenomena related to nonequilibrium plasmas including plasma-liquid simulations with David Go and plasma jets with Scott Walton.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Topics on Gabriel H. Brown</title><link>https://ghbrown.net/topics/</link><description>Recent content in Topics on Gabriel H. Brown</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright [Gabriel H. Brown](/).</copyright><atom:link href="https://ghbrown.net/topics/index.xml" rel="self" type="application/rss+xml"/><item><title>Hobbies and Interests</title><link>https://ghbrown.net/topics/hobbies_and_interests/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/hobbies_and_interests/</guid><description>&lt;h1 id="hobbies--interests">Hobbies &amp;amp; Interests&lt;/h1>
+&lt;hr>
+&lt;h2 id="3-d-modeling-and-graphics">3-D Modeling and Graphics&lt;/h2>
+&lt;p>Who can avoid being drawn to a beautiful render?
+Ask me about the time I wrote an ASCII shader in less than 600 characters, it&amp;rsquo;s a fun story.&lt;/p>
+&lt;table style="width:100%">
+ &lt;tr>
+ &lt;td width="50%">
+ &lt;video autoplay loop style="width:100%">
+ &lt;source src="https://ghbrown.net/assets/topics/hobbies_and_interests/donut.webm">
+ &lt;/video>
+ &lt;/td>
+ &lt;td style="vertical-align:middle">
+ &lt;p>
+ Here is my first 
+
+
+
+
+&lt;a href="https://www.youtube.com/watch?v=B0J27sf9N1Y&amp;amp;list=PLjEaoINr3zgEPv5y--4MKpciLaoQYZB1Z" class="mainlink" target="_blank">Blender Donut&lt;/a>, I went with a sour cream/old-fashioned instead of the standard yeast donut.
+ &lt;/p>
+ &lt;/td>
+ &lt;/tr>
+&lt;/table>
+&lt;h2 id="observational-astronomy">Observational Astronomy&lt;/h2>
+&lt;p>Open these images in a new tab to get them at full size and resolution.&lt;/p></description></item><item><title>Open Source</title><link>https://ghbrown.net/topics/open_source/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/open_source/</guid><description>&lt;h1 id="free-and-open-source">(Free and) Open Source&lt;/h1>
+&lt;hr>
+&lt;p>I believe in free and open source software (FOSS), so I dedicate a significant amount of time and effort to this end.&lt;/p>
+&lt;p>Here is the project I&amp;rsquo;m the most proud of:&lt;/p>
+&lt;h3 id="visla">visla&lt;/h3>
+&lt;table style="width:100%">
+ &lt;tr>
+ &lt;td width="30%">&lt;img src="https://ghbrown.net/assets/topics/open_source/gemm_10.png" width="100%">&lt;/td>
+ &lt;td>
+ &lt;p>
+ &lt;!-- cannot rely on markdown rendering inside of HTML environment -->
+ &lt;a href="https://github.com/ghbrown/visla" target=_blank>visla&lt;/a>
+ renders stunning visualizations of sparse matrices and graphs with ease.
+ &lt;/p>
+ &lt;/td>
+ &lt;/tr>
+&lt;/table>
+&lt;p>Here are some projects I&amp;rsquo;ve contributed to:&lt;/p>
+&lt;h3 id="chapel">Chapel&lt;/h3>
+&lt;ul>
+&lt;li>The &lt;a href="https://chapel-lang.org/" target="_blank">Chapel programming language&lt;/a>
+ is designed for parallel computing at scale.
+I &lt;a href="https://aur.archlinux.org/packages/chapel" target="_blank">package&lt;/a>
+ the compiler for Arch Linux, and have contributed multiple routines to built in modules like &lt;code>LinearAlgebra.chpl&lt;/code>.&lt;/li>
+&lt;/ul>
+&lt;h3 id="fortran-lang">fortran-lang&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://fortran-lang.org/en/" target="_blank">fortran-lang&lt;/a>
+ is a community effort to polish and modernize the Fortran programming language.
+Efforts include a &lt;a href="https://fpm.fortran-lang.org/" target="_blank">package manager&lt;/a>
+ and a &lt;a href="https://stdlib.fortran-lang.org/" target="_blank">standard library&lt;/a>
+ (to which I&amp;rsquo;ve contributed routines for linear algebra).&lt;/li>
+&lt;/ul>
+&lt;h3 id="endeavouros">EndeavourOS&lt;/h3>
+&lt;ul>
+&lt;li>I&amp;rsquo;ve contributed bug fixes to configurations for the &lt;a href="https://i3wm.org/i3" target="_blank">i3 window manager&lt;/a>
+ version of the &lt;a href="https://endeavouros.com/" target="_blank">EndeavourOS&lt;/a>
+ Linux distribution.&lt;/li>
+&lt;/ul>
+&lt;h3 id="beets">beets&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://beets.io/" target="_blank">beets&lt;/a>
+ organizes local music collections, including autotagging and so much more.
+I contributed an interface to match single tracks using Discogs.&lt;/li>
+&lt;/ul>
+&lt;hr></description></item><item><title>Publications</title><link>https://ghbrown.net/topics/publications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/publications/</guid><description>&lt;h1 id="publications">Publications&lt;/h1>
+&lt;hr>
+&lt;h2 id="2024">2024&lt;/h2>
+&lt;!-- seems cannot use markdown for bold/italics here since inside of complicated HTML -->
+&lt;table style="width:100%">
+ &lt;tr>
+ &lt;td width="20%">&lt;img src="https://ghbrown.net/assets/topics/publications/AVS-JVSTB_MayJune_2024.jpg" width="100%">&lt;/td>
+ &lt;td style="vertical-align:middle">
+ &lt;b>(Editor's Pick, Cover Art)&lt;/b>
+ M. J. Johnson. &lt;span class="themecolor">G.H. Brown&lt;/span>, et al.,
+ "Phase-shifted counterpropagating atmospheric pressure plasma jets:
+ Characterization and interaction with materials",
+ &lt;i>Journal of Vacuum Science &amp; Technology B&lt;/i>, 2024.
+ &lt;a class="mainlink" href="https://pubs.aip.org/avs/jvb/article/42/3/034004/3285545" target="_blank"> link &lt;/a>
+ &lt;/td>
+ &lt;/tr>
+&lt;/table>
+&lt;h2 id="2022">2022&lt;/h2>
+&lt;p>M. J. Johnson. &lt;span class="themecolor">G.H. Brown&lt;/span>, et al.,
+&amp;ldquo;Two Atmospheric Pressure Plasma Jets Driven by Phase-Shifted
+Voltages: A Method to Control Plasma Properties at the
+Plasma–Surface Interface&amp;rdquo;,
+&lt;em>IEEE Transaction on Plasma Science&lt;/em>, 2022.
+&lt;a class="mainlink" href="https://ieeexplore.ieee.org/document/9866674" target="_blank"> link &lt;/a>&lt;/p></description></item><item><title>Quotes</title><link>https://ghbrown.net/topics/quotes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/quotes/</guid><description>&lt;h1 id="quotes">Quotes&lt;/h1>
+&lt;p>Congratulations for finding this page!&lt;/p>
+&lt;p>It&amp;rsquo;s not linked anywhere on my site but is the source page from which the random quotes are drawn.&lt;/p>
+&lt;hr>
+&lt;p>MC: Gucchon, you win or you lose?&lt;/p>
+&lt;p>Gucchon: &lt;a href="https://youtu.be/Xli8mnd4dJs?t=579" target="_blank">I don&amp;rsquo;t care.&lt;/a>
+&lt;/p>
+&lt;hr>
+&lt;p>&amp;ldquo;So we want to make it easy to write parallel programs&amp;hellip;
+&lt;br>
+We can&amp;rsquo;t, writing parallel programs is extremely difficult.&amp;rdquo;
+&lt;br>
+- &lt;a href="https://youtu.be/bo5WL5IQAd0?t=538" target="_blank">Joe Armstrong&lt;/a>
+&lt;/p>
+&lt;hr>
+&lt;p>&amp;ldquo;7 iterations is a good number.&amp;rdquo;
+&lt;br>
+- numerical analysis student&lt;/p>
+&lt;hr>
+&lt;p>&amp;ldquo;Nothing brings fear to my heart more than a floating point number.
+&lt;br>
+Numerical analysis is the blackest art I know.&amp;rdquo;
+&lt;br>
+- &lt;a href="https://youtu.be/HB5TrK7A4pI?t=667" target="_blank">Gerald Sussman&lt;/a>
+&lt;/p></description></item><item><title>Research</title><link>https://ghbrown.net/topics/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/research/</guid><description>&lt;h1 id="research">Research&lt;/h1>
+&lt;hr>
+&lt;h2 id="research-positions">Research Positions&lt;/h2>
+&lt;p>I am fortunate to be advised by 
+
+
+
+
+&lt;a href="https://web.ma.utexas.edu/users/jkileel/" class="mainlink" target="_blank">&lt;span class="themecolor">Joe Kileel&lt;/span>&lt;/a>, with whom I am working on problems related to low rank tensor approximation.
+&lt;br>
+During my master&amp;rsquo;s degree I worked with
+
+
+
+
+
+&lt;a href="https://solomonik.cs.illinois.edu/" class="mainlink" target="_blank">&lt;span class="themecolor">Edgar Solomonik&lt;/span>&lt;/a>
+on theoretical and numerical aspects of the tensor eigenpair problem, and with
+
+
+
+
+
+&lt;a href="https://matse.illinois.edu/people/profile/htj" class="mainlink" target="_blank">&lt;span class="themecolor">Harley Johnson&lt;/span>&lt;/a>
+on computational electronic structure.
+&lt;br>
+As an undergraduate I researched multiple phenomena related to
+nonequilibrium plasmas including plasma-liquid simulations with
+
+
+
+
+
+&lt;a href="https://engineering.nd.edu/faculty/david-go/" class="mainlink" target="_blank">&lt;span class="themecolor">David Go&lt;/span>&lt;/a>
+and plasma jets with
+
+
+
+
+
+&lt;a href="https://ieeexplore.ieee.org/author/37273977200" class="mainlink" target="_blank">&lt;span class="themecolor">Scott Walton&lt;/span>&lt;/a>.
+I also spent one summer with a (chance) position in a nuclear
+physics laboratory, which is how I got into research.&lt;/p></description></item></channel></rss>

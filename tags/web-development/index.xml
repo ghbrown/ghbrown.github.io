@@ -1,5 +1,49 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web Development on Gabriel H. Brown</title><link>https://ghbrown.net/tags/web-development/</link><description>Recent content in Web Development on Gabriel H. Brown</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright [Gabriel H. Brown](/).</copyright><lastBuildDate>Sat, 13 Jul 2024 12:37:01 -0500</lastBuildDate><atom:link href="https://ghbrown.net/tags/web-development/index.xml" rel="self" type="application/rss+xml"/><item><title>Transparent videos from Blender to the web</title><link>https://ghbrown.net/posts/alpha_video/</link><pubDate>Sat, 13 Jul 2024 12:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/alpha_video/</guid><description>Get transparent videos out of Blender and onto the web A quick guide to get your cool render out of Blender and onto the web, with transparency/alpha!
-Out of Blender For renders to intermediate frame images you can use the following Blender settings in the Properties Editor:
-Render &amp;gt; Film &amp;gt; Transparent (check it) Output &amp;gt; Output &amp;gt; File Format &amp;gt; PNG Output &amp;gt; Output &amp;gt; Color &amp;gt; RGBA For a small renders directly to video files (bad practice) I used the following settings:</description></item><item><title>This website: thoughts and history</title><link>https://ghbrown.net/posts/this_website/</link><pubDate>Mon, 15 Jan 2024 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/this_website/</guid><description>This website History 2020-04: website started as a pandemic project after learning that GitHub offered free hosting, written in plain HTML, CSS, and Javascript (a great learning experience) 2022-10: website transitioned to Hugo, a massive boon to maintainability and flexibility 2023-01: bought and used the ghbrown.net domain name 2024-01: transitioned to using the risotto theme, with a moderate amount of modifications Fun Facts I was originally inspired to build my own website by Matthew Zahr, who was my instructor for Finite Element Analysis during my senior year of college.</description></item><item><title>Prime number detector</title><link>https://ghbrown.net/posts/prime_detector/</link><pubDate>Sat, 25 Apr 2020 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/prime_detector/</guid><description>Prime Number Detector Input a number to determine if it is prime.
-The maximum input value before truncation error is 9007199254740991 (~9e15, nine and fifteen zeros!), which is not prime but has a relatively large least factor. This is because JavaScript uses double-precision floating-point numbers according to IEEE 754, and this number is the largest this format supports.
-Notes I used this little project to get my feet wet with Javascript when I was building my website from raw HTML and CSS.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web Development on Gabriel H. Brown</title><link>https://ghbrown.net/tags/web-development/</link><description>Recent content in Web Development on Gabriel H. Brown</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright [Gabriel H. Brown](/).</copyright><lastBuildDate>Sat, 13 Jul 2024 12:37:01 -0500</lastBuildDate><atom:link href="https://ghbrown.net/tags/web-development/index.xml" rel="self" type="application/rss+xml"/><item><title>Transparent videos from Blender to the web</title><link>https://ghbrown.net/posts/alpha_video/</link><pubDate>Sat, 13 Jul 2024 12:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/alpha_video/</guid><description>&lt;h1 id="get-transparent-videos-out-of-blender-and-onto-the-web">Get transparent videos out of Blender and onto the web&lt;/h1>
+&lt;p>A quick guide to get your cool render out of Blender and onto the web, with transparency/alpha!&lt;/p>
+&lt;hr>
+&lt;h2 id="out-of-blenderhttpswwwblenderorg">Out of &lt;a href="https://www.blender.org/" target="_blank">Blender&lt;/a>
+&lt;/h2>
+&lt;p>For renders to intermediate frame images you can use the following Blender settings in the Properties Editor:&lt;/p>
+&lt;pre tabindex="0">&lt;code>Render &amp;gt; Film &amp;gt; Transparent (check it)
+Output &amp;gt; Output &amp;gt; File Format &amp;gt; PNG
+Output &amp;gt; Output &amp;gt; Color &amp;gt; RGBA
+&lt;/code>&lt;/pre>&lt;p>For a small renders directly to video files (bad practice) I used the following settings:&lt;/p></description></item><item><title>This website: thoughts and history</title><link>https://ghbrown.net/posts/this_website/</link><pubDate>Mon, 15 Jan 2024 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/this_website/</guid><description>&lt;h1 id="this-website">This website&lt;/h1>
+&lt;hr>
+&lt;h2 id="history">History&lt;/h2>
+&lt;ul>
+&lt;li>2020-04: website started as a pandemic project after learning that GitHub offered free hosting, written in plain HTML, CSS, and Javascript (a great learning experience)&lt;/li>
+&lt;li>2022-10: website transitioned to 
+
+
+
+
+&lt;a href="https://gohugo.io/" class="mainlink" target="_blank">&lt;span class="themecolor">Hugo&lt;/span>&lt;/a>, a massive boon to maintainability and flexibility&lt;/li>
+&lt;li>2023-01: bought and used the ghbrown.net domain name&lt;/li>
+&lt;li>2024-01: transitioned to using the &lt;a href="https://github.com/joeroe/risotto" target="_blank">risotto&lt;/a>
+ theme, with a moderate amount of modifications&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="fun-facts">Fun Facts&lt;/h2>
+&lt;ul>
+&lt;li>I was originally inspired to build my own website by 
+
+
+
+
+&lt;a href="https://mjzahr.github.io/" class="mainlink" target="_blank">&lt;span class="themecolor">Matthew Zahr&lt;/span>&lt;/a>, who was my instructor for Finite Element Analysis during my senior year of college.&lt;/li>
+&lt;/ul>
+&lt;hr></description></item><item><title>Prime number detector</title><link>https://ghbrown.net/posts/prime_detector/</link><pubDate>Sat, 25 Apr 2020 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/prime_detector/</guid><description>&lt;h1 id="prime-number-detector">Prime Number Detector&lt;/h1>
+&lt;hr>
+&lt;p>Input a number to determine if it is prime.&lt;br>&lt;/p>
+&lt;form id="primeform" onsubmit="determineIfPrime(); return false">
+ &lt;input type="text" id="primeinput">
+ &lt;input type="submit" class="button" id="primebutton" value="RUN">
+&lt;/form>
+&lt;p class="themecolor" id="primeresponse">&lt;/p>
+&lt;p>The maximum input value before truncation error is 9007199254740991 (~9e15, nine and fifteen zeros!),
+which is not prime but has a relatively large least factor.
+This is because JavaScript uses double-precision floating-point numbers according to IEEE 754, and this number is the largest this format supports.&lt;/p>
+&lt;hr>
+&lt;h2 id="notes">Notes&lt;/h2>
+&lt;p>I used this little project to get my feet wet with Javascript when I was building my website from raw HTML and CSS.
+I also enjoyed implementing some tricks to accelerate the solution, the main one being the square root bound on the factors.&lt;/p></description></item></channel></rss>

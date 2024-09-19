@@ -1,22 +1,289 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Gabriel H. Brown</title><link>https://ghbrown.net/posts/</link><description>Recent content in Posts on Gabriel H. Brown</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright [Gabriel H. Brown](/).</copyright><lastBuildDate>Mon, 29 Jul 2024 02:19:38 -0600</lastBuildDate><atom:link href="https://ghbrown.net/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Orthogonal projection onto an affine subspace</title><link>https://ghbrown.net/posts/affine_projection/</link><pubDate>Mon, 29 Jul 2024 02:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/affine_projection/</guid><description>Orthogonal projection onto an affine subspace Projection onto a vector subspace is a common task in linear algebra courses. Affine subspaces, sets of the form $ \{ \mathbf{v} \in \mathbb{R}^m : \exists \mathbf{c} : \mathbf{v} = \mathbf{Ac} &amp;#43; \mathbf{b} \} $ for fixed matrix $\mathbf{A}$ and vector $\mathbf{b}$, also have well-defined projections. However, it&amp;rsquo;s difficult to find a direct proof for the expression giving the projection of a point onto an affine space: example wordy proof 1 , example wordy proof 2 .</description></item><item><title>Transparent videos from Blender to the web</title><link>https://ghbrown.net/posts/alpha_video/</link><pubDate>Sat, 13 Jul 2024 12:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/alpha_video/</guid><description>Get transparent videos out of Blender and onto the web A quick guide to get your cool render out of Blender and onto the web, with transparency/alpha!
-Out of Blender For renders to intermediate frame images you can use the following Blender settings in the Properties Editor:
-Render &amp;gt; Film &amp;gt; Transparent (check it) Output &amp;gt; Output &amp;gt; File Format &amp;gt; PNG Output &amp;gt; Output &amp;gt; Color &amp;gt; RGBA For a small renders directly to video files (bad practice) I used the following settings:</description></item><item><title>Behavior of conjugate gradient residual</title><link>https://ghbrown.net/posts/cg_residual/</link><pubDate>Sat, 15 Jun 2024 02:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/cg_residual/</guid><description>Behavior of the conjugate gradient residual An often stressed property of the conjugate gradient method (CG) for solving linear systems is the monotonic decrease in the A-norm of the error. When CG is applied in practice the exact solution is unknown and the error cannot be computed or tracked, so the residual or relative residual is used instead.
-However, the kinds of guarantees available for residuals are slightly weaker and more involved than is often presented, due to complications introduced by different norms and arithmetic precisions.</description></item><item><title>Finding a rank 1 matrix orthogonal to another matrix</title><link>https://ghbrown.net/posts/orthogonal_rank_1/</link><pubDate>Sat, 06 Apr 2024 10:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/orthogonal_rank_1/</guid><description>Finding a rank 1 matrix orthogonal to another matrix Recently I needed to solve the following problem: given a square matrix $\mathbf{A}$ find another square matrix $\mathbf{B}$ satisfying $\text{vec}(\mathbf{A})^T \text{vec}(\mathbf{B}) = 0$. This is the sense in which I use the word orthogonal here, rather than the columns of $\mathbf{A}$ or $\mathbf{B}$ being orthogonal. Anyway, it&amp;rsquo;s impossible for the columns of a rank 1 matrix to be orthogonal.
-If you are like me this problem sounds: easy at first glance, then quite difficult, then easy again.</description></item><item><title>This website: thoughts and history</title><link>https://ghbrown.net/posts/this_website/</link><pubDate>Mon, 15 Jan 2024 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/this_website/</guid><description>This website History 2020-04: website started as a pandemic project after learning that GitHub offered free hosting, written in plain HTML, CSS, and Javascript (a great learning experience) 2022-10: website transitioned to Hugo, a massive boon to maintainability and flexibility 2023-01: bought and used the ghbrown.net domain name 2024-01: transitioned to using the risotto theme, with a moderate amount of modifications Fun Facts I was originally inspired to build my own website by Matthew Zahr, who was my instructor for Finite Element Analysis during my senior year of college.</description></item><item><title>How many parentheses can Python handle?</title><link>https://ghbrown.net/posts/python_parentheses_depth/</link><pubDate>Tue, 10 Oct 2023 23:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/python_parentheses_depth/</guid><description>How many parentheses can Python handle? During my office hours today I was asked whether &amp;ldquo;an extra pair of parentheses&amp;rdquo; would do any harm to the execution of a Python program. In the case at hand the answer was &amp;ldquo;no&amp;rdquo;, but I suspected there might be actually be a limit on nested parentheses depth.
-Using the following Python script (which leverages the ability of the interpreter to evaluate expressions at runtime via eval), we can determine the answer is 200.</description></item><item><title>A sufficient condition for non-negative solutions to non-negative linear systems</title><link>https://ghbrown.net/posts/sufficient_nonnegative/</link><pubDate>Fri, 29 Sep 2023 19:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/sufficient_nonnegative/</guid><description>A sufficient condition for non-negative solutions to non-negative linear systems Here we are concerned with &amp;ldquo;non-negative&amp;rdquo; linear systems, that is, linear systems where $\mathbf{A}, \mathbf{b} \geq \mathbf{0}$ (elementwise). In particular, we give a sufficient condition for non-negativity of the solution $\mathbf{x}$ to $\mathbf{Ax} = \mathbf{b}$.
-First, we discuss an intuition for the result. The columns of $\mathbf{A}$ form a linear cone; if a vector $\mathbf{c}$ (a right hand side to the linear system) is known to lie in the cone, then one can find a &amp;ldquo;subcone&amp;rdquo; containing $\mathbf{c}$.</description></item><item><title>The space of matrices where LU requires pivoting is almost full-dimensional</title><link>https://ghbrown.net/posts/dim_lu_pivot_needed/</link><pubDate>Tue, 06 Jun 2023 19:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/dim_lu_pivot_needed/</guid><description>The space of matrices requiring pivoted LU factorization is almost full-dimensional The pivoted LU factorization of square matrices is the key routine for the direct solution of linear systems. All square, invertible matrices have a pivoted LU factorization of the form $\mathbf{PA} = \mathbf{LU}$, where $\mathbf{P}$ is a permutation matrix and $\mathbf{L}, \; \mathbf{U}$ are respectively upper and lower triangular.
-However, not all square, invertible matrices have a factorization of the form $\mathbf{A} = \mathbf{LU}$ (an LU factorization).</description></item><item><title>LLVM will win the Turing Award</title><link>https://ghbrown.net/posts/llvm_turing/</link><pubDate>Thu, 22 Dec 2022 23:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/llvm_turing/</guid><description>LLVM will win the Turing Award (prediction) The LLVM Project, which focuses on &amp;ldquo;modular and reusable compiler technologies&amp;rdquo; has had an enormous impact on the field of compilers, and by extension almost every kind of &amp;ldquo;applied&amp;rdquo; computer science.
-Though compilers (at the time of writing) is not my area of expertise, LLVM&amp;rsquo;s impact on my own field of &amp;ldquo;numerical computing&amp;rdquo; is undeniable. Examples include:
-the compiler for the Chapel programming language the Flang and LFortran compilers for the Fortran programming language Intel&amp;rsquo;s IFX compiler for the Fortran programming language (it was the discovery that IFX was using LLVM that that spurred me to make this post) (Intel URLs are famous for breaking, apologies in advance) the compiler for the Julia programming language Needless to say, I strongly believe that one or both of Chris Lattner and Vikram Adve (the original authors of LLVM) will win the Turing Award for their work on LLVM.</description></item><item><title>Expected profit for a 50/50 Raffle</title><link>https://ghbrown.net/posts/50_50_raffle/</link><pubDate>Mon, 19 Dec 2022 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/50_50_raffle/</guid><description>Expected profit for a 50/50 Raffle An auto race I recently attended also ran a 50/50 raffle, which is where a single winner receives 50% of the money collected from ticket sales.
-Just like any form of gambling, it&amp;rsquo;s almost certainly a bad idea on average, but I wasn&amp;rsquo;t able to figure out precisely how bad without a pencil and a bit of scratch paper (which I got the next morning).</description></item><item><title>Linear Algebra Pronunciation Guide</title><link>https://ghbrown.net/posts/linear_algebra_pronunciation/</link><pubDate>Thu, 17 Nov 2022 18:00:23 -0600</pubDate><guid>https://ghbrown.net/posts/linear_algebra_pronunciation/</guid><description>Linear Algebra Pronunciation Guide Like all fields of mathematics, linear algebra has many prominent figures whose names are non-trivial to pronounce in English (the lingua franca of science and mathematics).
-This is further complicated by numerical linear algebra libraries which have inconsistent and unintuitive pronunciations.
-Cholesky pronounced: ko - less - key (somewhat throaty ko, like kho) often mispronounced: chuh - less - key notes: this is somewhat muddled by that fact that Choleskly was paternally Polish and maternally French, and grew up in France, but I side with the Polish pronunciation (see references) Schur pronounced: shore often mispronounced: sherr (rhymes with her) Krylov pronounced: cree - lav, cree - luvf often mispronounced: cry - lawv BLAS pronounced: blawz (rhymes with paws), bloss (rhymes with gloss, perhaps slightly less common) often mispronounced: blass (rhymes with class) LAPACK pronounced: L - A - pack (syllabic rhyme with bell - may - pack) often mispronounced: luh - pack SCALAPACK pronounced: skay - luh - pack (syllabic rhyme with may - uh - pack) often mispronounced: anything else PETSC pronounced: pet - see often mispronounced: anything else References: Cholesky, BLAS and LAPACK, PETSc</description></item><item><title>Timeline</title><link>https://ghbrown.net/posts/posts_timeline/</link><pubDate>Wed, 16 Nov 2022 22:48:16 -0600</pubDate><guid>https://ghbrown.net/posts/posts_timeline/</guid><description>Post Timeline All posts; ordered newest first.</description></item><item><title>Interior eigenvectors of symmetric matrices are saddle points</title><link>https://ghbrown.net/posts/symmetric_saddle_points/</link><pubDate>Fri, 29 Jul 2022 22:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/symmetric_saddle_points/</guid><description>Interior eigenvectors of symmetric matrices are saddle points Eigenpairs of symmetric matrices are intimately related to optimization and critical points, with the eigenvectors being critical points of the Rayleigh quotient. In optimization settings, the type of critical point (minimum, maximum, saddle point) is an important feature in designing and understanding algorithms.
-This write up characterizes the nature of all critical points (eigenvectors), with the main result being that all interior eigenvectors are saddle points.</description></item><item><title>Relationship between power iteration and gradient descent</title><link>https://ghbrown.net/posts/pow_iter_grad_desc/</link><pubDate>Sun, 29 May 2022 22:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/pow_iter_grad_desc/</guid><description>The relationship between power iteration and gradient descent Although the majority of successful algorithms for the symmetric tensor eigenvalue problem use optimization techniques directly, there are a few notable algorithms that do not appear to be based on optimization. Rather, they more closely resemble power iteration and shifted power iteration.
-In this write up we show that this is a false dichotomy, and that these methods are equivalent to very simple and classical optimization methods.</description></item><item><title>The theoretical minimum time for competition speed climbing</title><link>https://ghbrown.net/posts/speed_climbing/</link><pubDate>Sat, 05 Jun 2021 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/speed_climbing/</guid><description>The theoretical minimum time for competition speed climbing After watching a short documentary on the state and progress of competition speed climbing, with times going ever lower and quotes like &amp;ldquo;we never though X time was possible, and now were not sure how low times will go&amp;rdquo; I was inspired to provide an answer in the form of a lower bound.
-In this write up simple physics and physiological estimates are used calculate this lower bound.</description></item><item><title>Traditional Chain Pizza Review</title><link>https://ghbrown.net/posts/traditional_chain/</link><pubDate>Mon, 15 Feb 2021 18:55:13 -0500</pubDate><guid>https://ghbrown.net/posts/traditional_chain/</guid><description>Hand Tossed / Traditional Pizza Review (Chain) A review of traditional style pizzas from national chains (specifically those in the Urbana, IL area) including: Domino&amp;rsquo;s, Jet&amp;rsquo;s, Little Ceasars, Papa John&amp;rsquo;s, and Pizza Hut.
-Domino&amp;rsquo;s standard/traditional pizza (top left) has a slightly doughy base with a golden, crisp bottom. At the crust, the dough is crisp on the outside while remaining soft and well inflated on the inside (and covered with a tasty garlic butter).</description></item><item><title>Deep Dish Chain Pizza Review</title><link>https://ghbrown.net/posts/deep_dish_chain/</link><pubDate>Fri, 30 Oct 2020 18:54:34 -0500</pubDate><guid>https://ghbrown.net/posts/deep_dish_chain/</guid><description>Deep Dish / Pan Pizza Review (Chain) A review of deep dish and pan style pizzas from national chains (specifically those in the Urbana, IL area) including: Domino&amp;rsquo;s, Jet&amp;rsquo;s, Little Ceasars, Papa John&amp;rsquo;s and Pizza Hut.
-Domino&amp;rsquo;s pan pizza (top left) is appropriately doughy with a crisp bottom and a crust that was almost indiscernible from the rest of the pizza. However, the bread/dough was alarmingly sweet as compared to the typical pizza experience.</description></item><item><title>An alternative method to compute Gauss's sum</title><link>https://ghbrown.net/posts/gauss_sum/</link><pubDate>Mon, 19 Oct 2020 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/gauss_sum/</guid><description>An alternative method to compute Guass&amp;rsquo;s sum (from 1 to n) Gauss famously (and possibly fictionally) computed the sum between 1 and 100 at a young age. His original logic relies on symmetry and geometrical thought, especially triangles.
-In this write up we provide an alternative derivation of the same result, but using a technique more reminiscent of strategies for solving ordinary differential equations.</description></item><item><title>Uncle Gimpy's Intellectifier</title><link>https://ghbrown.net/posts/uncle_gimpy/</link><pubDate>Wed, 13 May 2020 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/uncle_gimpy/</guid><description>Uncle Gimpy&amp;rsquo;s Intellectifier An old reference sheet with simple formulae for length, area, volume as well as useful conversions. It&amp;rsquo;s called Uncle Gimpy&amp;rsquo;s Intellectifier, and is meant to be folded up and kept in a wallet or purse. This is certainly from a time before internet enabled personal devices (probably at least the 1980s), but these sorts of reference sheets are still just as useful today, if not less common.</description></item><item><title>Prime number detector</title><link>https://ghbrown.net/posts/prime_detector/</link><pubDate>Sat, 25 Apr 2020 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/prime_detector/</guid><description>Prime Number Detector Input a number to determine if it is prime.
-The maximum input value before truncation error is 9007199254740991 (~9e15, nine and fifteen zeros!), which is not prime but has a relatively large least factor. This is because JavaScript uses double-precision floating-point numbers according to IEEE 754, and this number is the largest this format supports.
-Notes I used this little project to get my feet wet with Javascript when I was building my website from raw HTML and CSS.</description></item><item><title>Re() and Im() as complex numbers</title><link>https://ghbrown.net/posts/re_im_as_numbers/</link><pubDate>Fri, 19 Jul 2019 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/re_im_as_numbers/</guid><description>Re() and Im() as complex numbers A summer day in 2019 reading Complex Variables and Applications by Churchill inspired what I now realize is almost certainly a useless (but perhaps slightly amusing) result. Enjoy.</description></item><item><title>Calculating the number of atoms in the Sun</title><link>https://ghbrown.net/posts/sun_atoms/</link><pubDate>Thu, 19 Apr 2018 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/sun_atoms/</guid><description>Calculating the number of atoms in the Sun It is said Freeman Dyson attempted to complete this task at the age of 4 or 5.
-In this write up we complete the calculation and simultaneously present the necessary basics of chemistry and measurement.</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Gabriel H. Brown</title><link>https://ghbrown.net/posts/</link><description>Recent content in Posts on Gabriel H. Brown</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright [Gabriel H. Brown](/).</copyright><lastBuildDate>Mon, 29 Jul 2024 02:19:38 -0600</lastBuildDate><atom:link href="https://ghbrown.net/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Orthogonal projection onto an affine subspace</title><link>https://ghbrown.net/posts/affine_projection/</link><pubDate>Mon, 29 Jul 2024 02:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/affine_projection/</guid><description>&lt;h1 id="orthogonal-projection-onto-an-affine-subspace">Orthogonal projection onto an affine subspace&lt;/h1>
+&lt;hr>
+&lt;p>Projection onto a vector subspace is a common task in linear algebra courses.
+Affine subspaces, sets of the form
+$
+\{ \mathbf{v} \in \mathbb{R}^m : \exists \mathbf{c} :
+ \mathbf{v} = \mathbf{Ac} &amp;#43; \mathbf{b} \}
+$
+for fixed matrix $\mathbf{A}$ and vector $\mathbf{b}$,
+also have well-defined projections.
+However, it&amp;rsquo;s difficult to find a direct proof for the expression giving the projection of a point onto an affine space:
+&lt;a href="https://joeyonng.github.io/joeyonng-notebook/Linear%20Algebra/11_Orthogonal_and_Affine_Projection.html" target="_blank">example wordy proof 1&lt;/a>
+,
+&lt;a href="https://math.stackexchange.com/questions/3989922/orthogonal-projection-onto-affine-subspaces-formula" target="_blank">example wordy proof 2&lt;/a>
+.&lt;/p></description></item><item><title>Transparent videos from Blender to the web</title><link>https://ghbrown.net/posts/alpha_video/</link><pubDate>Sat, 13 Jul 2024 12:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/alpha_video/</guid><description>&lt;h1 id="get-transparent-videos-out-of-blender-and-onto-the-web">Get transparent videos out of Blender and onto the web&lt;/h1>
+&lt;p>A quick guide to get your cool render out of Blender and onto the web, with transparency/alpha!&lt;/p>
+&lt;hr>
+&lt;h2 id="out-of-blenderhttpswwwblenderorg">Out of &lt;a href="https://www.blender.org/" target="_blank">Blender&lt;/a>
+&lt;/h2>
+&lt;p>For renders to intermediate frame images you can use the following Blender settings in the Properties Editor:&lt;/p>
+&lt;pre tabindex="0">&lt;code>Render &amp;gt; Film &amp;gt; Transparent (check it)
+Output &amp;gt; Output &amp;gt; File Format &amp;gt; PNG
+Output &amp;gt; Output &amp;gt; Color &amp;gt; RGBA
+&lt;/code>&lt;/pre>&lt;p>For a small renders directly to video files (bad practice) I used the following settings:&lt;/p></description></item><item><title>Behavior of conjugate gradient residual</title><link>https://ghbrown.net/posts/cg_residual/</link><pubDate>Sat, 15 Jun 2024 02:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/cg_residual/</guid><description>&lt;h1 id="behavior-of-the-conjugate-gradient-residual">Behavior of the conjugate gradient residual&lt;/h1>
+&lt;hr>
+&lt;p>An often stressed property of the conjugate gradient method (CG) for solving linear systems is the monotonic decrease in the A-norm of the error.
+When CG is applied in practice the exact solution is unknown and the error cannot be computed or tracked, so the residual or relative residual is used instead.&lt;/p>
+&lt;p>However, the kinds of guarantees available for residuals are slightly weaker and more involved than is often presented in courses, due to complications introduced by different norms and arithmetic precisions.
+Per 
+
+
+
+
+&lt;a href="https://www.scirp.org/html/2644.html" class="mainlink" target="_blank">&lt;span class="themecolor">an article by Washizawa&lt;/span>&lt;/a> we have&lt;/p></description></item><item><title>Finding a rank 1 matrix orthogonal to another matrix</title><link>https://ghbrown.net/posts/orthogonal_rank_1/</link><pubDate>Sat, 06 Apr 2024 10:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/orthogonal_rank_1/</guid><description>&lt;h1 id="finding-a-rank-1-matrix-orthogonal-to-another-matrix">Finding a rank 1 matrix orthogonal to another matrix&lt;/h1>
+&lt;hr>
+&lt;p>Recently I needed to solve the following problem: given a square matrix $\mathbf{A}$ find another square matrix $\mathbf{B}$ satisfying
+$\text{vec}(\mathbf{A})^T \text{vec}(\mathbf{B}) = 0$.
+This is the sense in which I use the word orthogonal here, rather than the columns of $\mathbf{A}$ or $\mathbf{B}$ being orthogonal.
+Anyway, it&amp;rsquo;s impossible for the columns of a rank 1 matrix to be orthogonal.&lt;/p>
+&lt;p>If you are like me this problem sounds: easy at first glance, then quite difficult, then easy again.
+Here is my solution.&lt;/p></description></item><item><title>This website: thoughts and history</title><link>https://ghbrown.net/posts/this_website/</link><pubDate>Mon, 15 Jan 2024 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/this_website/</guid><description>&lt;h1 id="this-website">This website&lt;/h1>
+&lt;hr>
+&lt;h2 id="history">History&lt;/h2>
+&lt;ul>
+&lt;li>2020-04: website started as a pandemic project after learning that GitHub offered free hosting, written in plain HTML, CSS, and Javascript (a great learning experience)&lt;/li>
+&lt;li>2022-10: website transitioned to 
+
+
+
+
+&lt;a href="https://gohugo.io/" class="mainlink" target="_blank">&lt;span class="themecolor">Hugo&lt;/span>&lt;/a>, a massive boon to maintainability and flexibility&lt;/li>
+&lt;li>2023-01: bought and used the ghbrown.net domain name&lt;/li>
+&lt;li>2024-01: transitioned to using the &lt;a href="https://github.com/joeroe/risotto" target="_blank">risotto&lt;/a>
+ theme, with a moderate amount of modifications&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="fun-facts">Fun Facts&lt;/h2>
+&lt;ul>
+&lt;li>I was originally inspired to build my own website by 
+
+
+
+
+&lt;a href="https://mjzahr.github.io/" class="mainlink" target="_blank">&lt;span class="themecolor">Matthew Zahr&lt;/span>&lt;/a>, who was my instructor for Finite Element Analysis during my senior year of college.&lt;/li>
+&lt;/ul>
+&lt;hr></description></item><item><title>How many parentheses can Python handle?</title><link>https://ghbrown.net/posts/python_parentheses_depth/</link><pubDate>Tue, 10 Oct 2023 23:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/python_parentheses_depth/</guid><description>&lt;h1 id="how-many-parentheses-can-python-handle">How many parentheses can Python handle?&lt;/h1>
+&lt;hr>
+&lt;p>During my office hours today I was asked whether &amp;ldquo;an extra pair of parentheses&amp;rdquo; would do any harm to the execution of a Python program.
+In the case at hand the answer was &amp;ldquo;no&amp;rdquo;, but I suspected there might be actually be a limit on nested parentheses depth.&lt;/p>
+&lt;p>Using the following Python script (which leverages the ability of the interpreter to evaluate expressions at runtime via &lt;code>eval&lt;/code>), we can determine the answer is &lt;span class='themecolor'>200&lt;/span>.
+For any greater depth one receives a &lt;code>SyntaxError: too many nested parentheses&lt;/code>.&lt;/p></description></item><item><title>A sufficient condition for non-negative solutions to non-negative linear systems</title><link>https://ghbrown.net/posts/sufficient_nonnegative/</link><pubDate>Fri, 29 Sep 2023 19:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/sufficient_nonnegative/</guid><description>&lt;h1 id="a-sufficient-condition-for-non-negative-solutions-to-non-negative-linear-systems">A sufficient condition for non-negative solutions to non-negative linear systems&lt;/h1>
+&lt;hr>
+&lt;p>Here we are concerned with &amp;ldquo;non-negative&amp;rdquo; linear systems, that is, linear systems where $\mathbf{A}, \mathbf{b} \geq \mathbf{0}$ (elementwise).
+In particular, we give a sufficient condition for non-negativity of the solution $\mathbf{x}$ to $\mathbf{Ax} = \mathbf{b}$.&lt;/p>
+&lt;p>First, we discuss an intuition for the result.
+The columns of $\mathbf{A}$ form a linear cone; if a vector $\mathbf{c}$ (a right hand side to the linear system) is known to lie in the cone, then one can find a &amp;ldquo;subcone&amp;rdquo; containing $\mathbf{c}$.
+The sufficient condition essentially upper bounds the &amp;ldquo;radius&amp;rdquo; of this subcone.&lt;/p></description></item><item><title>The space of matrices where LU requires pivoting is almost full-dimensional</title><link>https://ghbrown.net/posts/dim_lu_pivot_needed/</link><pubDate>Tue, 06 Jun 2023 19:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/dim_lu_pivot_needed/</guid><description>&lt;h1 id="the-space-of-matrices-requiring-pivoted-lu-factorization-is-almost-full-dimensional">The space of matrices requiring pivoted LU factorization is almost full-dimensional&lt;/h1>
+&lt;hr>
+&lt;p>The pivoted LU factorization of square matrices is the key routine for the direct solution of linear systems.
+All square, invertible matrices have a pivoted LU factorization of the form $\mathbf{PA} = \mathbf{LU}$, where $\mathbf{P}$ is a permutation matrix and $\mathbf{L}, \; \mathbf{U}$ are respectively upper and lower triangular.&lt;/p>
+&lt;p>However, not all square, invertible matrices have a factorization of the form $\mathbf{A} = \mathbf{LU}$ (an LU factorization).
+For example, consider the invertible matrix&lt;/p></description></item><item><title>LLVM will win the Turing Award</title><link>https://ghbrown.net/posts/llvm_turing/</link><pubDate>Thu, 22 Dec 2022 23:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/llvm_turing/</guid><description>&lt;h1 id="llvm-will-win-the-turing-award-prediction">LLVM will win the Turing Award (prediction)&lt;/h1>
+&lt;hr>
+&lt;p>The 
+
+
+
+
+&lt;a href="https://llvm.org" class="mainlink" target="_blank">&lt;span class="themecolor">LLVM Project&lt;/span>&lt;/a>, which focuses on &amp;ldquo;modular and reusable compiler technologies&amp;rdquo; has had an enormous impact on the field of compilers, and by extension almost every kind of &amp;ldquo;applied&amp;rdquo; computer science.&lt;/p>
+&lt;p>Though compilers (at the time of writing) is not my area of expertise, LLVM&amp;rsquo;s impact on my own field of &amp;ldquo;numerical computing&amp;rdquo; is undeniable.
+Examples include:&lt;/p>
+&lt;ul>
+&lt;li>the compiler for the 
+
+
+
+
+&lt;a href="https://chapel-lang.org" class="mainlink" target="_blank">&lt;span class="themecolor">Chapel&lt;/span>&lt;/a> programming language&lt;/li>
+&lt;li>the 
+
+
+
+
+&lt;a href="https://flang.llvm.org/docs/" class="mainlink" target="_blank">&lt;span class="themecolor">Flang&lt;/span>&lt;/a> and 
+
+
+
+
+&lt;a href="https://lfortran.org" class="mainlink" target="_blank">&lt;span class="themecolor">LFortran&lt;/span>&lt;/a> compilers for the Fortran programming language&lt;/li>
+&lt;li>Intel&amp;rsquo;s 
+
+
+
+
+&lt;a href="https://community.intel.com/t5/Intel-Fortran-Compiler/The-Next-Chapter-for-the-Intel-Fortran-Compiler-2023/td-p/1440619" class="mainlink" target="_blank">&lt;span class="themecolor">IFX&lt;/span>&lt;/a> compiler for the Fortran programming language (it was the discovery that IFX was using LLVM that that spurred me to make this post) (Intel URLs are famous for breaking, apologies in advance)&lt;/li>
+&lt;li>the compiler for the 
+
+
+
+
+&lt;a href="https://julialang.org" class="mainlink" target="_blank">&lt;span class="themecolor">Julia&lt;/span>&lt;/a> programming language&lt;/li>
+&lt;/ul>
+&lt;p>Needless to say, I strongly believe that one or both of 
+
+
+
+
+&lt;a href="https://nondot.org/~sabre/" class="mainlink" target="_blank">&lt;span class="themecolor">Chris Lattner&lt;/span>&lt;/a> and 
+
+
+
+
+&lt;a href="https://vikram.cs.illinois.edu" class="mainlink" target="_blank">&lt;span class="themecolor">Vikram Adve&lt;/span>&lt;/a> (the original authors of LLVM) will win the Turing Award for their work on LLVM.
+In the event that they do not win I will be extremely disappointed.&lt;/p></description></item><item><title>Expected profit for a 50/50 Raffle</title><link>https://ghbrown.net/posts/50_50_raffle/</link><pubDate>Mon, 19 Dec 2022 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/50_50_raffle/</guid><description>&lt;h1 id="expected-profit-for-a-5050-raffle">Expected profit for a 50/50 Raffle&lt;/h1>
+&lt;hr>
+&lt;p>An auto race I recently attended also ran a 50/50 raffle, which is where a single winner receives 50% of the money collected from ticket sales.&lt;/p>
+&lt;p>Just like any form of gambling, it&amp;rsquo;s almost certainly a bad idea on average, but I wasn&amp;rsquo;t able to figure out precisely how bad without a pencil and a bit of scratch paper (which I got the next morning).&lt;/p></description></item><item><title>Linear Algebra Pronunciation Guide</title><link>https://ghbrown.net/posts/linear_algebra_pronunciation/</link><pubDate>Thu, 17 Nov 2022 18:00:23 -0600</pubDate><guid>https://ghbrown.net/posts/linear_algebra_pronunciation/</guid><description>&lt;h1 id="linear-algebra-pronunciation-guide">Linear Algebra Pronunciation Guide&lt;/h1>
+&lt;hr>
+&lt;p>Like all fields of mathematics, linear algebra has many prominent figures whose names are non-trivial to pronounce in English (the &lt;em>lingua franca&lt;/em> of science and mathematics).&lt;/p>
+&lt;p>This is further complicated by numerical linear algebra libraries which have inconsistent and unintuitive pronunciations.&lt;/p>
+&lt;hr>
+&lt;h3 id="cholesky">Cholesky&lt;/h3>
+&lt;ul>
+&lt;li>pronounced: ko - less - key (somewhat throaty ko, like kho)&lt;/li>
+&lt;li>often mispronounced: chuh - less - key&lt;/li>
+&lt;li>notes: &lt;a href="https://en.wikipedia.org/wiki/Andr%C3%A9-Louis_Cholesky" target="_blank" class="mainlink">this is somewhat muddled by that fact that Choleskly was paternally Polish and maternally French, and grew up in France&lt;/a>, but I side with the Polish pronunciation (see references)&lt;/li>
+&lt;/ul>
+&lt;h3 id="schur">Schur&lt;/h3>
+&lt;ul>
+&lt;li>pronounced: shore&lt;/li>
+&lt;li>often mispronounced: sherr (rhymes with her)&lt;/li>
+&lt;/ul>
+&lt;h3 id="krylov">Krylov&lt;/h3>
+&lt;ul>
+&lt;li>pronounced: cree - lav, cree - luvf&lt;/li>
+&lt;li>often mispronounced: cry - lawv&lt;/li>
+&lt;/ul>
+&lt;h3 id="blas">BLAS&lt;/h3>
+&lt;ul>
+&lt;li>pronounced: blawz (rhymes with paws), bloss (rhymes with gloss, perhaps slightly less common)&lt;/li>
+&lt;li>often mispronounced: blass (rhymes with class)&lt;/li>
+&lt;/ul>
+&lt;h3 id="lapack">LAPACK&lt;/h3>
+&lt;ul>
+&lt;li>pronounced: L - A - pack (syllabic rhyme with bell - may - pack)&lt;/li>
+&lt;li>often mispronounced: luh - pack&lt;/li>
+&lt;/ul>
+&lt;h3 id="scalapack">SCALAPACK&lt;/h3>
+&lt;ul>
+&lt;li>pronounced: skay - luh - pack (syllabic rhyme with may - uh - pack)&lt;/li>
+&lt;li>often mispronounced: &lt;em>anything else&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;h3 id="petsc">PETSC&lt;/h3>
+&lt;ul>
+&lt;li>pronounced: pet - see&lt;/li>
+&lt;li>often mispronounced: &lt;em>anything else&lt;/em>&lt;/li>
+&lt;/ul>
+&lt;p>References:
+&lt;a href="https://news.ycombinator.com/item?id=15285881" target="_blank" class="mainlink">Cholesky&lt;/a>,
+&lt;a href="https://youtu.be/QlJ4rH6IGe0?t=115" target="_blank" class="mainlink">BLAS and LAPACK&lt;/a>,
+&lt;a href="https://petsc.org/release/" target="_blank" class="mainlink">PETSc&lt;/a>&lt;/p></description></item><item><title>Timeline</title><link>https://ghbrown.net/posts/posts_timeline/</link><pubDate>Wed, 16 Nov 2022 22:48:16 -0600</pubDate><guid>https://ghbrown.net/posts/posts_timeline/</guid><description>&lt;h1 id="post-timeline">Post Timeline&lt;/h1>
+&lt;hr>
+&lt;p>All posts; ordered newest first.&lt;/p></description></item><item><title>Interior eigenvectors of symmetric matrices are saddle points</title><link>https://ghbrown.net/posts/symmetric_saddle_points/</link><pubDate>Fri, 29 Jul 2022 22:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/symmetric_saddle_points/</guid><description>&lt;h1 id="interior-eigenvectors-of-symmetric-matrices-are-saddle-points">Interior eigenvectors of symmetric matrices are saddle points&lt;/h1>
+&lt;hr>
+&lt;p>Eigenpairs of symmetric matrices are intimately related to optimization and critical points, with the eigenvectors being critical points of the Rayleigh quotient.
+In optimization settings, the type of critical point (minimum, maximum, saddle point) is an important feature in designing and understanding algorithms.&lt;/p>
+&lt;p>
+
+
+
+
+&lt;a href="https://ghbrown.net/assets/posts/symmetric_saddle_points/Interior%20eigenvectors%20of%20symmetric%20matrices%20are%20saddle%20points%20-%20G.%20H.%20Brown%20and%20E.%20V.%20Solomonik.pdf" class="mainlink" target="_blank">&lt;span class="themecolor">This write up&lt;/span>&lt;/a> characterizes the nature of all critical points (eigenvectors), with the main result being that all interior eigenvectors are saddle points.&lt;/p></description></item><item><title>Relationship between power iteration and gradient descent</title><link>https://ghbrown.net/posts/pow_iter_grad_desc/</link><pubDate>Sun, 29 May 2022 22:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/pow_iter_grad_desc/</guid><description>&lt;h1 id="the-relationship-between-power-iteration-and-gradient-descent">The relationship between power iteration and gradient descent&lt;/h1>
+&lt;hr>
+&lt;p>Although the majority of successful algorithms for the symmetric tensor eigenvalue problem use optimization techniques directly, there are a few notable algorithms that do not appear to be based on optimization.
+Rather, they more closely resemble power iteration and shifted power iteration.&lt;/p>
+&lt;p>In 
+
+
+
+
+&lt;a href="https://ghbrown.net/assets/posts/pow_iter_grad_desc/The%20relationship%20between%20power%20iteration%20and%20gradient%20descent%20-%20G.%20H.%20Brown%20and%20E.%20V.%20Solomonik.pdf" class="mainlink" target="_blank">&lt;span class="themecolor">this write up&lt;/span>&lt;/a> we show that this is a false dichotomy, and that these methods are equivalent to very simple and classical optimization methods.
+This not only makes these methods easier to conceptualize, but aids in their characterization by permitting the use of established theory from optimization literature.&lt;/p></description></item><item><title>The theoretical minimum time for competition speed climbing</title><link>https://ghbrown.net/posts/speed_climbing/</link><pubDate>Sat, 05 Jun 2021 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/speed_climbing/</guid><description>&lt;h1 id="the-theoretical-minimum-time-for-competition-speed-climbing">The theoretical minimum time for competition speed climbing&lt;/h1>
+&lt;hr>
+&lt;p>After watching a short documentary on the state and progress of competition speed climbing, with times going ever lower and quotes like &amp;ldquo;we never though X time was possible, and now were not sure how low times will go&amp;rdquo; I was inspired to provide an answer in the form of a lower bound.&lt;/p>
+&lt;p>In 
+
+
+
+
+&lt;a href="https://ghbrown.net/assets/posts/speed_climbing/Theoretical%20minimum%20time%20for%20competition%20speed%20climbing%20-%20G.%20H.%20Brown.pdf" class="mainlink" target="_blank">&lt;span class="themecolor">this write up&lt;/span>&lt;/a> simple physics and physiological estimates are used calculate this lower bound.&lt;/p></description></item><item><title>Traditional Chain Pizza Review</title><link>https://ghbrown.net/posts/traditional_chain/</link><pubDate>Mon, 15 Feb 2021 18:55:13 -0500</pubDate><guid>https://ghbrown.net/posts/traditional_chain/</guid><description>&lt;h2 id="hand-tossed--traditional-pizza-review-chain">Hand Tossed / Traditional Pizza Review (Chain)&lt;/h2>
+&lt;p>A review of traditional style pizzas from national chains (specifically those in the Urbana, IL area) including: Domino&amp;rsquo;s, Jet&amp;rsquo;s, Little Ceasars, Papa John&amp;rsquo;s, and Pizza Hut.&lt;/p>
+&lt;table style="width:100%">
+ &lt;tr>
+ &lt;td>
+ &lt;img src="https://ghbrown.net/assets/posts/traditional_chain/TraditionalChain.jpg">
+ &lt;/td>
+ &lt;/tr>
+&lt;/table>
+&lt;p>&lt;span class="themecolor">Domino&amp;rsquo;s&lt;/span> standard/traditional pizza (top left) has a slightly doughy base with a golden, crisp bottom.
+At the crust, the dough is crisp on the outside while remaining soft and well inflated on the inside (and covered with a tasty garlic butter).
+sauce is well distributed and in a good ratio with the other components.
+Its flavor was light on spices and pleasantly acidic.
+propietary blend of cheeses (equal parts monterey jack, mozzarella, white cheddar) and the carefully metered cook time means the cheese is both flavorful (properly browned) and tender (not overcooked).
+This contributes to the overall &amp;ldquo;tender bite&amp;rdquo; of the pizza; that is to say the selected bite separates from the rest of the slice with no gnawing or vigorous head shaking.
+&lt;br>
+[COST: $8.49 after tax for 13 inch large.]&lt;/p></description></item><item><title>Deep Dish Chain Pizza Review</title><link>https://ghbrown.net/posts/deep_dish_chain/</link><pubDate>Fri, 30 Oct 2020 18:54:34 -0500</pubDate><guid>https://ghbrown.net/posts/deep_dish_chain/</guid><description>&lt;h2 id="deep-dish--pan-pizza-review-chain">Deep Dish / Pan Pizza Review (Chain)&lt;/h2>
+&lt;p>A review of deep dish and pan style pizzas from national chains (specifically those in the Urbana, IL area) including: Domino&amp;rsquo;s, Jet&amp;rsquo;s, Little Ceasars, Papa John&amp;rsquo;s and Pizza Hut.&lt;/p>
+&lt;table style="width:100%">
+ &lt;tr>
+ &lt;td>
+ &lt;img src="https://ghbrown.net/assets/posts/deep_dish_chain/DeepDishPanChain.jpg">
+ &lt;/td>
+ &lt;/tr>
+&lt;/table>
+&lt;p>&lt;span class="themecolor">Domino&amp;rsquo;s&lt;/span> pan pizza (top left) is appropriately doughy with a crisp bottom and a crust that was almost indiscernible from the rest of the pizza.
+However, the bread/dough was alarmingly sweet as compared to the typical pizza experience.
+The sauce was well distributed on the pizza, but the ratio of sauce to the rest of the pizza was too low.
+However, it is perhaps important to note that I err on the side of more sauce when in doubt.
+As for taste, the sauce was appropriately acidic, but perhaps under spiced.
+Moving up to cheese, it was applied in the correct proportion all the way to the edges, where crisped cheese bits could be had.
+Notably, Domino&amp;rsquo;s blend of mozzarella, monterey jack, and white cheddar provides a punchier flavor when compared to 100% mozzarella topped pizzas.
+&lt;br>
+[COST: $10.68 after tax for 14 inch large.]&lt;/p></description></item><item><title>An alternative method to compute Gauss's sum</title><link>https://ghbrown.net/posts/gauss_sum/</link><pubDate>Mon, 19 Oct 2020 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/gauss_sum/</guid><description>&lt;h1 id="an-alternative-method-to-compute-guasss-sum-from-1-to-n">An alternative method to compute Guass&amp;rsquo;s sum (from 1 to n)&lt;/h1>
+&lt;hr>
+&lt;p>Gauss famously (and possibly fictionally) computed the sum between 1 and 100 at a young age.
+His original logic relies on symmetry and geometrical thought, especially triangles.&lt;/p>
+&lt;p>In 
+
+
+
+
+&lt;a href="https://ghbrown.net/assets/posts/gauss_sum/An%20alternative%20method%20to%20compute%20Gauss%27s%20sum%20-%20G.%20H.%20Brown.pdf" class="mainlink" target="_blank">&lt;span class="themecolor">this write up&lt;/span>&lt;/a> we provide an alternative derivation of the same result, but using a technique more reminiscent of strategies for solving ordinary differential equations.&lt;/p>
+&lt;hr></description></item><item><title>Uncle Gimpy's Intellectifier</title><link>https://ghbrown.net/posts/uncle_gimpy/</link><pubDate>Wed, 13 May 2020 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/uncle_gimpy/</guid><description>&lt;h1 id="uncle-gimpys-intellectifier">Uncle Gimpy&amp;rsquo;s Intellectifier&lt;/h1>
+&lt;hr>
+&lt;p>An old reference sheet with simple formulae for length, area, volume as well as useful conversions.
+It&amp;rsquo;s called Uncle Gimpy&amp;rsquo;s Intellectifier, and is meant to be folded up and kept in a wallet or purse.
+This is certainly from a time before internet enabled personal devices (probably at least the 1980s), but these sorts of reference sheets are still just as useful today, if not less common.&lt;/p></description></item><item><title>Prime number detector</title><link>https://ghbrown.net/posts/prime_detector/</link><pubDate>Sat, 25 Apr 2020 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/prime_detector/</guid><description>&lt;h1 id="prime-number-detector">Prime Number Detector&lt;/h1>
+&lt;hr>
+&lt;p>Input a number to determine if it is prime.&lt;br>&lt;/p>
+&lt;form id="primeform" onsubmit="determineIfPrime(); return false">
+ &lt;input type="text" id="primeinput">
+ &lt;input type="submit" class="button" id="primebutton" value="RUN">
+&lt;/form>
+&lt;p class="themecolor" id="primeresponse">&lt;/p>
+&lt;p>The maximum input value before truncation error is 9007199254740991 (~9e15, nine and fifteen zeros!),
+which is not prime but has a relatively large least factor.
+This is because JavaScript uses double-precision floating-point numbers according to IEEE 754, and this number is the largest this format supports.&lt;/p>
+&lt;hr>
+&lt;h2 id="notes">Notes&lt;/h2>
+&lt;p>I used this little project to get my feet wet with Javascript when I was building my website from raw HTML and CSS.
+I also enjoyed implementing some tricks to accelerate the solution, the main one being the square root bound on the factors.&lt;/p></description></item><item><title>Re() and Im() as complex numbers</title><link>https://ghbrown.net/posts/re_im_as_numbers/</link><pubDate>Fri, 19 Jul 2019 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/re_im_as_numbers/</guid><description>&lt;h1 id="re-and-im-as-complex-numbers">Re() and Im() as complex numbers&lt;/h1>
+&lt;hr>
+&lt;p>A summer day in 2019 reading &lt;em>Complex Variables and Applications&lt;/em> by Churchill inspired what I now realize is almost certainly a useless (but perhaps slightly amusing) result.
+
+
+
+
+
+&lt;a href="https://ghbrown.net/assets/posts/re_im_as_numbers/Re%28%29%20and%20Im%28%29%20as%20complex%20numbers%20-%20G.%20H.%20Brown.pdf" class="mainlink" target="_blank">&lt;span class="themecolor">Enjoy&lt;/span>&lt;/a>.&lt;/p>
+&lt;hr></description></item><item><title>Calculating the number of atoms in the Sun</title><link>https://ghbrown.net/posts/sun_atoms/</link><pubDate>Thu, 19 Apr 2018 18:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/sun_atoms/</guid><description>&lt;h1 id="calculating-the-number-of-atoms-in-the-sun">Calculating the number of atoms in the Sun&lt;/h1>
+&lt;hr>
+&lt;p>It is said Freeman Dyson attempted to complete this task at the age of 4 or 5.&lt;/p>
+&lt;p>In 
+
+
+
+
+&lt;a href="https://ghbrown.net/assets/posts/sun_atoms/Calculating%20the%20number%20of%20atoms%20in%20the%20Sun%20-%20G.%20H.%20Brown.pdf" class="mainlink" target="_blank">&lt;span class="themecolor">this write up&lt;/span>&lt;/a> we complete the calculation and simultaneously present the necessary basics of chemistry and measurement.&lt;/p>
+&lt;hr></description></item></channel></rss>

@@ -1,15 +1,15 @@
 <!doctype html><html lang=en><head><title>Behavior of conjugate gradient residual | Gabriel H. Brown</title>
 <meta name=viewport content="width=device-width,initial-scale=1"><meta charset=UTF-8><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin=anonymous><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin=anonymous><link rel=stylesheet href=https://ghbrown.net/css/palettes/color-splotch.css><link rel=stylesheet href=https://ghbrown.net/css/risotto.css><link rel=stylesheet href=https://ghbrown.net/css/custom.css><script src=https://ghbrown.net/assets/quotes.js></script><script src=https://ghbrown.net/js/serve_quote.js></script><script type=text/javascript src=//code.jquery.com/jquery-latest.min.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css integrity=sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js integrity=sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4 crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js integrity=sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa crossorigin=anonymous onload=renderMathInElement(document.body)></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></head><body><div class=page><header class=page__header><nav class="page__nav main-nav"><ul><h1 class=page__logo><a href=https://ghbrown.net/ class=page__logo-inner>Gabriel H. Brown</a></h1><li class=main-nav__item><a class=nav-main-item href=https://ghbrown.net/ title>About Me</a></li><li class=main-nav__item><a class=nav-main-item href=https://ghbrown.net/topics/research title>Research</a></li><li class=main-nav__item><a class=nav-main-item href=https://ghbrown.net/topics/publications title>Publications</a></li><li class=main-nav__item><a class=nav-main-item href=https://ghbrown.net/topics/open_source title>Open Source</a></li><li class=main-nav__item><a class=nav-main-item href=https://ghbrown.net/topics/hobbies_and_interests title>Hobbies</a></li><li class=main-nav__item><a class=nav-main-item href=https://ghbrown.net/tags title>Post Topics</a></li></ul></nav></header><section class=page__body><div class=content__body><h1 id=behavior-of-the-conjugate-gradient-residual>Behavior of the conjugate gradient residual</h1><hr><p>An often stressed property of the conjugate gradient method (CG) for solving linear systems is the monotonic decrease in the A-norm of the error.
-When CG is applied in practice the exact solution is unknown and the error cannot be computed or tracked, so the residual or relative residual is used instead.</p><p>However, the kinds of guarantees available for residuals are slightly weaker and more involved than is often presented, due to complications introduced by different norms and arithmetic precisions.
+When CG is applied in practice the exact solution is unknown and the error cannot be computed or tracked, so the residual or relative residual is used instead.</p><p>However, the kinds of guarantees available for residuals are slightly weaker and more involved than is often presented in courses, due to complications introduced by different norms and arithmetic precisions.
 Per
 <a href=https://www.scirp.org/html/2644.html class=mainlink target=_blank><span class=themecolor>an article by Washizawa</span></a> we have</p><ul><li>monotonic decrease of error in the A-norm in finite precision and exact arithmetic
 \( \left( k > j \implies ||\mathbf{e}_k||_A \le ||\mathbf{e}_j||_A \right) \)</li><li>almost monotonic decrease of error in the 2-norm in exact arithmetic
 \( \left( \exist k > j : ||\mathbf{e}_k||_2 \le ||\mathbf{e}_j||_2 \right) \)</li><li>almost monotonic decrease of residual in the 2-norm in finite precision and exact arithmetic
-\( \left( \exist k > j : ||\mathbf{r}_k||_2 \le ||\mathbf{r}_j||_2 \right) \)</li></ul><p>However, while the errors decrease the 2-norm of the residual may provably do almost anything.
+\( \left( \exist k > j : ||\mathbf{r}_k||_2 \le ||\mathbf{r}_j||_2 \right) \)</li></ul><p>This final result means the 2-norm of the residual may provably do almost anything from one iteration to the next.
 An old but lesser known result from the original <a href=https://nvlpubs.nist.gov/nistpubs/jres/049/6/V49.N06.A08.pdf target=_blank>Hestenes and Stiefel paper</a>
 provides the precise form of the statement: for any (almost monotonically decreasing) sequence of residual 2-norms there exist $\mathbf{A}$ and $\mathbf{b}$ which realize this sequence.
-While there exist elaborately constructed systems which realize specific important patterns (see Section 2.7 of <a href=https://arxiv.org/pdf/2211.00953v3 target=_blank>this paper by Carson, Liesen, and Strakos</a>
-and the citations within) I find it hard to grasp what precisely is causing the residual 2-norm to increase.
+While there exist elaborately constructed systems realizing specific important patterns (see Section 2.7 of <a href=https://arxiv.org/pdf/2211.00953v3 target=_blank>this paper by Carson, Liesen, and Strakos</a>
+and the citations within) I find it hard to grasp why the residual 2-norm might increase.
 While grappling with this problem, I proved a small result that has helped me to understand just a bit better how the residual 2-norm can (at least temporarily) grow.
 <strong>The residual after one iteration of CG is larger than the initial residual if and only if</strong>
 $$
@@ -23,7 +23,7 @@ $$
 \frac{\mathbf{r}_0^T\mathbf{r}_0}{\mathbf{r}_0^T \mathbf{A} \mathbf{r}_0}
 \mathbf{A} \mathbf{r}_0 .
 $$
-Satisfying \\( ||\mathbf{r}_1||_2 \ge ||\mathbf{r}_0||_2 \\) is equivalent to
+Satisfying $||\mathbf{r}_1||_2 \ge ||\mathbf{r}_0||_2$ is equivalent to
 $$
 \left( \mathbf{r}_0 -
 \frac{\mathbf{r}_0^T\mathbf{r}_0}{\mathbf{r}_0^T \mathbf{A} \mathbf{r}_0}
@@ -44,26 +44,35 @@ $$
 ||\mathbf{r}_0||_2 ||\mathbf{A}\mathbf{r}_0||_2
 \ge
 \sqrt{2} \mathbf{r}_0^T \mathbf{A} \mathbf{r}_0.
-$$</details><p>Admittedly, this form of this statement does not immediately suggest a choice of $\mathbf{r}_0$ might result in an increase.
-However, let&rsquo;s try to understand one such case by picking apart the expression.</p><p>Since $\mathbf{A}$ is symmetric and positive definite, it may be written as $\mathbf{A} = \mathbf{Y}^T \mathbf{Y}$.
-Letting $\mathbf{v} = \mathbf{Y} \mathbf{r}_0$ and rewriting the expression we find
+$$</details><p>Admittedly, this form of this statement does not immediately suggest a choice of $\mathbf{r}_0$ which might result in an increase.
+It is also tempting to think that this inequality may never be satisfied: no eigenvectors of $\mathbf{A}$ satisfy the inequality, and attempting to lower bound $||\mathbf{Ar}_0||_2$ by
+$\lambda_{min} ||\mathbf{r}_0||_2$
+results in an inequality that is satisfied by no $\mathbf{r_0}$.
+Indeed, finding an $\mathbf{r}_0$ to satisfy this inequality in general is tricky, so we will give sufficient condition just demonstrate that is it possible to satisfy.</p><p>First note that the inequality is independent of the scale of $||\mathbf{r}_0||$, so we instead work with the form
+$||\mathbf{A} \hat{\mathbf{r}}_0||_2 \ge \sqrt{2} \hat{\mathbf{r}}_0^T \mathbf{A} \hat{\mathbf{r}}_0$, where $\hat{\mathbf{r}_0}$ is the direction of the residual.
+Using the eigenvalue decomposition of $\mathbf{A} = \mathbf{Q} \mathbf{\Lambda} \mathbf{Q}^T$, we can simplify the above inequality to the equivalent form
+$||\mathbf{\Lambda v}||_2 \geq \sqrt{2} \mathbf{v}^T \mathbf{\Lambda v}$, where
+$\mathbf{v} = \mathbf{Q}^T \hat{\mathbf{r}}_0$.</p><p>Since $\mathbf{v}$ has unit 2-norm, let us write it as a linear combination of the first and last elementary vector of $\mathbb{R}^m$,
+$\mathbf{v} = \epsilon \mathbf{e}_1 + \sqrt{1 - \epsilon^2} \mathbf{e}_m$;
+this is equivalent to letting $\hat{\mathbf{r}}_0$ be a similar linear combination of the eigenvectors of the largest and smallest magnitude eigenvalues respectively.
+Plugging in this choice of $\mathbf{v}$ the inequality becomes
 $$
-||\mathbf{r}_0||_2 ||\mathbf{X}^T \mathbf{v}||_2
-\ge
-\sqrt{2} ||\mathbf{v}||_2^2 .
+\epsilon^2 \lambda_1^2 + (1-\epsilon^2) \lambda_m^2
+\geq
+2 \left(\epsilon^2 \lambda_1 + (1-\epsilon^2) \lambda_m \right)^2
 $$
-Exploiting submultiplicativity of the norm on the left we find<p>$$
-||\mathbf{X}||_2 ||\mathbf{r}_0||_2
-\ge
-\sqrt{2} ||\mathbf{v}||_2
-=
-\sqrt{2} ||\mathbf{X} \mathbf{r}_0||_2 .
-$$</p>So, to realize an increasing residual 2-norm after 1 iteration it is sufficient to satisfy
-$||\mathbf{X}||_2 ||\mathbf{r}_0||_2 \ge \sqrt{2} ||\mathbf{X} \mathbf{r}_0||_2$.
-This can easily occur if $r_0$ is aligned with eigenvectors of $\mathbf{X}$ (equivalently $\mathbf{A}$) which have relatively small eigenvalues.
-Though in a very restricted case (the first iteration), I find this to be a digestible condition leading to a temporarily increasing 2-norm.</p><hr><h3 id=future-work-and-comments>Future work and comments</h3><p>Comment 1: I&rsquo;d like to read and understand the proof about realizing any residual 2-norm sequence.
+or, dividing both sides by $\lambda_m^2$
+$$
+\epsilon^2 t^2 + (1-\epsilon^2)
+\geq
+2 \left(\epsilon^2 t + (1-\epsilon^2)\right)^2
+$$
+where $t = \frac{\lambda_1}{\lambda_m}$.</p><p>If $t \geq 7$, one can verify that choosing $\epsilon = 0.5$ suffices.</p><p>So, to exhibit a system whose residual increases on the first iteration, it suffices for the matrix to satisfy
+$\frac{\lambda_1(\mathbf{A})}{\lambda_m(\mathbf{A})} \geq 7$
+and then choose the residual to be the following linear combination of eigenvectors
+$\mathbf{r}_0 = 0.5 \mathbf{v}_1 + \sqrt{0.75} \mathbf{v}_m$.</p><hr><h3 id=future-work-and-comments>Future work and comments</h3><p>Comment 1: I&rsquo;d like to read and understand the proof about realizing any residual 2-norm sequence.
 It&rsquo;s amazing that this result was already in the original CG paper.</p><p>Comment 2: A <a href=https://epubs.siam.org/doi/abs/10.1137/S0895479894275030 target=_blank>similar result about GMRES sequences</a>
 , but this time a whole paper has been dedicated to it.
-I am sure this is a more involved proof.</p><p>Comment 3: I think the Washizawa paper has some errors, see for example Equation 20, where it should be \( || \overline{\mathbf{r}_i} - \varepsilon_M(\mathbf{r}_i)|| \) (one less bar).</p><p>Comment 4: I&rsquo;d also like to discuss the common misconception about conjugate gradient and eigenvalue clusters brought up at 13:35 in
-<a href="https://www.youtube.com/watch?v=jpBzZP2f5Wk" class=mainlink target=_blank><span class=themecolor>this wonderful talk by Zdenek Strakos</span></a>.</p></div><footer class=content__footer></footer></section><section class=page__aside><div class=aside__about><div id=quote><h1>A fun quote</h1></div><script>newQuote()</script></div><hr><div class=aside__content><p>posted 2024-06-15</p></div></section><footer class=page__footer><p class=copyright>Copyright <a href=/>Gabriel H. Brown</a>
+I am sure this is a more involved proof.</p><p>Comment 3: I think the Washizawa paper has some errors, see for example Equation 20, where it should be \( || \overline{\mathbf{r}_i} - \varepsilon_M(\mathbf{r}_i)|| \) (one less bar).</p><p>Comment 4: I&rsquo;d also like to discuss the common misconception about conjugate gradient and eigenvalue clusters brought up at 13:35 in <a href="https://www.youtube.com/watch?v=jpBzZP2f5Wk" target=_blank>this wonderful talk by Zdenek Strakos</a>
+.</p></div><footer class=content__footer></footer></section><section class=page__aside><div class=aside__about><div id=quote><h1>A fun quote</h1></div><script>newQuote()</script></div><hr><div class=aside__content><p>posted 2024-06-15</p></div></section><footer class=page__footer><p class=copyright>Copyright <a href=/>Gabriel H. Brown</a>
 .</p></footer></div></body></html>
