@@ -43,29 +43,21 @@ Ask me about the time I wrote an ASCII shader in less than 600 characters, it&am
 &lt;p>Here are some projects I&amp;rsquo;ve contributed to:&lt;/p>
 &lt;h3 id="chapel">Chapel&lt;/h3>
 &lt;ul>
-&lt;li>The &lt;a href="https://chapel-lang.org/" target="_blank">Chapel programming language&lt;/a>
- is designed for parallel computing at scale.
-I &lt;a href="https://aur.archlinux.org/packages/chapel" target="_blank">package&lt;/a>
- the compiler for Arch Linux, and have contributed multiple routines to built in modules like &lt;code>LinearAlgebra.chpl&lt;/code>.&lt;/li>
+&lt;li>The &lt;a href="https://chapel-lang.org/" target="_blank">Chapel programming language&lt;/a> is designed for parallel computing at scale.
+I &lt;a href="https://aur.archlinux.org/packages/chapel" target="_blank">package&lt;/a> the compiler for Arch Linux, and have contributed multiple routines to built in modules like &lt;code>LinearAlgebra.chpl&lt;/code>.&lt;/li>
 &lt;/ul>
 &lt;h3 id="fortran-lang">fortran-lang&lt;/h3>
 &lt;ul>
-&lt;li>&lt;a href="https://fortran-lang.org/en/" target="_blank">fortran-lang&lt;/a>
- is a community effort to polish and modernize the Fortran programming language.
-Efforts include a &lt;a href="https://fpm.fortran-lang.org/" target="_blank">package manager&lt;/a>
- and a &lt;a href="https://stdlib.fortran-lang.org/" target="_blank">standard library&lt;/a>
- (to which I&amp;rsquo;ve contributed routines for linear algebra).&lt;/li>
+&lt;li>&lt;a href="https://fortran-lang.org/en/" target="_blank">fortran-lang&lt;/a> is a community effort to polish and modernize the Fortran programming language.
+Efforts include a &lt;a href="https://fpm.fortran-lang.org/" target="_blank">package manager&lt;/a> and a &lt;a href="https://stdlib.fortran-lang.org/" target="_blank">standard library&lt;/a> (to which I&amp;rsquo;ve contributed routines for linear algebra).&lt;/li>
 &lt;/ul>
 &lt;h3 id="endeavouros">EndeavourOS&lt;/h3>
 &lt;ul>
-&lt;li>I&amp;rsquo;ve contributed bug fixes to configurations for the &lt;a href="https://i3wm.org/i3" target="_blank">i3 window manager&lt;/a>
- version of the &lt;a href="https://endeavouros.com/" target="_blank">EndeavourOS&lt;/a>
- Linux distribution.&lt;/li>
+&lt;li>I&amp;rsquo;ve contributed bug fixes to configurations for the &lt;a href="https://i3wm.org/i3" target="_blank">i3 window manager&lt;/a> version of the &lt;a href="https://endeavouros.com/" target="_blank">EndeavourOS&lt;/a> Linux distribution.&lt;/li>
 &lt;/ul>
 &lt;h3 id="beets">beets&lt;/h3>
 &lt;ul>
-&lt;li>&lt;a href="https://beets.io/" target="_blank">beets&lt;/a>
- organizes local music collections, including autotagging and so much more.
+&lt;li>&lt;a href="https://beets.io/" target="_blank">beets&lt;/a> organizes local music collections, including autotagging and so much more.
 I contributed an interface to match single tracks using Discogs.&lt;/li>
 &lt;/ul>
 &lt;hr></description></item><item><title>Publications</title><link>https://ghbrown.net/topics/publications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/publications/</guid><description>&lt;h1 id="publications">Publications&lt;/h1>
@@ -96,15 +88,13 @@ Plasma–Surface Interface&amp;rdquo;,
 &lt;p>It&amp;rsquo;s not linked anywhere on my site but is the source page from which the random quotes are drawn.&lt;/p>
 &lt;hr>
 &lt;p>MC: Gucchon, you win or you lose?&lt;/p>
-&lt;p>Gucchon: &lt;a href="https://youtu.be/Xli8mnd4dJs?t=579" target="_blank">I don&amp;rsquo;t care.&lt;/a>
-&lt;/p>
+&lt;p>Gucchon: &lt;a href="https://youtu.be/Xli8mnd4dJs?t=579" target="_blank">I don&amp;rsquo;t care.&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>&amp;ldquo;So we want to make it easy to write parallel programs&amp;hellip;
 &lt;br>
 We can&amp;rsquo;t, writing parallel programs is extremely difficult.&amp;rdquo;
 &lt;br>
-- &lt;a href="https://youtu.be/bo5WL5IQAd0?t=538" target="_blank">Joe Armstrong&lt;/a>
-&lt;/p>
+- &lt;a href="https://youtu.be/bo5WL5IQAd0?t=538" target="_blank">Joe Armstrong&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>&amp;ldquo;7 iterations is a good number.&amp;rdquo;
 &lt;br>
@@ -114,8 +104,7 @@ We can&amp;rsquo;t, writing parallel programs is extremely difficult.&amp;rdquo;
 &lt;br>
 Numerical analysis is the blackest art I know.&amp;rdquo;
 &lt;br>
-- &lt;a href="https://youtu.be/HB5TrK7A4pI?t=667" target="_blank">Gerald Sussman&lt;/a>
-&lt;/p></description></item><item><title>Research</title><link>https://ghbrown.net/topics/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/research/</guid><description>&lt;h1 id="research">Research&lt;/h1>
+- &lt;a href="https://youtu.be/HB5TrK7A4pI?t=667" target="_blank">Gerald Sussman&lt;/a>&lt;/p></description></item><item><title>Research</title><link>https://ghbrown.net/topics/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/research/</guid><description>&lt;h1 id="research">Research&lt;/h1>
 &lt;hr>
 &lt;h2 id="research-positions">Research Positions&lt;/h2>
 &lt;p>I am fortunate to be advised by 

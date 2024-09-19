@@ -9,10 +9,8 @@ $
 for fixed matrix $\mathbf{A}$ and vector $\mathbf{b}$,
 also have well-defined projections.
 However, it&amp;rsquo;s difficult to find a direct proof for the expression giving the projection of a point onto an affine space:
-&lt;a href="https://joeyonng.github.io/joeyonng-notebook/Linear%20Algebra/11_Orthogonal_and_Affine_Projection.html" target="_blank">example wordy proof 1&lt;/a>
-,
-&lt;a href="https://math.stackexchange.com/questions/3989922/orthogonal-projection-onto-affine-subspaces-formula" target="_blank">example wordy proof 2&lt;/a>
-.&lt;/p></description></item><item><title>Behavior of conjugate gradient residual</title><link>https://ghbrown.net/posts/cg_residual/</link><pubDate>Sat, 15 Jun 2024 02:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/cg_residual/</guid><description>&lt;h1 id="behavior-of-the-conjugate-gradient-residual">Behavior of the conjugate gradient residual&lt;/h1>
+&lt;a href="https://joeyonng.github.io/joeyonng-notebook/Linear%20Algebra/11_Orthogonal_and_Affine_Projection.html" target="_blank">example wordy proof 1&lt;/a>,
+&lt;a href="https://math.stackexchange.com/questions/3989922/orthogonal-projection-onto-affine-subspaces-formula" target="_blank">example wordy proof 2&lt;/a>.&lt;/p></description></item><item><title>Behavior of conjugate gradient residual</title><link>https://ghbrown.net/posts/cg_residual/</link><pubDate>Sat, 15 Jun 2024 02:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/cg_residual/</guid><description>&lt;h1 id="behavior-of-the-conjugate-gradient-residual">Behavior of the conjugate gradient residual&lt;/h1>
 &lt;hr>
 &lt;p>An often stressed property of the conjugate gradient method (CG) for solving linear systems is the monotonic decrease in the A-norm of the error.
 When CG is applied in practice the exact solution is unknown and the error cannot be computed or tracked, so the residual or relative residual is used instead.&lt;/p>

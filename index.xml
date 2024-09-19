@@ -9,14 +9,11 @@ $
 for fixed matrix $\mathbf{A}$ and vector $\mathbf{b}$,
 also have well-defined projections.
 However, it&amp;rsquo;s difficult to find a direct proof for the expression giving the projection of a point onto an affine space:
-&lt;a href="https://joeyonng.github.io/joeyonng-notebook/Linear%20Algebra/11_Orthogonal_and_Affine_Projection.html" target="_blank">example wordy proof 1&lt;/a>
-,
-&lt;a href="https://math.stackexchange.com/questions/3989922/orthogonal-projection-onto-affine-subspaces-formula" target="_blank">example wordy proof 2&lt;/a>
-.&lt;/p></description></item><item><title>Transparent videos from Blender to the web</title><link>https://ghbrown.net/posts/alpha_video/</link><pubDate>Sat, 13 Jul 2024 12:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/alpha_video/</guid><description>&lt;h1 id="get-transparent-videos-out-of-blender-and-onto-the-web">Get transparent videos out of Blender and onto the web&lt;/h1>
+&lt;a href="https://joeyonng.github.io/joeyonng-notebook/Linear%20Algebra/11_Orthogonal_and_Affine_Projection.html" target="_blank">example wordy proof 1&lt;/a>,
+&lt;a href="https://math.stackexchange.com/questions/3989922/orthogonal-projection-onto-affine-subspaces-formula" target="_blank">example wordy proof 2&lt;/a>.&lt;/p></description></item><item><title>Transparent videos from Blender to the web</title><link>https://ghbrown.net/posts/alpha_video/</link><pubDate>Sat, 13 Jul 2024 12:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/alpha_video/</guid><description>&lt;h1 id="get-transparent-videos-out-of-blender-and-onto-the-web">Get transparent videos out of Blender and onto the web&lt;/h1>
 &lt;p>A quick guide to get your cool render out of Blender and onto the web, with transparency/alpha!&lt;/p>
 &lt;hr>
-&lt;h2 id="out-of-blenderhttpswwwblenderorg">Out of &lt;a href="https://www.blender.org/" target="_blank">Blender&lt;/a>
-&lt;/h2>
+&lt;h2 id="out-of-blenderhttpswwwblenderorg">Out of &lt;a href="https://www.blender.org/" target="_blank">Blender&lt;/a>&lt;/h2>
 &lt;p>For renders to intermediate frame images you can use the following Blender settings in the Properties Editor:&lt;/p>
 &lt;pre tabindex="0">&lt;code>Render &amp;gt; Film &amp;gt; Transparent (check it)
 Output &amp;gt; Output &amp;gt; File Format &amp;gt; PNG
@@ -50,8 +47,7 @@ Here is my solution.&lt;/p></description></item><item><title>This website: thoug
 
 &lt;a href="https://gohugo.io/" class="mainlink" target="_blank">&lt;span class="themecolor">Hugo&lt;/span>&lt;/a>, a massive boon to maintainability and flexibility&lt;/li>
 &lt;li>2023-01: bought and used the ghbrown.net domain name&lt;/li>
-&lt;li>2024-01: transitioned to using the &lt;a href="https://github.com/joeroe/risotto" target="_blank">risotto&lt;/a>
- theme, with a moderate amount of modifications&lt;/li>
+&lt;li>2024-01: transitioned to using the &lt;a href="https://github.com/joeroe/risotto" target="_blank">risotto&lt;/a> theme, with a moderate amount of modifications&lt;/li>
 &lt;/ul>
 &lt;hr>
 &lt;h2 id="fun-facts">Fun Facts&lt;/h2>
@@ -331,29 +327,21 @@ Ask me about the time I wrote an ASCII shader in less than 600 characters, it&am
 &lt;p>Here are some projects I&amp;rsquo;ve contributed to:&lt;/p>
 &lt;h3 id="chapel">Chapel&lt;/h3>
 &lt;ul>
-&lt;li>The &lt;a href="https://chapel-lang.org/" target="_blank">Chapel programming language&lt;/a>
- is designed for parallel computing at scale.
-I &lt;a href="https://aur.archlinux.org/packages/chapel" target="_blank">package&lt;/a>
- the compiler for Arch Linux, and have contributed multiple routines to built in modules like &lt;code>LinearAlgebra.chpl&lt;/code>.&lt;/li>
+&lt;li>The &lt;a href="https://chapel-lang.org/" target="_blank">Chapel programming language&lt;/a> is designed for parallel computing at scale.
+I &lt;a href="https://aur.archlinux.org/packages/chapel" target="_blank">package&lt;/a> the compiler for Arch Linux, and have contributed multiple routines to built in modules like &lt;code>LinearAlgebra.chpl&lt;/code>.&lt;/li>
 &lt;/ul>
 &lt;h3 id="fortran-lang">fortran-lang&lt;/h3>
 &lt;ul>
-&lt;li>&lt;a href="https://fortran-lang.org/en/" target="_blank">fortran-lang&lt;/a>
- is a community effort to polish and modernize the Fortran programming language.
-Efforts include a &lt;a href="https://fpm.fortran-lang.org/" target="_blank">package manager&lt;/a>
- and a &lt;a href="https://stdlib.fortran-lang.org/" target="_blank">standard library&lt;/a>
- (to which I&amp;rsquo;ve contributed routines for linear algebra).&lt;/li>
+&lt;li>&lt;a href="https://fortran-lang.org/en/" target="_blank">fortran-lang&lt;/a> is a community effort to polish and modernize the Fortran programming language.
+Efforts include a &lt;a href="https://fpm.fortran-lang.org/" target="_blank">package manager&lt;/a> and a &lt;a href="https://stdlib.fortran-lang.org/" target="_blank">standard library&lt;/a> (to which I&amp;rsquo;ve contributed routines for linear algebra).&lt;/li>
 &lt;/ul>
 &lt;h3 id="endeavouros">EndeavourOS&lt;/h3>
 &lt;ul>
-&lt;li>I&amp;rsquo;ve contributed bug fixes to configurations for the &lt;a href="https://i3wm.org/i3" target="_blank">i3 window manager&lt;/a>
- version of the &lt;a href="https://endeavouros.com/" target="_blank">EndeavourOS&lt;/a>
- Linux distribution.&lt;/li>
+&lt;li>I&amp;rsquo;ve contributed bug fixes to configurations for the &lt;a href="https://i3wm.org/i3" target="_blank">i3 window manager&lt;/a> version of the &lt;a href="https://endeavouros.com/" target="_blank">EndeavourOS&lt;/a> Linux distribution.&lt;/li>
 &lt;/ul>
 &lt;h3 id="beets">beets&lt;/h3>
 &lt;ul>
-&lt;li>&lt;a href="https://beets.io/" target="_blank">beets&lt;/a>
- organizes local music collections, including autotagging and so much more.
+&lt;li>&lt;a href="https://beets.io/" target="_blank">beets&lt;/a> organizes local music collections, including autotagging and so much more.
 I contributed an interface to match single tracks using Discogs.&lt;/li>
 &lt;/ul>
 &lt;hr></description></item><item><title>Publications</title><link>https://ghbrown.net/topics/publications/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/publications/</guid><description>&lt;h1 id="publications">Publications&lt;/h1>
@@ -384,15 +372,13 @@ Plasma–Surface Interface&amp;rdquo;,
 &lt;p>It&amp;rsquo;s not linked anywhere on my site but is the source page from which the random quotes are drawn.&lt;/p>
 &lt;hr>
 &lt;p>MC: Gucchon, you win or you lose?&lt;/p>
-&lt;p>Gucchon: &lt;a href="https://youtu.be/Xli8mnd4dJs?t=579" target="_blank">I don&amp;rsquo;t care.&lt;/a>
-&lt;/p>
+&lt;p>Gucchon: &lt;a href="https://youtu.be/Xli8mnd4dJs?t=579" target="_blank">I don&amp;rsquo;t care.&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>&amp;ldquo;So we want to make it easy to write parallel programs&amp;hellip;
 &lt;br>
 We can&amp;rsquo;t, writing parallel programs is extremely difficult.&amp;rdquo;
 &lt;br>
-- &lt;a href="https://youtu.be/bo5WL5IQAd0?t=538" target="_blank">Joe Armstrong&lt;/a>
-&lt;/p>
+- &lt;a href="https://youtu.be/bo5WL5IQAd0?t=538" target="_blank">Joe Armstrong&lt;/a>&lt;/p>
 &lt;hr>
 &lt;p>&amp;ldquo;7 iterations is a good number.&amp;rdquo;
 &lt;br>
@@ -402,8 +388,7 @@ We can&amp;rsquo;t, writing parallel programs is extremely difficult.&amp;rdquo;
 &lt;br>
 Numerical analysis is the blackest art I know.&amp;rdquo;
 &lt;br>
-- &lt;a href="https://youtu.be/HB5TrK7A4pI?t=667" target="_blank">Gerald Sussman&lt;/a>
-&lt;/p></description></item><item><title>Research</title><link>https://ghbrown.net/topics/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/research/</guid><description>&lt;h1 id="research">Research&lt;/h1>
+- &lt;a href="https://youtu.be/HB5TrK7A4pI?t=667" target="_blank">Gerald Sussman&lt;/a>&lt;/p></description></item><item><title>Research</title><link>https://ghbrown.net/topics/research/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://ghbrown.net/topics/research/</guid><description>&lt;h1 id="research">Research&lt;/h1>
 &lt;hr>
 &lt;h2 id="research-positions">Research Positions&lt;/h2>
 &lt;p>I am fortunate to be advised by 
