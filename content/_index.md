@@ -56,4 +56,3 @@ Here are some things I've been thinking (and writing) about lately:
 
 ---
 
-

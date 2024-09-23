@@ -37,7 +37,7 @@ physics laboratory, which is how I got into research.
 
 ## Personal Research Projects
 
-Write ups of my thoughts and efforts on various problems both inside and outside my research field (and of varying degrees of originality and complexity) can be found among {{< glink dest="/tags" text="my posts" int="y" color="y" >}}.
+Write ups of my thoughts and efforts on various problems both inside and outside my research field (and of varying degrees of originality and complexity) can be found among [my posts](/tags).
 
 You might be interested in
 

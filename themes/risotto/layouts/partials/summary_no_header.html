@@ -1,19 +1,13 @@
 <!--
-    render more aesthetic summary by removing the first header's text
+    render more aesthetic summary by including only text in first <p> element
     (and truncating a bit)
 -->
 
 {{ $summary_length := 300 }}
-{{ $summary_h := (.Summary | safeHTML | truncate $summary_length " ...") }} <!-- summary with header text -->
+{{ $summary_h := (.Summary | safeHTML | truncate $summary_length " ...") }} <!-- summary with header stuff -->
 
-<!-- find text of first header -->
-{{ $token := "LmNoP8675309" }} <!-- dummy token for splitting -->
-{{ $con0 := .Content }}
-{{ $con1 := (replaceRE "</h[0-9]>" $token $con0) }} <!-- insert dummy token -->
-{{ $con2 := (split $con1 $token) }}                 <!-- split on  token -->
-{{ $header := (index $con2 0) }}                    <!-- dirty HTML header -->
-{{ $header_text := (replaceRE "<h.*>" "" $header) }} <!-- remove leading header tag -->
+<!-- skip to first paragraph -->
+{{ $after_p_start := (index (split $summary_h "<p>") 1) }}
+{{ $in_p := (index (split $after_p_start "</p>") 0) }}
 
-{{ $summary := (replace $summary_h $header_text "") }} <!-- remove header text -->
-
-{{ $summary | safeHTML }} <!-- print result -->
+{{ $in_p | safeHTML }} <!-- print result -->

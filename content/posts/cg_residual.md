@@ -89,16 +89,16 @@ $$
 $$
 or, dividing both sides by $\lambda_m^2$
 $$
-\epsilon^2 t^2 + (1-\epsilon^2)
+\epsilon^2 \kappa^2 + (1-\epsilon^2)
 \geq
-2 \left(\epsilon^2 t + (1-\epsilon^2)\right)^2
+2 \left(\epsilon^2 \kappa + (1-\epsilon^2)\right)^2
 $$
-where $t = \frac{\lambda_1}{\lambda_m}$.
+where $\kappa = \frac{\lambda_1}{\lambda_m}$ is the condition number of $\mathbf{A}$.
 
-If $t \geq 7$, one can verify that choosing $\epsilon = 0.5$ suffices.
+If $\kappa \geq 7$, one can verify that choosing $\epsilon = 0.5$ suffices.
 
 So, to exhibit a system whose residual increases on the first iteration, it suffices for the matrix to satisfy
-$\frac{\lambda_1(\mathbf{A})}{\lambda_m(\mathbf{A})} \geq 7$
+$\kappa(\mathbf{A}) \geq 7$
 and then choose the residual to be the following linear combination of eigenvectors
 $\mathbf{r}_0 = 0.5 \mathbf{v}_1 + \sqrt{0.75} \mathbf{v}_m$.
 
