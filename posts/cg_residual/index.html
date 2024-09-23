@@ -61,12 +61,12 @@ $$
 $$
 or, dividing both sides by $\lambda_m^2$
 $$
-\epsilon^2 t^2 + (1-\epsilon^2)
+\epsilon^2 \kappa^2 + (1-\epsilon^2)
 \geq
-2 \left(\epsilon^2 t + (1-\epsilon^2)\right)^2
+2 \left(\epsilon^2 \kappa + (1-\epsilon^2)\right)^2
 $$
-where $t = \frac{\lambda_1}{\lambda_m}$.</p><p>If $t \geq 7$, one can verify that choosing $\epsilon = 0.5$ suffices.</p><p>So, to exhibit a system whose residual increases on the first iteration, it suffices for the matrix to satisfy
-$\frac{\lambda_1(\mathbf{A})}{\lambda_m(\mathbf{A})} \geq 7$
+where $\kappa = \frac{\lambda_1}{\lambda_m}$ is the condition number of $\mathbf{A}$.</p><p>If $\kappa \geq 7$, one can verify that choosing $\epsilon = 0.5$ suffices.</p><p>So, to exhibit a system whose residual increases on the first iteration, it suffices for the matrix to satisfy
+$\kappa(\mathbf{A}) \geq 7$
 and then choose the residual to be the following linear combination of eigenvectors
 $\mathbf{r}_0 = 0.5 \mathbf{v}_1 + \sqrt{0.75} \mathbf{v}_m$.</p><hr><h3 id=future-work-and-comments>Future work and comments</h3><p>Comment 1: I&rsquo;d like to read and understand the proof about realizing any residual 2-norm sequence.
 It&rsquo;s amazing that this result was already in the original CG paper.</p><p>Comment 2: A <a href=https://epubs.siam.org/doi/abs/10.1137/S0895479894275030 target=_blank>similar result about GMRES sequences</a>, but this time a whole paper has been dedicated to it.
