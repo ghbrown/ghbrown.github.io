@@ -51,6 +51,11 @@ I &lt;a href="https://aur.archlinux.org/packages/chapel" target="_blank">package
 &lt;li>&lt;a href="https://fortran-lang.org/en/" target="_blank">fortran-lang&lt;/a> is a community effort to polish and modernize the Fortran programming language.
 Efforts include a &lt;a href="https://fpm.fortran-lang.org/" target="_blank">package manager&lt;/a> and a &lt;a href="https://stdlib.fortran-lang.org/" target="_blank">standard library&lt;/a> (to which I&amp;rsquo;ve contributed routines for linear algebra).&lt;/li>
 &lt;/ul>
+&lt;h3 id="pyttb">pyttb&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://github.com/sandialabs/pyttb" target="_blank">pyttb&lt;/a>, the &amp;ldquo;Python Tensor Toolbox&amp;rdquo; provides data structures and algorithms for tensor computations.
+I contributed a visualizer and significantly accelerated another function.&lt;/li>
+&lt;/ul>
 &lt;h3 id="endeavouros">EndeavourOS&lt;/h3>
 &lt;ul>
 &lt;li>I&amp;rsquo;ve contributed bug fixes to configurations for the &lt;a href="https://i3wm.org/i3" target="_blank">i3 window manager&lt;/a> version of the &lt;a href="https://endeavouros.com/" target="_blank">EndeavourOS&lt;/a> Linux distribution.&lt;/li>
