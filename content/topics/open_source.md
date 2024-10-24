@@ -39,6 +39,10 @@ Here are some projects I've contributed to:
 - [fortran-lang](https://fortran-lang.org/en/) is a community effort to polish and modernize the Fortran programming language.
   Efforts include a [package manager](https://fpm.fortran-lang.org/) and a [standard library](https://stdlib.fortran-lang.org/) (to which I've contributed routines for linear algebra).
 
+### pyttb
+
+- [pyttb](https://github.com/sandialabs/pyttb), the "Python Tensor Toolbox" provides data structures and algorithms for tensor computations.
+  I contributed a visualizer and significantly accelerated another function.
 
 ### EndeavourOS
 
@@ -49,5 +53,5 @@ Here are some projects I've contributed to:
 
 - [beets](https://beets.io/) organizes local music collections, including autotagging and so much more.
   I contributed an interface to match single tracks using Discogs.
-  
+
 ---
