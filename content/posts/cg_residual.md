@@ -13,7 +13,7 @@ An often stressed property of the conjugate gradient method (CG) for solving lin
 When CG is applied in practice the exact solution is unknown and the error cannot be computed or tracked, so the residual or relative residual is used instead.
 
 However, the kinds of guarantees available for residuals are slightly weaker and more involved than is often presented in courses, due to complications introduced by different norms and arithmetic precisions.
-Per {{< glink dest="https://www.scirp.org/html/2644.html" text="an article by Washizawa" color="y" >}} we have
+Per [an article by Washizawa](https://www.scirp.org/html/2644.html) we have
 
 - monotonic decrease of error in the A-norm in finite precision and exact arithmetic
   \\( \left( k > j \implies ||\mathbf{e}_k||_A \le ||\mathbf{e}_j||_A  \right) \\)
@@ -70,7 +70,7 @@ Admittedly, this form of this statement does not immediately suggest a choice of
 It is also tempting to think that this inequality may never be satisfied: no eigenvectors of $\mathbf{A}$ satisfy the inequality, and attempting to lower bound $||\mathbf{Ar}_0||_2$ by
 {{< katex >}} $\lambda_{min} ||\mathbf{r}_0||_2$ {{< /katex >}}
 results in an inequality that is satisfied by no $\mathbf{r_0}$.
-Indeed, finding an $\mathbf{r}_0$ to satisfy this inequality in general is tricky, so we will give sufficient condition just demonstrate that is it possible to satisfy.
+Indeed, finding an $\mathbf{r}_0$ to satisfy this inequality in general is tricky, so we will give a sufficient condition just to demonstrate that it can be satisfied.
 
 First note that the inequality is independent of the scale of $||\mathbf{r}_0||$, so we instead work with the form
 $||\mathbf{A} \hat{\mathbf{r}}_0||_2 \ge \sqrt{2} \hat{\mathbf{r}}_0^T \mathbf{A} \hat{\mathbf{r}}_0$, where $\hat{\mathbf{r}_0}$ is the direction of the residual.
