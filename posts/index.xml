@@ -28,12 +28,7 @@ Output &amp;gt; Output &amp;gt; Color &amp;gt; RGBA
 &lt;p>An often stressed property of the conjugate gradient method (CG) for solving linear systems is the monotonic decrease in the A-norm of the error.
 When CG is applied in practice the exact solution is unknown and the error cannot be computed or tracked, so the residual or relative residual is used instead.&lt;/p>
 &lt;p>However, the kinds of guarantees available for residuals are slightly weaker and more involved than is often presented in courses, due to complications introduced by different norms and arithmetic precisions.
-Per 
-
-
-
-
-&lt;a href="https://www.scirp.org/html/2644.html" class="mainlink" target="_blank">&lt;span class="themecolor">an article by Washizawa&lt;/span>&lt;/a> we have&lt;/p></description></item><item><title>Finding a rank 1 matrix orthogonal to another matrix</title><link>https://ghbrown.net/posts/orthogonal_rank_1/</link><pubDate>Sat, 06 Apr 2024 10:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/orthogonal_rank_1/</guid><description>&lt;h1 id="finding-a-rank-1-matrix-orthogonal-to-another-matrix">Finding a rank 1 matrix orthogonal to another matrix&lt;/h1>
+Per &lt;a href="https://www.scirp.org/html/2644.html" target="_blank">an article by Washizawa&lt;/a> we have&lt;/p></description></item><item><title>Finding a rank 1 matrix orthogonal to another matrix</title><link>https://ghbrown.net/posts/orthogonal_rank_1/</link><pubDate>Sat, 06 Apr 2024 10:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/orthogonal_rank_1/</guid><description>&lt;h1 id="finding-a-rank-1-matrix-orthogonal-to-another-matrix">Finding a rank 1 matrix orthogonal to another matrix&lt;/h1>
 &lt;hr>
 &lt;p>Recently I needed to solve the following problem: given a square matrix $\mathbf{A}$ find another square matrix $\mathbf{B}$ satisfying
 $\text{vec}(\mathbf{A})^T \text{vec}(\mathbf{B}) = 0$.
