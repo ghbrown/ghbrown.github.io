@@ -65,7 +65,7 @@ You run the computation and you pray."
 
 ---
 
-"We develop open source software in MatLab."
+"We develop open source software in MATLAB."
 
 \- [a paper](https://arxiv.org/pdf/2006.08756.pdf)
 
