@@ -15,7 +15,7 @@ Perhaps one day I'll steal just a bit of knowledge from the gods, and then give 
 However, Aug. 13, 2024 was not to be such a day for me, at least not as such.
 
 I was mid-move between two apartments in the sweltering summer heat of Austin, TX.
-Sitting in my old, almost empty apartment I found myself with a problem and half.
+Sitting in my old, almost empty apartment I found myself with a problem and a half.
 First, the half problem: I was hungry; thankfully this was easily remedied by leftover lasagna in my old fridge.
 Second, the whole problem: I had already moved my silverware.
 
