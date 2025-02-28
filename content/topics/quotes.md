@@ -79,3 +79,9 @@ You run the computation and you pray."
 
 ---
 
+"The minimum is always less than or equal to the maximum... um, I think".
+
+\- [Joel Tropp](https://youtu.be/zdKB9PVb1i0?t=1079)
+
+---
+
