@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Web Development on Gabriel H. Brown</title><link>https://ghbrown.net/tags/web-development/</link><description>Recent content in Web Development on Gabriel H. Brown</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright [Gabriel H. Brown](/).</copyright><lastBuildDate>Sat, 13 Jul 2024 12:37:01 -0500</lastBuildDate><atom:link href="https://ghbrown.net/tags/web-development/index.xml" rel="self" type="application/rss+xml"/><item><title>Transparent videos from Blender to the web</title><link>https://ghbrown.net/posts/alpha_video/</link><pubDate>Sat, 13 Jul 2024 12:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/alpha_video/</guid><description>&lt;h1 id="get-transparent-videos-out-of-blender-and-onto-the-web">Get transparent videos out of Blender and onto the web&lt;/h1>
 &lt;p>A quick guide to get your cool render out of Blender and onto the web, with transparency/alpha!&lt;/p>
 &lt;hr>
-&lt;h2 id="out-of-blenderhttpswwwblenderorg">Out of &lt;a href="https://www.blender.org/" target="_blank">Blender&lt;/a>&lt;/h2>
+&lt;h2 id="out-of-blender">Out of &lt;a href="https://www.blender.org/" target="_blank">Blender&lt;/a>&lt;/h2>
 &lt;p>For renders to intermediate frame images you can use the following Blender settings in the Properties Editor:&lt;/p>
 &lt;pre tabindex="0">&lt;code>Render &amp;gt; Film &amp;gt; Transparent (check it)
 Output &amp;gt; Output &amp;gt; File Format &amp;gt; PNG
