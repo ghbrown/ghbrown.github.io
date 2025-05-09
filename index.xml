@@ -13,7 +13,7 @@ $
 $
 for fixed matrix $\mathbf{A}$ and vector $\mathbf{b}$,
 also have well-defined projections.
-However, it&amp;rsquo;s difficult to find a direct proof for the expression giving the projection of a point onto an affine space:
+However, it&amp;rsquo;s difficult to find a direct proof for the projection of a point onto an affine space:
 &lt;a href="https://joeyonng.github.io/joeyonng-notebook/Linear%20Algebra/11_Orthogonal_and_Affine_Projection.html" target="_blank">example wordy proof 1&lt;/a>,
 &lt;a href="https://math.stackexchange.com/questions/3989922/orthogonal-projection-onto-affine-subspaces-formula" target="_blank">example wordy proof 2&lt;/a>.&lt;/p></description></item><item><title>Transparent videos from Blender to the web</title><link>https://ghbrown.net/posts/alpha_video/</link><pubDate>Sat, 13 Jul 2024 12:37:01 -0500</pubDate><guid>https://ghbrown.net/posts/alpha_video/</guid><description>&lt;h1 id="get-transparent-videos-out-of-blender-and-onto-the-web">Get transparent videos out of Blender and onto the web&lt;/h1>
 &lt;p>A quick guide to get your cool render out of Blender and onto the web, with transparency/alpha!&lt;/p>
