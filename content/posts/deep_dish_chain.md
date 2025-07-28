@@ -24,7 +24,7 @@ The sauce was well distributed on the pizza, but the ratio of sauce to the rest 
 However, it is perhaps important to note that I err on the side of more sauce when in doubt.
 As for taste, the sauce was appropriately acidic, but perhaps under spiced.
 Moving up to cheese, it was applied in the correct proportion all the way to the edges, where crisped cheese bits could be had.
-Notably, Domino's blend of mozzarella, monterey jack, and white cheddar provides a punchier flavor when compared to 100% mozzarella topped pizzas.
+Notably, Domino's blend of mozzarella, Monterey jack, and white cheddar provides a punchier flavor when compared to 100% mozzarella topped pizzas.
 <br>
 [COST: $10.68 after tax for 14 inch large.]
 

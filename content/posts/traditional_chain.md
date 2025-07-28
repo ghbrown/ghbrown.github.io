@@ -21,7 +21,7 @@ A review of traditional style pizzas from national chains (specifically those in
 At the crust, the dough is crisp on the outside while remaining soft and well inflated on the inside (and covered with a tasty garlic butter).
 sauce is well distributed and in a good ratio with the other components.
 Its flavor was light on spices and pleasantly acidic.
-propietary blend of cheeses (equal parts monterey jack, mozzarella, white cheddar) and the carefully metered cook time means the cheese is both flavorful (properly browned) and tender (not overcooked).
+proprietary blend of cheeses (equal parts Monterey jack, mozzarella, white cheddar) and the carefully metered cook time means the cheese is both flavorful (properly browned) and tender (not overcooked).
 This contributes to the overall "tender bite" of the pizza; that is to say the selected bite separates from the rest of the slice with no gnawing or vigorous head shaking.
 <br>
 [COST: $8.49 after tax for 13 inch large.]
