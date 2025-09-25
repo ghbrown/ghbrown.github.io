@@ -37,10 +37,10 @@ draft: false
 
 ---
 
-I am a third year Ph.D. student in the Computational Science, Engineering, and Mathematics graduate program in the Oden Institute advised by [Joe Kileel](https://web.ma.utexas.edu/users/jkileel/).
+I am a fourth year Ph.D. student in the Computational Science, Engineering, and Mathematics graduate program in the Oden Institute advised by [Joe Kileel](https://web.ma.utexas.edu/users/jkileel/).
 
 My primary focus is on computational and applied mathematics, especially numerical analysis, (multi)linear algebra, and optimization.
-I also enjoy the intersections of these topics with high performance computing, theoretical computer science, and multiscale modeling.
+I also enjoy the intersections of these topics with high performance computing, theoretical computer science, and the physical sciences.
 
 I graduated from the University of Notre Dame in 2020 with my bachelor's in Mechanical Engineering, and from the University of Illinois Urbana-Champaign in 2022 with my master's in Theoretical and Applied Mechanics.
 

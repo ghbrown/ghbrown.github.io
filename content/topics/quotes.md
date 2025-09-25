@@ -71,9 +71,9 @@ You run the computation and you pray."
 
 ---
 
-"We disavow any knowledge of the existence of PDF files of Demmel's book.
+"We disavow any knowledge of the existence of PDF files of Demmel's book."
 <br>
-*provides link*"
+*provides link*
 
 \- [Gene Golub and Lek-Heng Lim](https://www.stat.uchicago.edu/~lekheng/courses/302/)
 
@@ -82,6 +82,19 @@ You run the computation and you pray."
 "The minimum is always less than or equal to the maximum... um, I think".
 
 \- [Joel Tropp](https://youtu.be/zdKB9PVb1i0?t=1079)
+
+
+---
+
+"Any fool can know. The point is to understand."
+
+\- fictional Einsten (written by [Ernest Kinoy](https://quoteinvestigator.com/2021/11/20/fool-know/))
+
+---
+
+"There are a lot of theorems you can prove, but it's worth proving what other people find interesting."
+
+\- [Daniel Spielman](https://youtu.be/SVfabuPRkYg?t=1633)
 
 ---
 
