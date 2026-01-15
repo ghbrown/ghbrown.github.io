@@ -98,3 +98,9 @@ You run the computation and you pray."
 
 ---
 
+"It would be lovely to get away from error analysis, I would rather do something interesting."
+
+\- [William Kahan](https://youtu.be/LZAeZBVAzVw?t=2146)
+
+---
+
