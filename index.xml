@@ -3,7 +3,7 @@
 &amp;ldquo;Finding all unique nearest neighbors in $O(n^{3/2} \log(n))$ with a standard k-d tree&amp;rdquo;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Suppose you wish to query a point cloud of $n$ points for a nearest point a total of $n$ times, and that no point can be selected twice.&lt;/p&gt;
-&lt;p&gt;That is you must return a sequence of $n$ nearest points (using each one only once), and the answer for each query must be the closest out of all the remaining points.&lt;/p&gt;</description></item><item><title>Prometheus and Lasagna</title><link>https://ghbrown.net/posts/lasagna/</link><pubDate>Tue, 20 Aug 2024 12:19:00 -0600</pubDate><guid>https://ghbrown.net/posts/lasagna/</guid><description>&lt;h1 id="prometheus-and-lasagna"&gt;Prometheus and Lasagna&lt;/h1&gt;
+&lt;p&gt;That is, you must return a sequence of $n$ nearest points (using each one only once), and the answer for each query must be the closest out of all the remaining points.&lt;/p&gt;</description></item><item><title>Prometheus and Lasagna</title><link>https://ghbrown.net/posts/lasagna/</link><pubDate>Tue, 20 Aug 2024 12:19:00 -0600</pubDate><guid>https://ghbrown.net/posts/lasagna/</guid><description>&lt;h1 id="prometheus-and-lasagna"&gt;Prometheus and Lasagna&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;After hundreds of thousands of years of the species &lt;em&gt;homo sapiens&lt;/em&gt;, it&amp;rsquo;s truly amazing to be the first person to achieve, create, or experience something.
 Maybe someday I&amp;rsquo;ll create an algorithm or prove a theorem which will change the world.

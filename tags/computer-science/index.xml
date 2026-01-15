@@ -3,7 +3,7 @@
 &amp;ldquo;Finding all unique nearest neighbors in $O(n^{3/2} \log(n))$ with a standard k-d tree&amp;rdquo;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Suppose you wish to query a point cloud of $n$ points for a nearest point a total of $n$ times, and that no point can be selected twice.&lt;/p&gt;
-&lt;p&gt;That is you must return a sequence of $n$ nearest points (using each one only once), and the answer for each query must be the closest out of all the remaining points.&lt;/p&gt;</description></item><item><title>How many parentheses can Python handle?</title><link>https://ghbrown.net/posts/python_parentheses_depth/</link><pubDate>Tue, 10 Oct 2023 23:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/python_parentheses_depth/</guid><description>&lt;h1 id="how-many-parentheses-can-python-handle"&gt;How many parentheses can Python handle?&lt;/h1&gt;
+&lt;p&gt;That is, you must return a sequence of $n$ nearest points (using each one only once), and the answer for each query must be the closest out of all the remaining points.&lt;/p&gt;</description></item><item><title>How many parentheses can Python handle?</title><link>https://ghbrown.net/posts/python_parentheses_depth/</link><pubDate>Tue, 10 Oct 2023 23:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/python_parentheses_depth/</guid><description>&lt;h1 id="how-many-parentheses-can-python-handle"&gt;How many parentheses can Python handle?&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;During my office hours today I was asked whether &amp;ldquo;an extra pair of parentheses&amp;rdquo; would do any harm to the execution of a Python program.
 In the case at hand the answer was &amp;ldquo;no&amp;rdquo;, but I suspected there might be actually be a limit on the depth of nested parentheses.&lt;/p&gt;
