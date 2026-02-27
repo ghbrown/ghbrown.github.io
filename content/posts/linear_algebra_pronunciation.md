@@ -9,7 +9,7 @@ tags: ['linear algebra']
 
 ---
 
-Like all fields of mathematics, linear algebra has many prominent figures whose names are non-trivial to pronounce in English (the *lingua franca* of science and mathematics). 
+Like all fields of mathematics, linear algebra has many prominent figures whose names are non-trivial to pronounce in English (the *lingua franca* of science and mathematics).
 
 This is further complicated by numerical linear algebra libraries which have inconsistent and unintuitive pronunciations.
 
@@ -17,9 +17,11 @@ This is further complicated by numerical linear algebra libraries which have inc
 
 ### Cholesky
 
-- pronounced: ko - less - key (somewhat throaty ko, like kho)
+- pronounced: ko - less - key (somewhat throaty ko), or shuh - less - key
 - often mispronounced: chuh - less - key
-- notes: <a href="https://en.wikipedia.org/wiki/Andr%C3%A9-Louis_Cholesky" target="_blank" class="mainlink">this is somewhat muddled by that fact that Choleskly was paternally Polish and maternally French, and grew up in France</a>, but I side with the Polish pronunciation (see references)
+- notes: the first pronunciation is Polish and the second is French,
+<a href="https://en.wikipedia.org/wiki/Andr%C3%A9-Louis_Cholesky" target="_blank" class="mainlink">deciding on the correct pronunciation is somewhat muddled by that fact that Cholesky was paternally Polish and maternally French, and grew up in France</a>,
+Joel Tropp (in an unrecorded presentation I attended) made a convincing argument for the second (French) pronunciation, saying that "Cholesky's family had lived in France for multiple generations, and he probably pronounced his own name this way"
 
 
 ### Schur
