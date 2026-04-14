@@ -104,3 +104,9 @@ You run the computation and you pray."
 
 ---
 
+"Applied mathematics is all about getting approximations to things you can't have."
+
+\- me
+
+---
+
