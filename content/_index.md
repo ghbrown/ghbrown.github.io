@@ -38,8 +38,10 @@ draft: false
 ---
 
 I am a fourth year Ph.D. student in the Computational Science, Engineering, and Mathematics graduate program in the Oden Institute advised by [Joe Kileel](https://web.ma.utexas.edu/users/jkileel/).
+For summer 2026 I am a Computing Scholar at Lawrence Livermore National Laboratory working with [Peter Lindstrom](https://people.llnl.gov/lindstrom2), and for fall 2026 I will work with [Yang Liu](https://liuyangzhuan.github.io/) at Lawrence Berkeley National Laboratory as part of the DOE SCGSR.
 
-My primary focus is on computational and applied mathematics, especially numerical analysis, (multi)linear algebra, and optimization.
+I am interested in numerical analysis, linear algebra, and optimization.
+My PhD has focused on low-rank tensors and their applications to data compression and fast approximate algorithms.
 I also enjoy the intersections of these topics with high performance computing, theoretical computer science, and the physical sciences.
 
 I graduated from the University of Notre Dame in 2020 with my bachelor's in Mechanical Engineering, and from the University of Illinois Urbana-Champaign in 2022 with my master's in Theoretical and Applied Mechanics.
