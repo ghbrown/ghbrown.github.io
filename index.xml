@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About Me on Gabriel H. Brown</title><link>https://ghbrown.net/</link><description>Recent content in About Me on Gabriel H. Brown</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright [Gabriel H. Brown](/).</copyright><lastBuildDate>Wed, 14 Jan 2026 00:19:38 -0600</lastBuildDate><atom:link href="https://ghbrown.net/index.xml" rel="self" type="application/rss+xml"/><item><title>A mediocre algorithm to exhaust k-d tree</title><link>https://ghbrown.net/posts/exhausted_kdtree/</link><pubDate>Wed, 14 Jan 2026 00:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/exhausted_kdtree/</guid><description>&lt;h1 id="a-mediocre-algorithm-to-exhaust-k-d-tree"&gt;A mediocre algorithm to exhaust k-d tree&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>About Me on Gabriel H. Brown</title><link>https://ghbrown.net/</link><description>Recent content in About Me on Gabriel H. Brown</description><generator>Hugo</generator><language>en-us</language><copyright>Copyright [Gabriel H. Brown](/).</copyright><lastBuildDate>Mon, 15 Jun 2026 10:21:47 -0500</lastBuildDate><atom:link href="https://ghbrown.net/index.xml" rel="self" type="application/rss+xml"/><item><title>Which tensor multilinear ranks can be realized?</title><link>https://ghbrown.net/posts/multilinear_iff/</link><pubDate>Mon, 15 Jun 2026 10:21:47 -0500</pubDate><guid>https://ghbrown.net/posts/multilinear_iff/</guid><description>&lt;h1 id="necessary-and-sufficient-conditions-on-tensor-multilinear-rank"&gt;Necessary and sufficient conditions on tensor multilinear rank&lt;/h1&gt;
+&lt;hr&gt;
+&lt;p&gt;The multilinear rank of a tensor $\mathcal{T} \in \mathbb{R}^{m \times n \times p}$
+is defined as the 3-tuple&lt;/p&gt;
+
+ &lt;p&gt;$$
+(\;
+\text{rank}(\mathbf{T}_{(1)}),\;
+\text{rank}(\mathbf{T}_{(2)}),\;
+\text{rank}(\mathbf{T}_{(3)}) \;
+)
+$$
+ &lt;/p&gt;
+&lt;p&gt;where $T_{(i)}$ is the mode $i$ flattening of $\mathcal{T}$, a matrix whose columns are the mode $i$ fibers.
+Here the shapes of these unfoldings would be&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;$m \times np$ for $\mathbf{T}_{(1)}$,&lt;/li&gt;
+&lt;li&gt;$n \times mp$ for $\mathbf{T}_{(2)}$,&lt;/li&gt;
+&lt;li&gt;$p \times mn$ for $\mathbf{T}_{(3)}$.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;A reviewer asked a question I hadn&amp;rsquo;t considered before:
+what are the &amp;ldquo;realizable&amp;rdquo; multilinear ranks for a given tensor shape?
+There are two directions here:&lt;/p&gt;</description></item><item><title>A mediocre algorithm to exhaust k-d tree</title><link>https://ghbrown.net/posts/exhausted_kdtree/</link><pubDate>Wed, 14 Jan 2026 00:19:38 -0600</pubDate><guid>https://ghbrown.net/posts/exhausted_kdtree/</guid><description>&lt;h1 id="a-mediocre-algorithm-to-exhaust-k-d-tree"&gt;A mediocre algorithm to exhaust k-d tree&lt;/h1&gt;
 &lt;p&gt;Or perhaps a better title:
 &amp;ldquo;Finding all unique nearest neighbors in $O(n^{3/2} \log(n))$ with a standard k-d tree&amp;rdquo;&lt;/p&gt;
 &lt;hr&gt;
