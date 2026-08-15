@@ -9,14 +9,24 @@ draft: false
 
 ## Research Positions
 
-I am fortunate to be advised by [Joe Kileel](https://web.ma.utexas.edu/users/jkileel/), with whom I am working on problems related to low rank tensor approximation, approximate, and fast algorithms.
-<br>
+I am fortunate to be advised by
+[Joe Kileel](https://web.ma.utexas.edu/users/jkileel/),
+with whom I study low-rank tensors and their application to error-bounded compression and fast approximate algorithms.
+
+I have held multiple research positions at national laboratories during my PhD.
+At Lawrence Livermore National Laboratory I worked with
+[Peter Lindstrom](https://people.llnl.gov/lindstrom2)
+on fast multilinear transforms for compression.
+At Sandia National Laboratories I worked with
+[Eric Phipps](https://www.sandia.gov/ccr/staff/eric-t-phipps/)
+on the identification of atmospheric phenomena using tensor decompositions and other data-driven techniques.
+
 During my master's degree I worked with
 [Edgar Solomonik](https://solomonik.cs.illinois.edu/)
 on theoretical and numerical aspects of the tensor eigenpair problem, and with
 [Harley Johnson](/themes/risotto/exampleSite/content/homepage/index.md)
 on computational electronic structure.
-<br>
+
 As an undergraduate I researched multiple phenomena related to
 nonequilibrium plasmas including plasma-liquid simulations with
 [David Go](https://engineering.nd.edu/faculty/david-go/)
@@ -25,8 +35,10 @@ and plasma jets with
 I also spent one summer with a (chance) position in a nuclear
 physics laboratory, which is how I got into research.
 
-- <b>May 2026 - August 2026</b>: Computing Scholar, Peter Lindstrom, Lawrence Livermore National Laboratory
+<br>
+
 - <b>August 2022 - <span class="themecolor">present</span></b>: Applied Mathematics Group, Joe Kileel, UT Austin
+- <b>Summer 2026</b>: Computing Scholar, Peter Lindstrom, Lawrence Livermore National Laboratory
 - <b>Summer 2024</b>: Computer Science Research Institute, Eric Phipps, Sandia National Laboratory
 - <b>March 2021 - August 2022</b>: Labaratory for Parallel Numerical Algorithms, Edgar Solomonik, UIUC
 - <b>July 2020 - May 2022</b>: Harley T. Johnson Group, UIUC

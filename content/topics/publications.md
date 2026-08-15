@@ -7,7 +7,20 @@ draft: false
 
 ---
 
+## 2026
+
+D. Palmer, N. Ferdous, <span class="themecolor">G.H. Brown</span>, et al.,
+"Total energy of twisted bilayer graphene from a tight binding model",
+*Physical Review B*, 2026.
+[link](https://link.aps.org/doi/10.1103/j9sg-gbth)
+
+
 ## 2025
+
+T.S. Ehrmann, D.L. Bull, E.T. Phipps, <span class="themecolor">G.H. Brown</span>, H.N. Kolla,
+"Identifying Increased MJO Dimensionality through Canonical Polyadic Decomposition",
+*ESS Open Archive*, 2025.
+[link](https://essopenarchive.org/doi/full/10.22541/essoar.175766730.07397918/v1)
 
 <span class="themecolor">G.H. Brown</span>, J. Kileel, T.G. Kolda,
 "The Fascinating World of 2 $\times$ 2 $\times$ 2 Tensors: Its Geometry and Optimization Challenges",
@@ -45,11 +58,6 @@ Plasma–Surface Interface",
 
 ## 2021
 
-N. Shaffer, <span class="themecolor">G.H. Brown</span>, et al.,
-"What's new in the Fortran standard library?",
-*International Fortran Conference 2021*, 2021.
-[link](https://tcevents.chem.uzh.ch/event/14/co)
-
 H.E. Delgado, <span class="themecolor">G.H. Brown</span>, D.M. Bartels, P. Rumbach, and D.B. Go,
 "The scaling of kinetic and transport behaviors of a plasma-liquid interface",
 *Journal of Applied Physics*,
@@ -85,11 +93,29 @@ of 11C: The most precise mirror transition Ft value",
 
 ---
 
+# 2026
+
+<span class="themecolor">G.H. Brown</span>, J. Kileel, and T.G. Kolda,
+"Rank Geometry for Real 2 $\times$ 2 $\times$ 2 Tensors: Singularities, Best Low-Rank Approximations, and Visualization",
+SIAM Annual Meeting, 2026.
+
+<span class="themecolor">G.H. Brown</span> and J. Kileel,
+"Fast and Deterministic Approximation of Matrix Multiplication",
+NASC RTG Ranch Retreat, 2026.
+
+
 # 2024
 
-<span class="themecolor">G.H. Brown</span>, J. Kileel, T.G. Kolda,
+<span class="themecolor">G.H. Brown</span>, J. Kileel, and T.G. Kolda,
 "Rank geometry for small sized tensors: singularities and nearest point problems",
 SIAM TX-LA Sectional Meeting, 2024.
+
+# 2021
+
+N. Shaffer, <span class="themecolor">G.H. Brown</span>, et al.,
+"What's new in the Fortran standard library?",
+*International Fortran Conference 2021*, 2021.
+[link](https://tcevents.chem.uzh.ch/event/14/co)
 
 ---
 
