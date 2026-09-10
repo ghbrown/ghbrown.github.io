@@ -38,7 +38,7 @@ draft: false
 ---
 
 I am a fifth year Ph.D. student in the Computational Science, Engineering, and Mathematics graduate program in the Oden Institute advised by [Joe Kileel](https://web.ma.utexas.edu/users/jkileel/).
-During fall 2026 I am working with [Yang Liu](https://liuyangzhuan.github.io/) at Lawrence Berkeley National Laboratory as part of the Department of Energy Graduate Student Research Program.
+This fall I am working with [Yang Liu](https://liuyangzhuan.github.io/) at Lawrence Berkeley National Laboratory through the Department of Energy Graduate Student Research Program.
 
 I am interested in numerical analysis, linear algebra, and optimization.
 My PhD has focused on low-rank tensors and their applications to data compression and fast approximate algorithms.

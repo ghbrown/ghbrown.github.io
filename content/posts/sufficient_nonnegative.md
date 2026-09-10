@@ -14,10 +14,10 @@ Here we are concerned with "non-negative" linear systems, that is, linear system
 In particular, we give a sufficient condition for non-negativity of the solution {{< katex >}}$\mathbf{x}${{< /katex >}} to {{< katex >}}$\mathbf{Ax} = \mathbf{b}${{< /katex >}}.
 
 First, we discuss an intuition for the result.
-The columns of {{< katex >}}$\mathbf{A}${{< /katex >}} form a linear cone; if a vector {{< katex >}}$\mathbf{c}${{< /katex >}} (a right hand side to the linear system) is known to lie in the cone, then one can find a "subcone" containing {{< katex >}}$\mathbf{c}${{< /katex >}}.
+The possible solutions of a linear system in {{< katex >}}$\mathbf{A}${{< /katex >}} form a linear cone; if a vector {{< katex >}}$\mathbf{c}${{< /katex >}} (a right hand side to the linear system) is known to lie in the cone, then one can find a "subcone" containing {{< katex >}}$\mathbf{c}${{< /katex >}}.
 The sufficient condition essentially upper bounds the "radius" of this subcone.
 
-<span class="themecolor">**Theorem**</span>: let {{< katex >}}$\mathbf{A} \in \mathbb{R}^{n \times n}${{< /katex >}} and {{< katex >}}$\mathbf{b}${{< /katex >}} be an invertible matrix and a vector, both non-negative.
+<span class="themecolor">**Theorem**</span>: let {{< katex >}}$\mathbf{A} \in \mathbb{R}^{n \times n}${{< /katex >}} and {{< katex >}}$\mathbf{b} \in \mathbb{R}^n${{< /katex >}} be an invertible matrix and a vector, both non-negative.
 Further, let {{< katex >}}$\mathbf{A}${{< /katex >}} satisfy the following form of diagonal dominance by rows
 {{< katex >}}
 $$
@@ -28,15 +28,17 @@ $$
 Then
 {{< katex >}}
 $$
-\exists \mathbf{c} : \mathbf{Ay} = \mathbf{c}, \;
-\mathbf{y} \geq \mathbf{0}, \;
-\mathbf{c} \geq \mathbf{0}, \;
-||\mathbf{b} - \mathbf{c}||_\infty \leq \min\left( \alpha \min(|\mathbf{y}|), \min(\mathbf{|c|}) \right) \\
-\quad \Rightarrow \quad \exists \mathbf{x} : \mathbf{x} \geq \mathbf{0}, \mathbf{Ax}=b
+\begin{aligned}
+&\exists \mathbf{b}, \mathbf{c} \; : \; \mathbf{Ay} = \mathbf{c}, \;\;
+\mathbf{b}, \mathbf{c}, \mathbf{y} \geq \mathbf{0} \; , \;\; \\
+&\quad ||\mathbf{b} - \mathbf{c}||_\infty \leq \min\left( \alpha \min(|\mathbf{y}|), \min(\mathbf{|c|}) \right)
+\end{aligned} \\
+\Downarrow \\
+\exists \mathbf{x} \; : \; \mathbf{x} \geq \mathbf{0}, \;\; \mathbf{Ax}=\mathbf{b} \; .
 $$
 {{< /katex >}}
 
-In particular, one could apply this theorem to the case when {{< katex >}}$\mathbf{c} = \mathbf{A}\mathbb{1}${{< /katex >}}, a point expected to be relatively deep in the interior of the cone (assuming all columns normalized).
+In particular, one could apply this theorem to the case when {{< katex >}}$\mathbf{c} = \mathbf{A}\mathbf{1}${{< /katex >}}, a point expected to be relatively deep in the interior of the cone (assuming all columns normalized).
 Contrast with the case when {{< katex >}}$\mathbf{c} = \mathbf{Az}${{< /katex >}}, where {{< katex >}}$\mathbf{z}${{< /katex >}} has a 0 in one or more elements, meaning {{< katex >}}$\mathbf{c}${{< /katex >}} would be on a face of the cone (and hence the above theorem would predict zero for the radius of the subcone).
 
 <details>

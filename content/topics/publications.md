@@ -95,6 +95,10 @@ of 11C: The most precise mirror transition Ft value",
 
 # 2026
 
+<span class="themecolor">G.H. Brown</span> and J. Kileel,
+"Theoretical limits on approximate matrix multiplication",
+Workshop on Approximate Computing in Numerical Linear Algebra, 2026.
+
 <span class="themecolor">G.H. Brown</span>, J. Kileel, and T.G. Kolda,
 "Rank Geometry for Real 2 $\times$ 2 $\times$ 2 Tensors: Singularities, Best Low-Rank Approximations, and Visualization",
 SIAM Annual Meeting, 2026.

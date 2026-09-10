@@ -37,6 +37,7 @@ physics laboratory, which is how I got into research.
 
 <br>
 
+- <b><span class="themecolor">Fall 2026</span></b>: Applied Math and Computational Research Division, Yang Liu, Lawrence Berkeley National Laboratory
 - <b>August 2022 - <span class="themecolor">present</span></b>: Applied Mathematics Group, Joe Kileel, UT Austin
 - <b>Summer 2026</b>: Computing Scholar, Peter Lindstrom, Lawrence Livermore National Laboratory
 - <b>Summer 2024</b>: Computer Science Research Institute, Eric Phipps, Sandia National Laboratory
