@@ -1,0 +1,158 @@
+<!doctype html><html lang=en><head><title>Complexity of symbolic QR decomposition | Gabriel H. Brown</title><meta name=viewport content="width=device-width,initial-scale=1"><meta charset=UTF-8><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin=anonymous><link rel=stylesheet href=//cdnjs.cloudflare.com/ajax/libs/academicons/1.9.1/css/academicons.min.css integrity="sha512-b1ASx0WHgVFL5ZQhTgiPWX+68KjS38Jk87jg7pe+qC7q9YkEtFq0z7xCglv7qGIs/68d3mAp+StfC8WKC5SSAg==" crossorigin=anonymous><link rel=stylesheet href=https://ghbrown.net/css/palettes/color-splotch.css><link rel=stylesheet href=https://ghbrown.net/css/risotto.css><link rel=stylesheet href=https://ghbrown.net/css/custom.css><script src=https://ghbrown.net/assets/quotes.js></script><script src=https://ghbrown.net/js/serve_quote.js></script><script type=text/javascript src=//code.jquery.com/jquery-latest.min.js></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css integrity=sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X crossorigin=anonymous><script defer src=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.js integrity=sha384-g7c+Jr9ZivxKLnZTDUhnkOnsh30B4H0rpLUpJ4jAIKs4fnJI+sEnkvrMWph2EDg4 crossorigin=anonymous></script><script defer src=https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/contrib/auto-render.min.js integrity=sha384-mll67QQFJfxn0IYznZYonOWZ644AWYC+Pt2cHqMaRhXVrursRwvLnLaebdGIlYNa crossorigin=anonymous onload=renderMathInElement(document.body)></script><script>document.addEventListener("DOMContentLoaded",function(){renderMathInElement(document.body,{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1}]})})</script></head><body><div class=page><header class=page__header><nav class="page__nav main-nav"><ul><h1 class=page__logo><a href=https://ghbrown.net/ class=page__logo-inner>Gabriel H. Brown</a></h1><li class=main-nav__item><a class=nav-main-item href=https://ghbrown.net/ title>About Me</a></li><li class=main-nav__item><a class=nav-main-item href=https://ghbrown.net/topics/research title>Research</a></li><li class=main-nav__item><a class=nav-main-item href=https://ghbrown.net/topics/publications title>Publications</a></li><li class=main-nav__item><a class=nav-main-item href=https://ghbrown.net/topics/open_source title>Open Source</a></li><li class=main-nav__item><a class=nav-main-item href=https://ghbrown.net/topics/hobbies_and_interests title>Hobbies</a></li><li class=main-nav__item><a class=nav-main-item href=https://ghbrown.net/tags title>Post Topics</a></li></ul></nav></header><section class=page__body><div class=content__body><h1 id=complexity-of-symbolic-qr-factorization>Complexity of symbolic QR factorization</h1><hr><p>Suppose the matrix $\mathbf{A} \in \mathbb{R}^{m \times n}$ is populated by real variables, that is every entry is a unique variable which can assume real values.
+What is the complexity of computing the symbolic QR decomposition of this matrix?
+In particular, how &ldquo;complicated&rdquo; are the symbolic expressions in the final decomposition?</p><p>We show that a symbolic version of the Householder algorithm results in an upper triangular factor $\mathbf{R}$ which has exponentially or factorially large expressions (and so space).</p><p>This is of course much more costly than the usual setting of numerical linear algebra where $\mathbf{A}$ is populated by real floating points values, in which case the Householder algorithm computes the upper triangular factor in $O(m n^2)$ time and stores it in $O(mn)$ space, assuming $m \geq n$.</p><hr><h2 id=complexity-model>Complexity Model</h2><p>The complexity model we use for expressions is the number of operators ($+, -, \times, \div, \sqrt{\cdot}$, etc.).
+This is (up to constants) the cost of evaluating the expression after plugging in numerical values, as well as the number of nodes in the expression tree.</p><p>If $E$ is a symbolic expression, we denote the cost of evaluations (same as number of operators) of $E$ by $d(E)$.
+For vectors and matrices, let $d(\cdot)$ represent the cost of evaluating every entry, so simply the sum over all entries.
+We give some simple results about this measure of cost, focusing on upper bounds.</p><p><strong>Binary operations</strong>: $d(x \circ y) = d(x) + d(y) + 1$, where
+$
+\circ \in \{ +, -, \times, \div \}
+$</p><p><strong>Unary operations</strong>: $d(\sqrt{x}) = d(x) + 1$</p><p>(the rest follow almost immediately from these two)</p><p><strong>Vector addition</strong>: for symbolic $\mathbf{u}$, $\mathbf{v}$ of length $m$<p>$$
+\begin{aligned}
+d(\mathbf{u} + \mathbf{v})
+&= \sum_i d(u_i + v_i) \\
+&= \sum_i d(u_i) + d(v_i) + 1 \\
+&= d(\mathbf{u}) + d(\mathbf{v}) + m \\
+\end{aligned}
+$$</p></p><p><strong>Scalar times vector</strong>: for symbolic scalar $\gamma$ and symbolic $\mathbf{x}$ of length $m$</p><p>$$
+\begin{aligned}
+d(\gamma \mathbf{x}) &= \sum_i d(\gamma x_i) \\
+&= \sum_i d(\gamma) +d(x_i) + 1 \\
+&= d(\mathbf{x}) + m(d(\gamma) + 1)
+\end{aligned}
+$$</p><p><strong>Inner product</strong>: for symbolic $\mathbf{u}$, $\mathbf{v}$ of length $m$</p><p>$$
+\begin{aligned}
+d(\mathbf{u}^T \mathbf{v})
+&= d(\sum_i u_i v_i) \\
+&= \sum_{i=1}^m (d(u_i) + d(v_i) + 1) + m - 1 \\
+&= \sum_{i=1}^m d(u_i) + \sum_{i=1}^m d(v_i) + 2m - 1 \\
+&= d(\mathbf{v}) + d(\mathbf{u}) + 2m - 1 \\
+\end{aligned}
+$$</p><p><strong>2-norm</strong>: for symbolic $\mathbf{x}$ of length $m$,<p>$$
+\begin{aligned}
+d(||\mathbf{x}||_2)
+&= d(\sqrt{\mathbf{x}^T \mathbf{x}}) \\
+&= d(\mathbf{x}^T \mathbf{x}) + 1 \\
+&= 2 (d(\mathbf{x}) + m)
+\end{aligned}
+$$</p></p><hr><h2 id=refresher-on-householder-qr>Refresher on Householder QR</h2><p>Householder QR computes the upper triangular matrix
+$\mathbf{R} \in \mathbb{R}^{m \times n}$
+by applying $n$ orthogonal matrices</p><p>$$
+\mathbf{R} = \mathbf{H}_n \mathbf{H}_{n-1} \dots \mathbf{H}_{1} \mathbf{A},
+$$</p><p>Each matrix
+$
+\mathbf{H}_i \in \mathbb{R}^{m \times m}
+$
+is orthogonal, hence $\prod_{i=n}^{1} \mathbf{H}_i$ is orthogonal and equals $\mathbf{Q}^T$.</p><p>The matrix $\mathbf{H}_i$ is called a <a href=https://en.wikipedia.org/wiki/Householder_transformation target=_blank>Householder reflector</a> and is designed to introduce zeros below the diagonal of the $i$th column of whichever matrix it is applied to.
+Applying $n$ such matrices in the correct order brings $\mathbf{A}$ to an upper diagonal matrix.
+What makes Householder QR work is that this introduction of zeros can done in a right-looking manner: the zeros introduced by $\mathbf{H}_i$ in column $i$ are not spoiled by the application of
+$
+\mathbf{H}_{i+1}
+$
+which introduces zeros in column $i+1$ to the right.</p><p>This right-looking nature is encoded in the structure of the Householder reflectors, which have identity blocks that grow with $i$,</p><p>$$
+\mathbf{H}_i =
+\begin{bmatrix}
+\mathbf{I}_{i-1} & \mathbf{0} \\
+\mathbf{0} & \mathbf{I}_{m - i + 1} - 2 \mathbf{v}_i \mathbf{v}_i^T
+\end{bmatrix}
+$$</p><p>where $\mathbf{I}_p$ is the $p \times p$ identity and
+$\mathbf{v}_i \in \mathbb{R}^{m - i + 1}$ is given by</p><p>$$
+\mathbf{v}_i =
+\pm
+\frac{\mathbf{x}_i - \alpha \mathbf{e}_1}
+{||\mathbf{x}_i - \alpha \mathbf{e}_1||_2},
+\quad
+\alpha = \pm || \mathbf{x} ||_2 .
+$$</p><p>The vector $\mathbf{x}_i$ is a partial column of the &ldquo;work in progress&rdquo; matrix
+$
+\mathbf{W}_i = \mathbf{H}_{i-1} ... \mathbf{H}_{1} \mathbf{A} ;
+$
+in particular,
+$
+\mathbf{x}_i = (\mathbf{W}_i)_{i:n,i} .
+$</p><hr><h2 id=proof-of-complexity>Proof of complexity</h2><p>In this section we prove that the complexity of the resulting upper triangular factor $\mathbf{R}$ is</p><p>$$
+\begin{aligned}
+&amp;O(mn \cdot \frac{m!}{(m-n)!}), \; \text{when $m > n$} \\
+&amp;O(mn \cdot m!), \hspace{3.1em}\text{when $m \leq n$} \; .
+\end{aligned}
+$$</p><p>We begin by analyzing the complexity of a vector which has been transformed by a Householder reflector.
+In particular, it will be most useful to get the complexity of an element of this transformed vector.</p><p><strong>Lemma 1</strong>: If $\mathbf{H}_i$ is the $i$th Householder reflector (parameterized by $\mathbf{x} \in \mathbb{R}^{m - i + 1}$),
+then for arbitrary $\mathbf{b}$ an element of the trailing block of
+$
+\mathbf{H}_i \begin{bmatrix}\times \\ \mathbf{b}\end{bmatrix}
+$
+has complexity<p>$$
+O\left(\; d(\mathbf{b}) + d(\mathbf{x}) + (m-i+1) \;\right) .
+$$</p></p><details><summary>Proof</summary>It suffices to focus on the trailing subvector of size $m-i+1$ since the leading identity block can be implicitly applied using zero operations.
+Within the trailing subvector, we focus on computing the complexity of the first element, which will have slightly larger complexity than all other elements and hence provides a complexity upper bound.
+We therefore focus on the cost
+$d(b_1 - 2 v_1 \mathbf{v}^T \mathbf{b})$, and
+temporarily denote $\text{dim}(\mathbf{b})=b$;
+$b = m - i + 1$ will be inserted later.<p>$$
+\begin{aligned}
+d(b_1 - 2 \mathbf{v}^T \mathbf{b} v_1)
+&=
+d\left(b_1 - \frac{2(\mathbf{x} - \alpha \mathbf{e}_1)^T \mathbf{b}
+}{||\mathbf{x} - \alpha \mathbf{e}_1||_2^2} (x_1 - \alpha) \right) \\
+&= d(b_1) + d(x_1 - \alpha) + c + 2 \\
+&= d(b_1) + d(x_1) + d(\alpha) + c + 3
+\end{aligned}
+$$</p><p>where</p><p><p>$$
+\begin{aligned}
+c &\coloneqq
+d\left( \frac{2(\mathbf{x} - \alpha \mathbf{e}_1)^T \mathbf{b}
+}{||\mathbf{x} - \alpha \mathbf{e}_1||_2^2} \right) \\
+&= d((\mathbf{x} - \alpha \mathbf{e}_1)^T \mathbf{b})
++ d(||\mathbf{x} - \alpha \mathbf{e}_1||_2^2) + 2 \\
+&= 3 d(\mathbf{x} - \alpha \mathbf{e}_1) + d(\mathbf{b}) + 4b \\
+&= 3 \left(d(\mathbf{x}) + d(\alpha) + 1\right) + d(\mathbf{b}) + 4b
+\end{aligned}
+$$</p>and
+$d(\alpha) = d(\pm ||\mathbf{x}||_2) = 2(d(\mathbf{x}) + b) + 1$.</p><p>Inserting $d(\alpha)$ into $c$ and
+$d(b_1 - 2 \mathbf{v}^T \mathbf{b} v_1)$
+we obtain<p>$$
+\begin{aligned}
+c &= 9 d(\mathbf{x}) + d(\mathbf{b}) + 10b + 3 \\
+d(b_1 - 2 \mathbf{v}^T \mathbf{b} v_1) &=
+d(b_1) + d(x_1) + 2d(\mathbf{x}) + 2b + c + 4,
+\end{aligned}
+$$</p></p><p>and combining we get the element&rsquo;s complexity as<p>$$
+d(b_1) + d(x_1) + d(\mathbf{b}) + 11d(\mathbf{x}) + 12b + 7 \; .
+$$</p></p><p>Inserting $b = m-i+1$ we have<p>$$
+d(b_1) + d(v_1) + d(\mathbf{b}) + 11d(\mathbf{x}) + 12(m-i+1) + 7
+$$</p>which is clearly
+$O\left(d(\mathbf{b}) + d(\mathbf{x}) + (m-i+1) \right)$ .</p></details><p>Recall that after step $i$ of the Householder QR algorithm, the row $i$ of the working matrix is no longer altered.
+This means that its complexity also stops increasing.</p><p>Therefore, the total complexity of the matrix $R$ (over all upper triangular elements) is given by
+$\sum_{i=1}^{min(m,n)} (n - i + 1) K_i$,
+where the first term of a summand accounts for the number of elements in the $i$th row, while $K_i$ is the complexity of the elements in the $i$th row after $i$ Householder steps.
+Critically, note that $K_i$ is also the element complexity of the trailing
+$(m-i+1) \times (m-i+1)$
+submatrix of $\mathbf{W}_i$.
+As an example, $K_1$ can easily be computed using Lemma 1 as $O(m)$ since $d(\mathbf{b})$ and $d(\mathbf{x})$ are both $O(m)$ (they are simply unaltered entries of the input $\mathbf{A}$).
+The following lemma shows that the asymptotic order of $K_i$ is factorial in $m$.</p><p><strong>Lemma 2</strong>: $K_i = O(\frac{m!}{(m-i)!})$.</p><details><summary>Proof</summary>By induction, note that $K_i = O(\frac{m!}{(m-i)!})$.
+For the base case, $K_1 = m$ since then
+$d(\mathbf{x})$ and $d(\mathbf{b})$ are full columns of $\mathbf{A}$, which have complexity $m$ (no operations have been performed on them yet).
+Assuming $K_{i-1} = \frac{m!}{(m-i+1)!}$,
+$
+\mathbf{H}_i
+$
+will be constructed using a vector $\mathbf{x}$ of length $m-i+1$ taken from the trailing submatrix of
+$
+\mathbf{W}_{i-1}.
+$
+The complexity of this the vector is $K_{i-1} (m-i+1)$,
+and all vectors it will be applied to (other columns of the trailing submatrix of $\mathbf{W}_{i}$).
+By Lemma 2 the, the element complexity of the output vectors is<p>$$
+\begin{aligned}
+&amp;O(2K_{i-1} (m-i+1) + (m-i+1)) \\
+&\quad = O(2\frac{m!}{(m-i+1)!} (m-i+1) + (m-i+1)) \\
+&\quad = O(2\frac{m!}{(m-i)!} + (m-i+1))
+\end{aligned}
+$$</p>and clearly this is of factorial complexity asymptotically, proving the claim for $K_i$.</details><p>Therefore, the overall complexity of $\mathbf{R}$ is
+$O(mn \cdot K_{\min(m,n)})$, since there are at most $mn$ elements of which have element complexity at most $K_{\min(m,n)}$, which completes the proof of the claimed complexity.
+Of course this is somewhat of an overestimate, as the earlier rows of $\mathbf{R}$ have lower complexity than the final row.
+For example, let us compare the cost of the whole first row of $\mathbf{R}$ and the cost of the last element.
+The first row has $n$ elements each of complexity $O(m)$.
+Hence the overall cost is $O(mn)$; interestingly, this is also the cost of storing the entire matrix $\mathbf{A}$.
+Meanwhile the last element of $\mathbf{R}$ costs $O\left(\frac{m!}{(m-n)!}\right)$, assuming $m > n$, which is much larger than the first row&rsquo;s cost for even modest $m$, $n$.</p><hr><h2 id=comments>Comments</h2><ul><li>This is only an upper bound, and only valid for a single algorithm.
+Other algorithms or analyses could perhaps sharpen the bound.</li><li>Lower bounds are of course also interesting, though I haven&rsquo;t thought about how to attack them.</li><li>It would be interesting to investigate the effects of fast matrix multiplication on symbolic complexity of linear algebra algorithms.
+For example, algorithms like Strassen are known to reduce the asymptotic work of computing a matrix product, but do they lead to lower or higher expression complexities symbolically?</li></ul><hr><h2 id=acknowledgements>Acknowledgements</h2><p>Part of this work was completed at the University of Heidelberg with the support of the <a href=https://cgkrishnanunni.github.io/ target=_blank>Krishnanunni CG</a> Visiting Fellows Program.</p><hr></div><footer class=content__footer></footer></section><section class=page__aside><div class=aside__about><div id=quote><h1>A fun quote</h1></div><script>newQuote()</script></div><hr><div class=aside__content><p>posted 2026-09-10</p></div></section><footer class=page__footer><p class=copyright>Copyright <a href=/>Gabriel H. Brown</a>.</p></footer></div></body></html>
