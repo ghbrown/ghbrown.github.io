@@ -1,7 +1,7 @@
 {{ define "main" }}
 <!-- orders all tagged posts newest first -->
 <div class="main">
-    <h1>{{ .Title }}</h1>
+    <!-- <h1>{{ .Title }}</h1> -->
     {{ .Content }}
     <hr>
     {{ range .Site.RegularPages.ByPublishDate.Reverse }}
@@ -14,7 +14,7 @@
             <p>
                 {{ partial "summary_no_header.html" . }} <!-- cleaner summary -->
             </p>
-            <p>({{ .PublishDate.Format "2006-01-02" }})</p>
+            <p>{{ .PublishDate.Format "2006-01-02" }}</p>
             <hr>
         {{ end }}
     {{ end }}
