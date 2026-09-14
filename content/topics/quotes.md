@@ -110,3 +110,9 @@ You run the computation and you pray."
 
 ---
 
+"The hands will never surpass the eyes."
+
+- Aoi Todo (Jujutsu Kaisen S1E16)
+
+---
+
