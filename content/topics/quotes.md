@@ -88,7 +88,7 @@ You run the computation and you pray."
 
 "Any fool can know. The point is to understand."
 
-\- fictional Einsten (written by [Ernest Kinoy](https://quoteinvestigator.com/2021/11/20/fool-know/))
+\- fictional Einstein (written by [Ernest Kinoy](https://quoteinvestigator.com/2021/11/20/fool-know/))
 
 ---
 
