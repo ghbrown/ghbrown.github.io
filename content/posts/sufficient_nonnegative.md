@@ -10,23 +10,23 @@ tags: ['linear algebra']
 
 ---
 
-Here we are concerned with "non-negative" linear systems, that is, linear systems where {{< katex >}}$\mathbf{A}, \mathbf{b} \geq \mathbf{0}${{< /katex >}} (elementwise).
-In particular, we give a sufficient condition for non-negativity of the solution {{< katex >}}$\mathbf{x}${{< /katex >}} to {{< katex >}}$\mathbf{Ax} = \mathbf{b}${{< /katex >}}.
+Here we are concerned with "non-negative" linear systems, that is, linear systems where $\mathbf{A}, \mathbf{b} \geq \mathbf{0}$ (elementwise).
+In particular, we give a sufficient condition for non-negativity of the solution $\mathbf{x}$ to $\mathbf{Ax} = \mathbf{b}$.
 
 First, we discuss an intuition for the result.
-The possible solutions of a linear system in {{< katex >}}$\mathbf{A}${{< /katex >}} form a linear cone; if a vector {{< katex >}}$\mathbf{c}${{< /katex >}} (a right hand side to the linear system) is known to lie in the cone, then one can find a "subcone" containing {{< katex >}}$\mathbf{c}${{< /katex >}}.
+The possible solutions of a linear system in $\mathbf{A}$ form a linear cone; if a vector $\mathbf{c}$ (a right hand side to the linear system) is known to lie in the cone, then one can find a "subcone" containing $\mathbf{c}$.
 The sufficient condition essentially upper bounds the "radius" of this subcone.
 
-<span class="themecolor">**Theorem**</span>: let {{< katex >}}$\mathbf{A} \in \mathbb{R}^{n \times n}${{< /katex >}} and {{< katex >}}$\mathbf{b} \in \mathbb{R}^n${{< /katex >}} be an invertible matrix and a vector, both non-negative.
-Further, let {{< katex >}}$\mathbf{A}${{< /katex >}} satisfy the following form of diagonal dominance by rows
-{{< katex >}}
+<span class="themecolor">**Theorem**</span>: let $\mathbf{A} \in \mathbb{R}^{n \times n}$ and $\mathbf{b} \in \mathbb{R}^n$ be an invertible matrix and a vector, both non-negative.
+Further, let $\mathbf{A}$ satisfy the following form of diagonal dominance by rows
+
 $$
   0 \leq \alpha \leq |a_{ii}| - \sum_{j} |a_{ij}| \quad \forall i .
 $$
-{{< /katex >}}
+
 
 Then
-{{< katex >}}
+
 $$
 \begin{aligned}
 &\exists \mathbf{b}, \mathbf{c} \; : \; \mathbf{Ay} = \mathbf{c}, \;\;
@@ -36,40 +36,55 @@ $$
 \Downarrow \\
 \exists \mathbf{x} \; : \; \mathbf{x} \geq \mathbf{0}, \;\; \mathbf{Ax}=\mathbf{b} \; .
 $$
-{{< /katex >}}
 
-In particular, one could apply this theorem to the case when {{< katex >}}$\mathbf{c} = \mathbf{A}\mathbf{1}${{< /katex >}}, a point expected to be relatively deep in the interior of the cone (assuming all columns normalized).
-Contrast with the case when {{< katex >}}$\mathbf{c} = \mathbf{Az}${{< /katex >}}, where {{< katex >}}$\mathbf{z}${{< /katex >}} has a 0 in one or more elements, meaning {{< katex >}}$\mathbf{c}${{< /katex >}} would be on a face of the cone (and hence the above theorem would predict zero for the radius of the subcone).
 
-<details>
-  <summary>Proof</summary>
-  We have {{< katex >}}$\mathbf{Ay}=\mathbf{c}${{< /katex >}}, now consider
-  {{< katex >}}$\mathbf{A}(\mathbf{y} + \delta\mathbf{y}) = \mathbf{c} + \delta\mathbf{c}${{< /katex >}} and define {{< katex >}}$\mathbf{x} = \mathbf{y} + \delta\mathbf{y}${{< /katex >}} and {{< katex >}}$\mathbf{b} = \mathbf{c} + \delta\mathbf{c}${{< /katex >}}.
-  We will show that given the assumptions above {{< katex >}}$\mathbf{x},\mathbf{b} \geq \mathbf{0}${{< /katex >}}.
-  
-  First, we consider {{< katex >}}$\mathbf{b}${{< /katex >}}.
-  Since {{< katex >}}$||\mathbf{b} - \mathbf{c}||_\infty = ||\delta\mathbf{c}||_\infty \leq \min(|\mathbf{c}|)${{< /katex >}} then {{< katex >}}$\mathbf{b} = \mathbf{c} + \delta\mathbf{c} \geq \mathbf{0}${{< /katex >}}.
-  
-  Now, we consider {{< katex >}}$\mathbf{x}${{< /katex >}}.
-  Note that {{< katex >}}$\mathbf{A} \delta\mathbf{y} = \delta\mathbf{c} ${{< /katex >}}, or equivalently {{< katex >}}$\delta\mathbf{y} = \mathbf{A}^{-1} \delta\mathbf{c} ${{< /katex >}}.
-  By norm submultiplicativity, 
-  {{< katex >}}$||\delta\mathbf{y}||_\infty \leq ||\mathbf{A}^{-1}||_\infty ||\delta\mathbf{c}||_\infty${{< /katex >}}.
-  Now since
-  {{< katex >}}$||\mathbf{b} - \mathbf{c}||_\infty = ||\delta\mathbf{c}||_\infty \leq \alpha\min(|\mathbf{y}|)${{< /katex >}},
-  we have
-  {{< katex >}}$||\delta\mathbf{y}||_\infty \leq \alpha ||\mathbf{A}^{-1}||_\infty \min(|\mathbf{y}|)${{< /katex >}}.
-  Finally, via {{< glink dest="https://www.sciencedirect.com/science/article/pii/0024379575901123" text="Varah's upper bound" color="y" >}} for the {{< katex >}}$\infty${{< /katex >}}-norm of the inverse of a row diagonal dominant matrix we have {{< katex >}}$\alpha ||\mathbf{A}^{-1}||_\infty \leq 1${{< /katex >}}.
-  Therefore, {{< katex >}}$||\delta\mathbf{y}||_\infty \leq \min(|\mathbf{y}|)${{< /katex >}}, so $\mathbf{x} = \mathbf{y} + \delta\mathbf{y} \geq \mathbf{0}$.
-</details>
+In particular, one could apply this theorem to the case when $\mathbf{c} = \mathbf{A}\mathbf{1}$, a point expected to be relatively deep in the interior of the cone (assuming all columns normalized).
+Contrast with the case when $\mathbf{c} = \mathbf{Az}$, where $\mathbf{z}$ has a 0 in one or more elements, meaning $\mathbf{c}$ would be on a face of the cone (and hence the above theorem would predict zero for the radius of the subcone).
+
+{{< details summary="Proof" >}}
+We have $\mathbf{Ay}=\mathbf{c}$, now consider
+$\mathbf{A}(\mathbf{y} + \delta\mathbf{y}) = \mathbf{c} + \delta\mathbf{c}$ and define $\mathbf{x} = \mathbf{y} + \delta\mathbf{y}$ and $\mathbf{b} = \mathbf{c} + \delta\mathbf{c}$.
+We will show that given the assumptions above $\mathbf{x},\mathbf{b} \geq \mathbf{0}$.
+
+
+First, we consider $\mathbf{b}$.
+Since
+$||\mathbf{b} - \mathbf{c}||_\infty = ||\delta\mathbf{c}||_\infty \leq \min(\mathbf{c})$
+then
+$\mathbf{b} = \mathbf{c} + \delta\mathbf{c} \geq \mathbf{0}$.
+
+Now, we consider $\mathbf{x}$.
+Note that
+$\mathbf{A} \delta\mathbf{y} = \delta\mathbf{c} $,
+or equivalently
+$\delta\mathbf{y} = \mathbf{A}^{-1} \delta\mathbf{c}$.
+By norm submultiplicativity,
+$||\delta\mathbf{y}||_\infty \leq ||\mathbf{A}^{-1}||_\infty ||\delta\mathbf{c}||_\infty$.
+Now since
+$||\mathbf{b} - \mathbf{c}||_\infty = ||\delta\mathbf{c}||_\infty \leq \alpha\min(\mathbf{y})$,
+we have
+$||\delta\mathbf{y}||_\infty \leq \alpha ||\mathbf{A}^{-1}||_\infty \min(\mathbf{y})$.
+Finally, via [Varah's upper bound](https://www.sciencedirect.com/science/article/pii/0024379575901123) for the
+$\infty$-norm of the inverse of a row diagonal dominant matrix we have
+$\alpha ||\mathbf{A}^{-1}||_\infty \leq 1$.
+Therefore,
+$||\delta\mathbf{y}||_\infty \leq \min(|\mathbf{y}|)$,
+so
+$\mathbf{x} = \mathbf{y} + \delta\mathbf{y} \geq \mathbf{0}$.
+{{< /details >}}
 
 ---
 
 ### Comments
 
-Comment 1: There exist other upper bounds for the {{< katex >}}$\infty${{< /katex >}}-norm of the inverse of a diagonally dominant matrix.
-{{< glink dest="https://math.stackexchange.com/questions/1191503/conditioning-of-triangular-matrices" text="Specifically" color="y" >}}, if {{< katex >}}$\mathbf{A}${{< /katex >}} instead satisfies {{< katex >}}$|a_{ii}| \geq \gamma \sum_{i \neq j} |a_{ij}| \; \forall i${{< /katex >}}, then {{< katex >}}$||\mathbf{A}^{-1}||_\infty \leq \frac{\gamma}{\gamma-1} \frac{1}{\min_i |a_{ii}|}${{< /katex >}}.
+Comment 1: There exist other upper bounds for the $\infty$-norm of the inverse of a diagonally dominant matrix.
+[Specifically](https://math.stackexchange.com/questions/1191503/conditioning-of-triangular-matrices), if
+$\mathbf{A}$ instead satisfies
+$|a_{ii}| \geq \gamma \sum_{i \neq j} |a_{ij}| \; \forall i$,
+then
+$||\mathbf{A}^{-1}||_\infty \leq \frac{\gamma}{\gamma-1} \frac{1}{\min_i |a_{ii}|}$.
 
-Comment 2: The proof does not actually require {{< katex >}}$\mathbf{A} \geq 0${{< /katex >}}, so perhaps this assumption could strengthen the conclusion.
+Comment 2: The proof does not actually require $\mathbf{A} \geq 0$, so perhaps this assumption could strengthen the conclusion.
 Likewise, for a symmetry assumption if one is added.
 
 ---

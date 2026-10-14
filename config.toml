@@ -12,6 +12,14 @@ theme = 'risotto'
 [markup.goldmark.renderer]
   unsafe = true  # allow HTML in md files
 
+# this seems to be working better than suggested here:
+#   https://gohugo.io/content-management/mathematics/
+# but I'm not complaining
+# the katex shortcode should deprecated now?
+[markup.goldmark.extensions.passthrough]
+  enable = true
+  delimiters = { inline = [['$', '$']], block  = [['$$','$$']] }
+
 [markup.highlight]
   noClasses = false  # control highlighting via syntax.css style sheet
 
