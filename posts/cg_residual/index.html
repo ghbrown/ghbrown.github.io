@@ -7,12 +7,11 @@ Per <a href=https://www.scirp.org/html/2644.html target=_blank>an article by Was
 An old but lesser known result from the original <a href=https://nvlpubs.nist.gov/nistpubs/jres/049/6/V49.N06.A08.pdf target=_blank>Hestenes and Stiefel paper</a> provides the precise form of the statement: for any (almost monotonically decreasing) sequence of residual 2-norms there exist $\mathbf{A}$ and $\mathbf{b}$ which realize this sequence.
 While there exist elaborately constructed systems realizing specific important patterns (see Section 2.7 of <a href=https://arxiv.org/pdf/2211.00953v3 target=_blank>this paper by Carson, Liesen, and Strakos</a> and the citations within) I find it hard to grasp why the residual 2-norm might increase.
 While grappling with this problem, I proved a small result that has helped me to understand just a bit better how the residual 2-norm can (at least temporarily) grow.
-<strong>The residual after one iteration of CG is larger than the initial residual if and only if</strong>
-$$
+<strong>The residual after one iteration of CG is larger than the initial residual if and only if</strong></p>$$
 ||\mathbf{r}_0||_2 ||\mathbf{A}\mathbf{r}_0||_2
 \ge
 \sqrt{2} \mathbf{r}_0^T \mathbf{A} \mathbf{r}_0 .
-$$</p><details><summary>Proof</summary>Using the standard conjugate gradient iteration pseudocode (from Trefethen and Bau, for example) the residual after 0 and 1 iterations of CG are
+$$<details><summary>Proof</summary>Using the standard conjugate gradient iteration pseudocode (from Trefethen and Bau, for example) the residual after 0 and 1 iterations of CG are
 $$
 \mathbf{r}_0 = \mathbf{A}\mathbf{x}_0 - \mathbf{b}, \quad\quad
 \mathbf{r}_1 = \mathbf{r}_0 -
@@ -51,19 +50,15 @@ $||\mathbf{\Lambda v}||_2 \geq \sqrt{2} \mathbf{v}^T \mathbf{\Lambda v}$, where
 $\mathbf{v} = \mathbf{Q}^T \hat{\mathbf{r}}_0$.</p><p>Since $\mathbf{v}$ has unit 2-norm, let us write it as a linear combination of the first and last elementary vector of $\mathbb{R}^m$,
 $\mathbf{v} = \epsilon \mathbf{e}_1 + \sqrt{1 - \epsilon^2} \mathbf{e}_m$;
 this is equivalent to letting $\hat{\mathbf{r}}_0$ be a similar linear combination of the eigenvectors of the largest and smallest magnitude eigenvalues respectively.
-Plugging in this choice of $\mathbf{v}$ the inequality becomes
-$$
+Plugging in this choice of $\mathbf{v}$ the inequality becomes</p>$$
 \epsilon^2 \lambda_1^2 + (1-\epsilon^2) \lambda_m^2
 \geq
 2 \left(\epsilon^2 \lambda_1 + (1-\epsilon^2) \lambda_m \right)^2
-$$
-or, dividing both sides by $\lambda_m^2$
-$$
+$$<p>or, dividing both sides by $\lambda_m^2$</p>$$
 \epsilon^2 \kappa^2 + (1-\epsilon^2)
 \geq
 2 \left(\epsilon^2 \kappa + (1-\epsilon^2)\right)^2
-$$
-where $\kappa = \frac{\lambda_1}{\lambda_m}$ is the condition number of $\mathbf{A}$.</p><p>If $\kappa \geq 7$, one can verify that choosing $\epsilon = 0.5$ suffices.</p><p>So, to exhibit a system whose residual increases on the first iteration, it suffices for the matrix to satisfy
+$$<p>where $\kappa = \frac{\lambda_1}{\lambda_m}$ is the condition number of $\mathbf{A}$.</p><p>If $\kappa \geq 7$, one can verify that choosing $\epsilon = 0.5$ suffices.</p><p>So, to exhibit a system whose residual increases on the first iteration, it suffices for the matrix to satisfy
 $\kappa(\mathbf{A}) \geq 7$
 and then choose the residual to be the following linear combination of eigenvectors
 $\mathbf{r}_0 = 0.5 \mathbf{v}_1 + \sqrt{0.75} \mathbf{v}_m$.</p><hr><h3 id=future-work-and-comments>Future work and comments</h3><p>Comment 1: I&rsquo;d like to read and understand the proof about realizing any residual 2-norm sequence.
