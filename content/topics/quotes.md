@@ -116,3 +116,9 @@ You run the computation and you pray."
 
 ---
 
+"I'm not a magician, I'm a mathematician."
+
+- [Yuanran Zhu](profiles.lbl.gov/148958-yuanran-zhu)
+
+---
+
