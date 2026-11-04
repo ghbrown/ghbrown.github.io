@@ -31,8 +31,7 @@ Here are some projects I've contributed to:
 ### Chapel
 
 - The [Chapel programming language](https://chapel-lang.org/) is designed for parallel computing at scale.
-  I [package](https://aur.archlinux.org/packages/chapel) the compiler for Arch Linux, and have contributed multiple routines to built in modules like `LinearAlgebra.chpl`.
-
+  I contributed multiple routines to modules like `LinearAlgebra.chpl`, and previously packaged the compiler for Arch Linux.
 
 ### fortran-lang
 
@@ -41,8 +40,12 @@ Here are some projects I've contributed to:
 
 ### pyttb
 
-- [pyttb](https://github.com/sandialabs/pyttb), the "Python Tensor Toolbox" provides data structures and algorithms for tensor computations.
+- [pyttb](https://github.com/sandialabs/pyttb), the "Python Tensor Toolbox", provides data structures and algorithms for tensor computations.
   I contributed a visualizer and significantly accelerated another function.
+
+### nixpkgs
+- [nixpkgs](https://github.com/NixOS/nixpkgs) is the official package collection for the NixOS Linux distribution.
+  I contributed a small fix for one of the packages.
 
 ### EndeavourOS
 
