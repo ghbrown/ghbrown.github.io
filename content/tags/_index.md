@@ -7,4 +7,3 @@ draft: false
 The most common post tags.
 
 If you want to see what I've been up to lately, <a href="{{< ref "posts/posts_timeline" >}}" class="mainlink"><span class="themecolor">see the post timeline here</span></a>.
-

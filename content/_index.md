@@ -7,44 +7,50 @@ draft: false
 
 ---
 
-<div style="display:flex; column-gap:3%; align-items:stretch">
-<!-- <div width=100% style="display:flex;"> -->
-  <div style="flex-grow:1; flex-basis:30%; flex-shrink:0">
-    <img src="assets/bust.png">
-    <!-- <p>just some coolio text</p> -->
+<div style="display:flex; column-gap:3%; justify-content:flex-start; align-items:flex-start">
+  <div style="flex-grow:1; flex-basis:30%; flex-shrink:1">
+    <a href="/posts/head_eigenfunctions">
+    <video autoplay loop style="width:100%" title="click to learn how I made this" alt="rotating mesh of shoulders and head">
+      <source src="/assets/bust.webm">
+    </video>
+    </a>
   </div>
-  <div style="display:flex; flex-direction:column; flex-grow:2">
-    <p class="left_align">
-      Gabriel H. Brown <br> <!-- usually I put ", graduate research assistant"-->
-      Oden Institute for Computational Engineering & Sciences <br>
-      University of Texas at Austin <br>
-    </p>
-    <ul>
-        <li>
+  <div style="margin-right:0.5em;">
+    <div style="margin-bottom: 1.5em;">
+      Gabriel H. Brown
+      <span style="display: block; height: 0.5em;"></span>
+      Oden Institute for Computational <br>
+      Engineering & Sciences
+      <span style="display: block; height: 0.5em;"></span>
+      University of Texas at Austin
+    </div>
+    <div style="display: grid; grid-template-columns: max-content max-content; gap: 0.5em 1em;">
+        <ul style="margin:0;"><li>
           {{< glink dest="assets/CV_GHBrown.pdf" text="Curriculum Vitae" >}}
-        </li>
-        <li>
-          {{< glink dest="https://scholar.google.com/citations?user=L465_QQAAAAJ&hl=en&oi=ao" text="Google Scholar" >}}
-        </li>
-        <li>
+        </li></ul>
+        <ul style="margin:0;"><li>
           {{< glink dest="https://github.com/ghbrown" text="GitHub" >}}
-        </li>
-        <li>
-        {{< glink dest="https://www.linkedin.com/in/gabriel-brown-25829b138/" text="LinkedIn" >}}
-    </ul>
+        </li></ul>
+        <ul style="margin:0;"><li>
+          {{< glink dest="https://scholar.google.com/citations?user=L465_QQAAAAJ&hl=en&oi=ao" text="Google Scholar" >}}
+        </li></ul>
+        <ul style="margin:0;"><li>
+          {{< glink dest="https://www.linkedin.com/in/gabriel-brown-25829b138/" text="LinkedIn" >}}
+        </li></ul>
+    </div>
   </div>
 </div>
 
 ---
 
-I am a fifth year Ph.D. student in the Computational Science, Engineering, and Mathematics graduate program in the Oden Institute advised by [Joe Kileel](https://web.ma.utexas.edu/users/jkileel/).
+I am a fifth year Ph.D. student in the Oden Institute's Computational Science, Engineering, and Mathematics program advised by [Joe Kileel](https://web.ma.utexas.edu/users/jkileel/).
 This fall I am working with [Yang Liu](https://liuyangzhuan.github.io/) at Lawrence Berkeley National Laboratory through the Department of Energy Graduate Student Research Program.
 
 I am interested in numerical analysis, linear algebra, and optimization.
 My PhD has focused on low-rank tensors and their applications to data compression and fast approximate algorithms.
 I also enjoy the intersections of these topics with high performance computing, theoretical computer science, and the physical sciences.
 
-I graduated from the University of Notre Dame in 2020 with my bachelor's in Mechanical Engineering, and from the University of Illinois Urbana-Champaign in 2022 with my master's in Theoretical and Applied Mechanics.
+I studied Mechanical Engineering at the University of Notre Dame and then got a master's in Theoretical and Applied Mechanics from the University of Illinois Urbana-Champaign.
 
 ---
 
