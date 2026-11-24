@@ -12,7 +12,8 @@ tags: ['graphics']
 This is the basic workflow of how I generated the animation below (also on the homepage of this website) using only open source software.
 
 <video autoplay loop style="width:100%" alt="rotating mesh of shoulders and head">
-  <source src="/assets/bust.webm">
+    <source src="/assets/bust.webm" type="video/webm">
+    <source src="/assets/bust.mp4" type="video/mp4">
 </video>
 
 In one sentence:
@@ -53,11 +54,16 @@ Notes (in order):
 - transferred the vertex data to the textured mesh, and created a new material that used the vertex colors as input to an emission shader
 - selectively applied the two materials to different faces on the same mesh
 - [rendered the final animation with transparency](/posts/alpha_video), then downsized with [ffmpeg](https://ffmpeg.org/)
+    - iOS Safari is [extremely picky about transparent video formats](https://www.bobbykegel.dev/blog/transparent-video-safari-ios), and the only way to generate one at the time of this project was to own a Mac.
+      That is the kind of stupidity I won't get behind, so a non-transparent mp4 with matched background serves as a fallback for those unfortunate souls.
+
 
 ---
 
 ## Acknowledgements
 
-Thanks to [Navjot Singh](https://scholar.google.com/citations?user=QxgNpSQAAAAJ&hl=en) for taking the pictures, and for his patience while doing so.
+- Thanks to [Navjot Singh](https://scholar.google.com/citations?user=QxgNpSQAAAAJ&hl=en) for taking the pictures, and for his patience while doing so.
+- This project was loosely inspired by the graphic on [Jonathan Shewchuk's homepage](https://people.eecs.berkeley.edu/~jrs/).
+  I saw it years ago, thought "that's really cool", and then it rolled around in my head until my own idea fell out.
 
 ---

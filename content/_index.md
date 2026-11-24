@@ -11,7 +11,8 @@ draft: false
   <div style="flex-grow:1; flex-basis:30%; flex-shrink:1">
     <a href="/posts/head_eigenfunctions">
     <video autoplay loop style="width:100%" title="click to learn how I made this" alt="rotating mesh of shoulders and head">
-      <source src="/assets/bust.webm">
+      <source src="/assets/bust.webm" type="video/webm">
+      <source src="/assets/bust.mp4" type="video/mp4">
     </video>
     </a>
   </div>
