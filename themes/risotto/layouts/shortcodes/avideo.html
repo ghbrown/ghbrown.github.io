@@ -1,0 +1,101 @@
+<!--
+alpha/transparent video via webm with mp4 fallback
+aspect ratio helps to keep CSS layouts from "jumping" when video appears
+
+uses a "canary" webm with transparency (opaque and red on the left, transparent on the right) rendered offscreen to test whether the broswer properly handles webm videos with alpha (iOS does not); falls back to mp4 in case of issues
+
+*note*: all {{- "" -}} are necessary to remove automatically inserted
+        spaces/line breaks
+-->
+{{ $id := (.Get "id") }}
+{{ $title := (.Get "title") }}
+{{ $alt := (.Get "alt") }}
+{{ $settings := (.Get "settings") }}
+{{ $ratio := (.Get "ratio")}} <!-- width/height -->
+{{ $webm := (.Get "webm") }}
+{{ $mp4 := (.Get "mp4") }}
+{{ $allowed_settings := slice "autoplay" "muted" "controls" "loop" -}}
+<video id="{{ $id }}"
+  style="width:100%;aspect-ratio:{{ $ratio }};"
+  title="{{ $title }}"
+  alt="{{ $alt }}"
+  {{- range (split $settings " ") -}}
+      {{- $setting := strings.TrimSpace . -}}
+      {{- if and $setting (in $allowed_settings $setting) }} {{ $setting }}{{ end -}}
+  {{- end }}
+></video>
+
+<video id="canary"
+       muted playsinline
+       preload="auto"
+       aria-hidden="true"
+       style="position:fixed;left:-100px;top:0;width:32px;height:32px;opacity:0;pointer-events:none">
+</video>
+
+<canvas id="probe" width="32" height="32" hidden></canvas>
+
+<script>
+  const vid = document.getElementById("{{ $id }}");
+  const canary = document.getElementById("canary");
+  const canvas = document.getElementById("probe");
+  const ctx = canvas.getContext("2d", { willReadFrequently: true });
+
+  let usingMp4 = false;
+
+  function useMp4() {
+    if (usingMp4) return;
+    usingMp4 = true;
+    vid.src = "{{ $mp4 }}";
+    vid.load();
+    vid.play().catch(() => {});
+  }
+
+  function useWebm() {
+    vid.src = "{{ $webm }}";
+    vid.load();
+    vid.play().catch(() => {});
+  }
+
+
+  function testCanary() {
+    ctx.drawImage(canary, 0, 0, 32, 32);
+    const opaqueAlpha = ctx.getImageData(8, 16, 1, 1).data[3];
+    const transparentAlpha = ctx.getImageData(24, 16, 1, 1).data[3];
+    canary.pause();
+
+    if (opaqueAlpha > 240 && transparentAlpha < 16) {
+      // webm transparency working
+      useWebm();
+    } else {
+      // webm transparency failing (e.g. iOS)
+      useMp4();
+    }
+  }
+
+  let checked = false;
+  function checkCanaryOnce() {
+    if (checked) return; // no need to run on every frame of canary
+    checked = true;
+    testCanary();
+  }
+
+  // use mp4 if webm fails
+  vid.addEventListener("error", useMp4);
+  canary.addEventListener("error", useMp4, { once: true });
+
+  // set tests to run when canary frame is advanced
+  if ("requestVideoFrameCallback" in canary) {
+    // alert('test');
+    canary.requestVideoFrameCallback(checkCanaryOnce);
+  } else {
+    canary.addEventListener("loadeddata", () => {
+      requestAnimationFrame(checkCanaryOnce);
+    }, { once: true });
+  }
+
+  // actually load and play canary, which calls callback, which calls test
+  canary.src = "/assets/alpha-test.webm";
+  canary.load();
+  canary.play().catch(useMp4);
+</script>
+{{- "" -}}

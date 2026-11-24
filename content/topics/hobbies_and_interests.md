@@ -15,9 +15,13 @@ Ask me about the time I wrote an ASCII shader in less than 600 characters, it's 
 <table style="width:100%">
   <tr>
     <td width="50%">
-      <video autoplay loop style="width:100%">
-        <source src="/assets/topics/hobbies_and_interests/donut.webm">
-      </video>
+      {{< avideo id="donut"
+                 webm="/assets/topics/hobbies_and_interests/donut.webm"
+                 mp4="/assets/topics/hobbies_and_interests/donut.webm"
+                 ratio=1
+                 settings="autoplay loop muted"
+                 alt="rotating CGI donut"
+                >}}
     </td>
     <td style="vertical-align:middle">
       <p>

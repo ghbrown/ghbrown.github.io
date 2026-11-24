@@ -10,10 +10,12 @@ draft: false
 <div style="display:flex; column-gap:3%; justify-content:flex-start; align-items:flex-start">
   <div style="flex-grow:1; flex-basis:30%; flex-shrink:1">
     <a href="/posts/head_eigenfunctions">
-    <video autoplay loop style="width:100%" title="click to learn how I made this" alt="rotating mesh of shoulders and head">
-      <source src="/assets/bust.webm" type="video/webm">
-      <source src="/assets/bust.mp4" type="video/mp4">
-    </video>
+    {{< avideo id="bust" webm=/assets/bust.webm mp4=/assets/bust.mp4
+                ratio=1
+                settings="autoplay loop muted"
+                title="click to learn how I made this"
+                alt="rotating mesh of my shoulders and head"
+        >}}
     </a>
   </div>
   <div style="margin-right:0.5em;">

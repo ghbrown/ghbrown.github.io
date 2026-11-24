@@ -11,10 +11,11 @@ tags: ['graphics']
 
 This is the basic workflow of how I generated the animation below (also on the homepage of this website) using only open source software.
 
-<video autoplay loop style="width:100%" alt="rotating mesh of shoulders and head">
-    <source src="/assets/bust.webm" type="video/webm">
-    <source src="/assets/bust.mp4" type="video/mp4">
-</video>
+{{< avideo id="bust" webm=/assets/bust.webm mp4=/assets/bust.mp4
+  ratio=1
+  settings="autoplay loop muted"
+  alt="rotating mesh of my shoulders and head"
+  >}}
 
 In one sentence:
 I used [COLMAP](https://colmap.github.io/) and [OpenMVG](https://github.com/openMVG/openMVG) to generate a textured mesh of myself from pictures;
@@ -53,10 +54,8 @@ Notes (in order):
 - imported the two meshes; one fully textures from images, the other with vertex colors of eigenfunction
 - transferred the vertex data to the textured mesh, and created a new material that used the vertex colors as input to an emission shader
 - selectively applied the two materials to different faces on the same mesh
-- [rendered the final animation with transparency](/posts/alpha_video), then downsized with [ffmpeg](https://ffmpeg.org/)
-    - iOS Safari is [extremely picky about transparent video formats](https://www.bobbykegel.dev/blog/transparent-video-safari-ios), and the only way to generate one at the time of this project was to own a Mac.
-      That is the kind of stupidity I won't get behind, so a non-transparent mp4 with matched background serves as a fallback for those unfortunate souls.
-
+- [rendered the final animation with transparency], then downsized with [ffmpeg](https://ffmpeg.org/)
+- [rendered the video with transparent background](/posts/alpha_video), but for reasons [entirely to do with Apple](https://www.bobbykegel.dev/blog/transparent-video-safari-ios) and their inability to play standard video formats then converted to an opaque mp4 with matching background
 
 ---
 
