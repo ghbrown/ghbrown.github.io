@@ -13,7 +13,7 @@ This is the basic workflow of how I generated the animation below (also on the h
 
 {{< avideo id="bust" webm=/assets/bust.webm mp4=/assets/bust.mp4
   ratio=1
-  settings="autoplay loop muted"
+  settings="autoplay loop muted playsinline"
   alt="rotating mesh of my shoulders and head"
   >}}
 
@@ -55,7 +55,8 @@ Notes (in order):
 - transferred the vertex data to the textured mesh, and created a new material that used the vertex colors as input to an emission shader
 - selectively applied the two materials to different faces on the same mesh
 - [rendered the final animation with transparency], then downsized with [ffmpeg](https://ffmpeg.org/)
-- [rendered the video with transparent background](/posts/alpha_video), but for reasons [entirely to do with Apple](https://www.bobbykegel.dev/blog/transparent-video-safari-ios) and their inability to play standard video formats then converted to an opaque mp4 with matching background
+- [rendered the video with transparent background](/posts/alpha_video)
+  - for reasons [entirely to do with Apple](https://www.bobbykegel.dev/blog/transparent-video-safari-ios) you may get the fallback mp4 with solid matching background
 
 ---
 

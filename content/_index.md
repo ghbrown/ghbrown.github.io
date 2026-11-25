@@ -12,7 +12,7 @@ draft: false
     <a href="/posts/head_eigenfunctions">
     {{< avideo id="bust" webm=/assets/bust.webm mp4=/assets/bust.mp4
                 ratio=1
-                settings="autoplay loop muted"
+                settings="autoplay loop muted playsinline"
                 title="click to learn how I made this"
                 alt="rotating mesh of my shoulders and head"
         >}}

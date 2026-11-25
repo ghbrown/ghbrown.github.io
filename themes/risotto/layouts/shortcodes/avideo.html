@@ -14,7 +14,7 @@ uses a "canary" webm with transparency (opaque and red on the left, transparent 
 {{ $ratio := (.Get "ratio")}} <!-- width/height -->
 {{ $webm := (.Get "webm") }}
 {{ $mp4 := (.Get "mp4") }}
-{{ $allowed_settings := slice "autoplay" "muted" "controls" "loop" -}}
+{{ $allowed_settings := slice "autoplay" "muted" "controls" "loop" "playsinline" -}}
 <video id="{{ $id }}"
   style="width:100%;aspect-ratio:{{ $ratio }};"
   title="{{ $title }}"
