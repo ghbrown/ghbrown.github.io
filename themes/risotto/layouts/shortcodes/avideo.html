@@ -59,12 +59,12 @@ uses a "canary" webm with transparency (opaque and red on the left, transparent 
 
   function testCanary() {
     ctx.drawImage(canary, 0, 0, 32, 32);
-    const opaqueAlpha = ctx.getImageData(8, 16, 1, 1).data[3];
-    const transparentAlpha = ctx.getImageData(24, 16, 1, 1).data[3];
+    const leftAlpha = ctx.getImageData(8, 16, 1, 1).data[3];
+    const rightAlpha = ctx.getImageData(24, 16, 1, 1).data[3];
     canary.pause();
 
-    if (opaqueAlpha > 240 && transparentAlpha < 16) {
-      // webm transparency working
+    if (leftAlpha > 240 && rightAlpha < 16) {
+      // webm transparency working as expected
       useWebm();
     } else {
       // webm transparency failing (e.g. iOS)
@@ -93,7 +93,7 @@ uses a "canary" webm with transparency (opaque and red on the left, transparent 
     }, { once: true });
   }
 
-  // actually load and play canary, which calls callback, which calls test
+  // load and play canary, which calls callback upon loading a frame, which calls the actual test
   canary.src = "/assets/alpha-test.webm";
   canary.load();
   canary.play().catch(useMp4);

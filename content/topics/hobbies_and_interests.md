@@ -12,11 +12,15 @@ draft: false
 Who can avoid being drawn to a beautiful render?
 Ask me about the time I wrote an ASCII shader in less than 600 characters, it's a fun story.
 
+<video style="width=100%" autoplay loop muted>
+    <source src="/assets/bust.mp4">
+</video>
+
 <table style="width:100%">
   <tr>
     <td width="50%">
       {{< avideo id="donut"
-                 webm="/assets/topics/hobbies_and_interests/donut.mp4"
+                 webm="/assets/topics/hobbies_and_interests/donut.webm"
                  mp4="/assets/topics/hobbies_and_interests/donut.mp4"
                  ratio=1
                  settings="autoplay loop muted"
