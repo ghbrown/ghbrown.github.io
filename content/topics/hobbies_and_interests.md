@@ -12,7 +12,7 @@ draft: false
 Who can avoid being drawn to a beautiful render?
 Ask me about the time I wrote an ASCII shader in less than 600 characters, it's a fun story.
 
-<video style="width=100%" autoplay loop muted>
+<video style="width=100%" autoplay loop muted playsinline>
     <source src="/assets/bust.mp4">
 </video>
 
@@ -23,7 +23,7 @@ Ask me about the time I wrote an ASCII shader in less than 600 characters, it's 
                  webm="/assets/topics/hobbies_and_interests/donut.webm"
                  mp4="/assets/topics/hobbies_and_interests/donut.mp4"
                  ratio=1
-                 settings="autoplay loop muted"
+                 settings="autoplay loop muted playsinline"
                  alt="rotating CGI donut"
                 >}}
     </td>
