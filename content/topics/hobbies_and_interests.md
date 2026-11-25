@@ -16,8 +16,8 @@ Ask me about the time I wrote an ASCII shader in less than 600 characters, it's 
   <tr>
     <td width="50%">
       {{< avideo id="donut"
-                 webm="/assets/topics/hobbies_and_interests/donut.webm"
-                 mp4="/assets/topics/hobbies_and_interests/donut.webm"
+                 webm="/assets/topics/hobbies_and_interests/donut.mp4"
+                 mp4="/assets/topics/hobbies_and_interests/donut.mp4"
                  ratio=1
                  settings="autoplay loop muted"
                  alt="rotating CGI donut"
