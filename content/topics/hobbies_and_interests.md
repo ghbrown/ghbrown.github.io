@@ -16,6 +16,10 @@ Ask me about the time I wrote an ASCII shader in less than 600 characters, it's 
     <source src="/assets/bust.mp4">
 </video>
 
+<video style="width=100%" autoplay loop muted playsinline>
+    <source src="/assets/bust.webm">
+</video>
+
 <table style="width:100%">
   <tr>
     <td width="50%">
