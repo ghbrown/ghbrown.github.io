@@ -80,45 +80,64 @@ You run the computation and you pray."
 ---
 
 "The minimum is always less than or equal to the maximum... um, I think".
-
+<br>
 \- [Joel Tropp](https://youtu.be/zdKB9PVb1i0?t=1079)
-
 
 ---
 
 "Any fool can know. The point is to understand."
-
+<br>
 \- fictional Einstein (written by [Ernest Kinoy](https://quoteinvestigator.com/2021/11/20/fool-know/))
 
 ---
 
 "There are a lot of theorems you can prove, but it's worth proving what other people find interesting."
-
+<br>
 \- [Daniel Spielman](https://youtu.be/SVfabuPRkYg?t=1633)
 
 ---
 
 "It would be lovely to get away from error analysis, I would rather do something interesting."
-
+<br>
 \- [William Kahan](https://youtu.be/LZAeZBVAzVw?t=2146)
 
 ---
 
 "Applied mathematics is all about getting approximations to things you can't have."
-
+<br>
 \- me
 
 ---
 
 "The hands will never surpass the eyes."
-
+<br>
 - Aoi Todo (Jujutsu Kaisen S1E16)
 
 ---
 
 "I'm not a magician, I'm a mathematician."
-
+<br>
 - [Yuanran Zhu](profiles.lbl.gov/148958-yuanran-zhu)
+
+---
+
+"Any sufficiently well-explained mathematics is indistinguishable from being obvious."
+<br>
+- [Matt Parker](https://youtu.be/TNWl-0rle4A?t=1149)
+
+---
+
+"If you see two ants in your kitchen, you do not have a two-ant problem."
+<br>
+- [Nathan Calvin](https://x.com/_NathanCalvin/status/2084856543561093535), paraphrased
+
+---
+
+"A man doesn't need a home, all he needs is a shelter.
+<br>
+ If we can sell him on the idea of a shelter we can make millions."
+<br>
+- [Company Flow](https://youtu.be/T3fvKBa28x0?list=RDT3fvKBa28x0&t=1546), sampled from <a href="https://en.wikipedia.org/wiki/The_Holy_Mountain_(1973_film)">The Holy Mountain</a>
 
 ---
 
