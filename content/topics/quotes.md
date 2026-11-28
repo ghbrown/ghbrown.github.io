@@ -111,25 +111,25 @@ You run the computation and you pray."
 
 "The hands will never surpass the eyes."
 <br>
-- Aoi Todo (Jujutsu Kaisen S1E16)
+\- Aoi Todo (Jujutsu Kaisen S1E16)
 
 ---
 
 "I'm not a magician, I'm a mathematician."
 <br>
-- [Yuanran Zhu](profiles.lbl.gov/148958-yuanran-zhu)
+\- [Yuanran Zhu](profiles.lbl.gov/148958-yuanran-zhu)
 
 ---
 
 "Any sufficiently well-explained mathematics is indistinguishable from being obvious."
 <br>
-- [Matt Parker](https://youtu.be/TNWl-0rle4A?t=1149)
+\- [Matt Parker](https://youtu.be/TNWl-0rle4A?t=1149)
 
 ---
 
 "If you see two ants in your kitchen, you do not have a two-ant problem."
 <br>
-- [Nathan Calvin](https://x.com/_NathanCalvin/status/2084856543561093535), paraphrased
+\- [Nathan Calvin](https://x.com/_NathanCalvin/status/2084856543561093535), paraphrased
 
 ---
 
@@ -137,7 +137,7 @@ You run the computation and you pray."
 <br>
  If we can sell him on the idea of a shelter we can make millions."
 <br>
-- [Company Flow](https://youtu.be/T3fvKBa28x0?list=RDT3fvKBa28x0&t=1546), sampled from <a href="https://en.wikipedia.org/wiki/The_Holy_Mountain_(1973_film)">The Holy Mountain</a>
+\- [Company Flow](https://youtu.be/T3fvKBa28x0?list=RDT3fvKBa28x0&t=1546), sampled from <a href="https://en.wikipedia.org/wiki/The_Holy_Mountain_(1973_film)">The Holy Mountain</a>
 
 ---
 
